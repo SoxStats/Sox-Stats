@@ -53,6 +53,7 @@ th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:
 td:first-child{font-weight:600}
 td.pos{text-align:left;color:var(--steel)}
 td.dim{color:var(--steel)}
+.rk{font-size:12px;font-weight:600;color:var(--steel)}
 .key{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--steel);margin:10px 0 0}
 .key i{display:inline-block;width:72px;height:10px;border-radius:2px;background:linear-gradient(90deg,rgb(var(--cold)/.45),transparent,rgb(var(--hot)/.45))}
 footer{margin-top:40px;font-size:13px;color:var(--steel);border-top:1px solid var(--rule);padding-top:14px}
@@ -88,6 +89,7 @@ footer{margin-top:40px;font-size:13px;color:var(--steel);border-top:1px solid va
   <footer>
     Shading compares each player to the rest of the team over the same games: warmer is better, cooler is worse.
     Games started (GS) shows who's been in the lineup.
+    Numbers in parentheses are American League rank, shown for top-10 finishes in the season view. Rate stats like AVG and ERA rank qualified players only; T means tied.
     Data from the MLB Stats API. A fan site, not affiliated with Major League Baseball or the Chicago White Sox.
   </footer>
 </div>
@@ -107,6 +109,7 @@ const MIN = {season:{PA:100,outs:60}, last30:{PA:30,outs:15}, last10:{PA:10,outs
 let data, win = "season", sorts = {hitters:["PA",-1], pitchers:["outs",-1]};
 const $ = s => document.querySelector(s);
 const fmt = (v, d) => v == null ? "–" : d === 3 ? v.toFixed(3).replace(/^0\./, ".") : d ? v.toFixed(d) : v;
+const ordinal = r => { const n = +String(r).replace("T-", ""); return [11,12,13].includes(n % 100) ? "th" : ({1:"st",2:"nd",3:"rd"})[n % 10] || "th"; };
 const fmtDate = s => new Date(s + "T12:00:00").toLocaleDateString("en-US", {month:"short", day:"numeric"});
 
 function shade(rows, cols, qualified) {
@@ -147,7 +150,9 @@ function table(kind, cols, rows) {
   const body = shown.map(r => "<tr>" + cols.map(([k,, d]) => {
     const cls = k === "pos" ? ' class="pos"' : !isQual(r) && d ? ' class="dim"' : "";
     const st = tint[k] ? tint[k](r) : "";
-    return `<td${cls}${st ? ` style="${st}"` : ""}>${fmt(r[k], d)}</td>`;
+    const rk = win === "season" && r.ranks && r.ranks[k === "outs" ? "IP" : k];
+    const rank = rk ? ` <span class="rk" title="Rank in the American League">(${rk}${ordinal(rk)})</span>` : "";
+    return `<td${cls}${st ? ` style="${st}"` : ""}>${fmt(r[k], d)}${rank}</td>`;
   }).join("") + "</tr>").join("");
   const empty = `<tr><td colspan="${cols.length}">No one has enough playing time yet. Turn off "Regulars only" to see everyone.</td></tr>`;
   return `<div class="scroll"><table><thead><tr>${head}</tr></thead><tbody>${body || empty}</tbody></table></div>`;

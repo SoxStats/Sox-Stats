@@ -182,6 +182,45 @@ def build_window(games):
     }
 
 
+# American League leaderboard ranks shown next to season stats.
+# MLB's leaderboards only rank qualified players for rate stats (AVG, ERA...),
+# and tied players share a rank.
+LEAGUE_ID = 103  # American League
+RANK_TOP = 10    # only show a rank when a player is in the top 10
+RANK_CATEGORIES = {
+    "hitting": {"homeRuns": "HR", "hits": "H", "doubles": "2B", "runsBattedIn": "RBI",
+                "baseOnBalls": "BB", "stolenBases": "SB", "battingAverage": "AVG",
+                "onBasePercentage": "OBP", "sluggingPercentage": "SLG",
+                "onBasePlusSlugging": "OPS"},
+    "pitching": {"wins": "W", "saves": "SV", "inningsPitched": "IP",
+                 "strikeouts": "SO", "earnedRunAverage": "ERA",
+                 "walksAndHitsPerInningPitched": "WHIP"},
+}
+
+
+def league_ranks(season):
+    """Return {"hitting"|"pitching": {player_id: {stat: "6" or "T-6"}}}."""
+    ranks = {g: defaultdict(dict) for g in RANK_CATEGORIES}
+    for group, cats in RANK_CATEGORIES.items():
+        for cat, key in cats.items():
+            url = (f"{API}/stats/leaders?leaderCategories={cat}&season={season}"
+                   f"&leagueId={LEAGUE_ID}&sportId=1&statGroup={group}"
+                   f"&limit={RANK_TOP}")
+            try:
+                block = get_json(url)["leagueLeaders"][0]["leaders"]
+            except Exception as e:  # one bad category shouldn't stop the update
+                print(f"  rank lookup failed for {cat}: {e}")
+                continue
+            counts = Counter(l["rank"] for l in block)
+            for l in block:
+                if l["rank"] > RANK_TOP:
+                    continue
+                tie = "T-" if counts[l["rank"]] > 1 else ""
+                ranks[group][l["person"]["id"]][key] = f"{tie}{l['rank']}"
+            time.sleep(0.1)
+    return ranks
+
+
 def main():
     season = pick_season()
     schedule = final_games(season)
@@ -203,7 +242,13 @@ def main():
         "windows": {k: build_window(games[-n:] if n else games)
                     for k, n in WINDOWS.items()},
         "log": [s for s, _ in games[-30:]],
+        "rankTop": RANK_TOP,
     }
+    ranks = league_ranks(season)
+    for group, kind in (("hitting", "hitters"), ("pitching", "pitchers")):
+        for row in out["windows"]["season"][kind]:
+            if ranks[group].get(row["id"]):
+                row["ranks"] = ranks[group][row["id"]]
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
         json.dump(out, f, separators=(",", ":"))
