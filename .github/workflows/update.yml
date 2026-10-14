@@ -1,0 +1,42 @@
+name: Update stats
+
+on:
+  schedule:
+    - cron: "17 9 * * *"   # every morning, about 5 a.m. Eastern
+  workflow_dispatch:        # "Run workflow" button on the Actions tab
+  push:
+    branches: [main]
+    paths: ["scripts/**", ".github/workflows/update.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pull box scores and build stats
+        run: python scripts/build.py
+
+      - name: Save updated data
+        run: |
+          git config user.name "sox-stats bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update stats $(date -u +%Y-%m-%d)"
+            git push
+          fi
