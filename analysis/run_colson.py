@@ -1,6 +1,8 @@
 import sys, json; sys.path.insert(0, "analysis")
 import pandas as pd
-from comps import comps, me, pool
+import os, importlib
+_m = importlib.import_module(os.environ.get("COMPS", "comps"))
+comps, me, pool = _m.comps, _m.me, _m.pool
 from tiers import career, ORDER
 
 rows = []
@@ -11,7 +13,7 @@ for _, c in comps.iterrows():
                      relK=round(c.relK,2), relISO=round(c.relISO,2), relBB=round(c.relBB,2),
                      dist=round(c.dist,3), **r))
 df = pd.DataFrame(rows)
-df.to_csv("analysis/colson_comps.csv", index=False)
+df.to_csv(os.environ.get("OUT", "analysis/colson_comps.csv"), index=False)
 
 def summary(d, label):
     t = d.tier.value_counts().reindex(ORDER[::-1], fill_value=0)
