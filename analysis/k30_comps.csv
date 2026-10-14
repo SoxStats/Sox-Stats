@@ -38,71 +38,67 @@ rank,name,season,age,pos,team,AB,HR,K,too_early,times30,field,war_def,season_war
 37,Brandon Dixon,2019,27,1B,Detroit Tigers,391,15,32.4,False,1,-4.0,-1.1,-0.3,-1.3,1,-0.09,,-0.3,89,Below replacement,Below replacement,0
 38,Benji Gil,1995,22,SS,Texas Rangers,415,9,32.4,False,1,10.8,1.9,0.3,2.8,3,0.6,61.0,0.9,74,Just a guy,Just a guy,0
 39,Mike Napoli,2013,31,1B,Boston Red Sox,498,23,32.4,False,3,6.0,0.1,3.7,26.4,10,4.08,157.0,5.5,198,All-Star,MVP candidate,1
-40,Domingo Santana,2019,26,LF,Seattle Mariners,451,21,32.3,False,1,-9.0,-1.8,0.5,3.4,2,1.0,,2.5,135,Just a guy,Solid regular,1
-41,Jack Cust,2007,28,DH,Oakland Athletics,395,26,32.3,False,3,-2.0,-1.1,3.3,9.4,4,2.75,138.0,3.3,145,Solid regular,All-Star,1
+40,Jack Cust,2007,28,DH,Oakland Athletics,395,26,32.3,False,3,-2.0,-1.1,3.3,9.4,4,2.75,138.0,3.3,145,Solid regular,All-Star,1
+41,Domingo Santana,2019,26,LF,Seattle Mariners,451,21,32.3,False,1,-9.0,-1.8,0.5,3.4,2,1.0,,2.5,135,Just a guy,Solid regular,1
 42,Christopher Morel,2022,23,CF,Chicago Cubs,379,16,32.2,True,2,-12.0,-0.8,1.0,0.9,4,0.72,107.0,1.5,121,Just a guy,Solid regular,1
 43,Jack Suwinski,2023,24,CF,Pittsburgh Pirates,447,26,32.2,True,1,-6.0,-0.8,2.1,1.3,2,1.13,,2.1,116,Just a guy,Solid regular,1
 44,Michael Toglia,2024,25,1B,Colorado Rockies,399,25,32.1,True,1,8.0,0.5,2.1,-1.5,2,0.16,,2.1,114,Just a guy,Just a guy,0
 45,James Wood,2025,22,LF,Washington Nationals,598,31,32.1,True,1,-2.0,-0.6,3.6,8.3,3,2.77,133.0,3.7,147,Solid regular,All-Star,1
-46,Mike Trout,2025,33,DH,Los Angeles Angels,456,26,32.0,True,1,-2.0,-1.3,1.7,91.7,12,10.28,187.0,10.5,195,MVP candidate,MVP candidate,0
-47,Franmil Reyes,2021,25,DH,Cleveland Indians,418,30,32.0,False,2,-1.0,-1.0,1.7,2.7,3,0.39,107.0,1.7,129,Just a guy,Solid regular,1
-48,James Outman,2023,26,CF,Los Angeles Dodgers,483,23,31.9,True,1,1.0,0.3,3.4,2.1,1,1.15,,3.4,118,Just a guy,Solid regular,1
-49,Nolan Gorman,2023,23,2B,St. Louis Cardinals,406,27,31.9,True,3,2.0,-0.2,2.4,3.3,5,1.19,103.0,2.4,119,Just a guy,Solid regular,1
-50,Dan Uggla,2013,33,2B,Atlanta Braves,448,22,31.8,False,1,-9.0,-1.1,-0.3,18.4,8,3.94,133.0,4.4,145,Solid regular,All-Star,1
-51,Jordan Walker,2025,23,RF,St. Louis Cardinals,363,6,31.8,True,1,-7.0,-1.5,-1.7,0.7,3,0.5,99.0,3.3,120,Just a guy,Solid regular,1
-52,Josh Lowe,2024,26,RF,Tampa Bay Rays,353,10,31.8,True,1,-2.0,-0.6,0.7,5.0,4,1.49,99.0,3.6,125,Just a guy,Solid regular,1
-53,Colby Rasmus,2015,28,LF,Houston Astros,432,25,31.8,False,1,-3.0,0.1,3.0,20.4,8,3.85,132.0,5.0,139,Solid regular,All-Star,1
-54,Jarred Kelenic,2023,23,LF,Seattle Mariners,372,11,31.7,True,1,3.0,-0.0,2.1,-0.1,3,0.32,87.0,2.1,102,Just a guy,Just a guy,0
-55,Davis Schneider,2024,25,LF,Toronto Blue Jays,397,13,31.7,True,1,-1.0,-0.4,-0.1,2.8,1,-0.05,,-0.1,76,Below replacement,Below replacement,0
-56,Ryan McMahon,2023,28,3B,Colorado Rockies,555,23,31.6,True,2,14.0,2.0,2.9,17.3,7,3.37,111.0,4.0,114,Solid regular,Solid regular,0
-57,Luke Raley,2023,28,1B,Tampa Bay Rays,357,19,31.5,True,1,1.0,-0.4,2.7,5.3,2,1.95,,3.1,124,Just a guy,Solid regular,1
-58,Luke Voit,2022,31,DH,Washington Nationals,500,22,31.5,True,1,-1.0,-1.0,0.7,5.5,2,0.71,,1.4,126,Just a guy,Solid regular,1
-59,Bo Naylor,2024,24,C,Cleveland Guardians,354,13,31.4,True,1,2.0,1.0,0.7,2.9,2,0.75,,1.6,83,Just a guy,Just a guy,0
-60,Ray Lankford,2000,33,LF,St. Louis Cardinals,392,26,31.4,False,2,-6.6,-1.1,1.0,38.2,11,5.49,153.0,6.2,162,All-Star,All-Star,0
-61,Adam Duvall,2021,32,LF,Atlanta Braves,513,38,31.4,False,1,8.0,1.2,2.9,10.6,7,2.78,114.0,3.4,122,Just a guy,Solid regular,1
-62,Trevor Story,2016,23,SS,Colorado Rockies,372,27,31.3,False,3,16.0,1.8,4.1,35.4,7,5.83,146.0,6.9,151,All-Star,All-Star,0
-63,Tyler O'Neill,2021,26,LF,St. Louis Cardinals,482,34,31.3,False,2,9.0,0.9,6.4,12.9,3,3.44,128.0,6.4,149,Solid regular,All-Star,1
-64,José Hernández,2001,31,SS,Milwaukee Brewers,542,25,31.2,False,3,6.4,1.3,1.9,13.3,7,2.87,108.0,4.5,125,Just a guy,Solid regular,1
-65,Ian Happ,2017,22,CF,Chicago Cubs,364,24,31.2,False,2,0.0,-0.1,1.6,25.3,8,4.06,121.0,4.3,122,Solid regular,Solid regular,0
-66,Eric Haase,2021,28,C,Detroit Tigers,351,22,31.2,False,1,0.0,0.4,1.9,3.0,2,1.27,,1.9,109,Just a guy,Just a guy,0
-67,Adolis García,2021,28,CF,Texas Rangers,581,31,31.2,False,1,6.0,1.7,3.9,14.3,5,4.03,113.0,4.5,126,Solid regular,Solid regular,0
-68,Hunter Renfroe,2019,27,RF,San Diego Padres,440,33,31.2,False,1,12.0,1.1,2.3,8.9,7,2.43,122.0,2.4,127,Solid regular,Solid regular,0
-69,Teoscar Hernández,2018,25,LF,Toronto Blue Jays,476,22,31.2,False,3,-9.0,-1.6,0.5,19.8,8,3.55,134.0,4.1,139,Solid regular,Solid regular,0
-70,Eugenio Suárez,2022,30,3B,Seattle Mariners,543,31,31.2,True,2,-1.0,0.1,4.1,27.3,11,3.81,138.0,4.1,145,Solid regular,All-Star,1
-71,Mark Reynolds,2007,23,3B,Arizona Diamondbacks,366,17,31.2,False,6,-6.0,-0.2,1.3,6.9,11,2.0,130.0,3.3,138,Solid regular,Solid regular,0
-72,Chad Pinder,2022,30,LF,Oakland Athletics,361,12,31.1,True,1,-4.0,-1.2,-0.6,3.9,4,1.57,99.0,2.0,114,Just a guy,Just a guy,0
-73,Giancarlo Stanton,2010,20,RF,Florida Marlins,359,22,31.1,False,3,10.0,0.9,2.8,47.0,13,6.66,168.0,8.1,172,MVP candidate,MVP candidate,0
-74,Korey Lee,2024,25,C,Chicago White Sox,377,12,31.0,True,1,0.0,0.4,0.0,-0.8,1,0.01,,0.0,62,Just a guy,Just a guy,0
-75,Oswaldo Arcia,2013,22,LF,Minnesota Twins,351,14,31.0,False,2,-17.0,-2.1,-0.7,-1.7,2,-0.09,,0.5,113,Below replacement,Just a guy,1
-76,Mitch Garver,2024,33,DH,Seattle Mariners,367,15,30.9,True,1,0.0,-0.7,-0.2,10.0,4,2.49,135.0,4.1,159,Solid regular,All-Star,1
-77,Michael A. Taylor,2015,24,CF,Washington Nationals,472,14,30.9,False,4,3.0,0.9,0.4,12.8,8,3.0,99.0,3.4,113,Solid regular,Solid regular,0
-78,Tony Clark,1996,24,1B,Detroit Tigers,376,27,30.9,False,1,-8.8,-1.2,-0.3,12.3,6,3.4,143.0,3.5,164,All-Star,All-Star,0
-79,Craig Wilson,2006,29,1B,New York Yankees,359,17,30.9,False,1,-9.0,-1.4,-0.7,3.4,4,0.9,125.0,1.3,132,Solid regular,Solid regular,0
-80,Nick Kurtz,2025,22,1B,Athletics,420,36,30.9,True,1,1.0,-0.4,5.0,8.7,2,2.91,,5.0,176,Just a guy,MVP candidate,3
-81,Kyle Schwarber,2017,24,LF,Chicago Cubs,422,30,30.9,False,1,-4.0,-1.3,-0.0,22.2,9,3.8,150.0,4.6,156,All-Star,All-Star,0
-82,Jackie Bradley Jr.,2021,31,CF,Milwaukee Brewers,387,6,30.8,False,1,8.0,1.1,-0.7,16.6,7,3.84,106.0,5.7,126,Solid regular,All-Star,1
-83,Jarrod Saltalamacchia,2011,26,C,Boston Red Sox,358,16,30.8,False,3,0.0,-0.1,0.7,5.9,6,1.74,111.0,2.9,127,Just a guy,Solid regular,1
-84,Logan O'Hoppe,2025,25,C,Los Angeles Angels,423,19,30.8,True,1,0.0,0.3,0.0,2.2,2,0.88,,2.6,101,Just a guy,Just a guy,0
-85,Jazz Chisholm Jr.,2023,25,CF,Miami Marlins,352,19,30.8,True,1,-6.0,-0.7,0.9,14.2,5,3.09,115.0,4.1,126,Solid regular,Solid regular,0
-86,Pedro Álvarez,2012,25,3B,Pittsburgh Pirates,525,30,30.7,False,2,-2.0,-0.2,2.6,4.9,6,2.27,118.0,3.3,123,Solid regular,Solid regular,0
-87,Adam Dunn,2010,30,1B,Washington Nationals,558,38,30.7,False,5,-9.0,-2.1,2.5,18.0,13,3.33,149.0,4.7,150,All-Star,All-Star,0
-88,Ryan Howard,2007,27,1B,Philadelphia Phillies,529,47,30.7,False,1,-4.0,-1.2,2.9,14.5,11,4.03,156.0,5.2,174,All-Star,MVP candidate,1
-89,Riley Greene,2025,24,LF,Detroit Tigers,600,36,30.7,True,1,-1.0,-1.3,2.2,13.3,5,3.36,130.0,5.3,135,Solid regular,All-Star,1
-90,Aaron Judge,2017,25,RF,New York Yankees,542,52,30.7,False,3,6.0,0.3,8.1,64.2,8,10.44,212.0,10.9,219,MVP candidate,MVP candidate,0
-91,Colton Cowser,2024,24,LF,Baltimore Orioles,499,24,30.7,True,1,5.0,-0.1,2.8,5.7,3,2.11,97.0,2.8,115,Just a guy,Solid regular,1
-92,Rougned Odor,2019,25,2B,Texas Rangers,522,30,30.6,False,1,-8.0,-0.2,-0.2,6.4,8,2.5,112.0,2.8,116,Just a guy,Solid regular,1
-93,Kris Bryant,2015,23,3B,Chicago Cubs,559,26,30.6,False,1,-2.0,-0.1,5.4,27.3,7,6.13,151.0,7.2,156,All-Star,All-Star,0
-94,Pete Incaviglia,1986,22,RF,Texas Rangers,540,30,30.5,False,2,-7.8,-1.9,0.7,10.3,9,2.53,126.0,3.0,129,Solid regular,Solid regular,0
-95,Eric Thames,2019,32,1B,Milwaukee Brewers,396,25,30.5,False,1,-1.0,-0.9,1.3,2.3,3,0.99,124.0,1.3,134,Solid regular,Solid regular,0
-96,JaCoby Jones,2018,26,CF,Detroit Tigers,429,11,30.4,False,1,13.0,2.1,1.7,1.0,2,0.49,,1.7,95,Just a guy,Just a guy,0
-97,Jared Walsh,2022,28,1B,Los Angeles Angels,423,15,30.4,True,1,-2.0,-0.8,-0.7,1.4,2,0.67,,2.7,131,Just a guy,Solid regular,1
-98,Brandon Moss,2016,32,1B,St. Louis Cardinals,413,28,30.4,False,2,0.0,-0.9,0.8,5.4,6,1.85,125.0,2.6,143,Solid regular,All-Star,1
-99,Derek Norris,2016,27,C,San Diego Padres,415,14,30.3,False,1,0.0,1.4,0.4,8.9,4,2.54,113.0,3.2,125,Just a guy,Solid regular,1
-100,Miguel Olivo,2009,30,C,Kansas City Royals,390,23,30.3,False,1,0.0,0.0,1.4,8.0,9,1.77,100.0,2.5,106,Just a guy,Just a guy,0
-101,Jonathan Villar,2017,26,2B,Milwaukee Brewers,403,11,30.3,False,1,-2.0,-0.0,-0.1,12.4,5,3.59,113.0,4.4,127,Solid regular,Solid regular,0
-102,Paul DeJong,2023,29,SS,San Francisco Giants,372,14,30.2,True,2,2.0,0.6,-0.5,13.1,6,3.6,111.0,5.2,128,Solid regular,All-Star,1
-103,Oneil Cruz,2024,25,SS,Pittsburgh Pirates,541,21,30.2,True,2,-10.0,-0.5,2.6,8.2,4,2.57,121.0,2.8,139,Solid regular,Solid regular,0
-104,Ruben Rivera,1999,25,CF,San Diego Padres,411,23,30.1,False,1,8.4,1.0,1.4,5.6,2,0.76,,1.4,80,Just a guy,Just a guy,0
-105,Drew Stubbs,2011,26,CF,Cincinnati Reds,604,15,30.1,False,3,-8.0,-0.0,1.8,8.0,5,2.35,115.0,3.0,138,Solid regular,Solid regular,0
-106,Randal Grichuk,2017,25,LF,St. Louis Cardinals,412,22,30.1,False,1,2.0,-0.3,0.6,15.4,8,2.73,124.0,3.1,143,Solid regular,All-Star,1
-107,Carlos Gómez,2016,30,LF,Texas Rangers,411,13,30.0,False,1,-10.0,-0.8,-0.0,24.4,10,4.84,133.0,7.6,145,Solid regular,MVP candidate,2
+46,Franmil Reyes,2021,25,DH,Cleveland Indians,418,30,32.0,False,2,-1.0,-1.0,1.7,2.7,3,0.39,107.0,1.7,129,Just a guy,Solid regular,1
+47,James Outman,2023,26,CF,Los Angeles Dodgers,483,23,31.9,True,1,1.0,0.3,3.4,2.1,1,1.15,,3.4,118,Just a guy,Solid regular,1
+48,Nolan Gorman,2023,23,2B,St. Louis Cardinals,406,27,31.9,True,3,2.0,-0.2,2.4,3.3,5,1.19,103.0,2.4,119,Just a guy,Solid regular,1
+49,Jordan Walker,2025,23,RF,St. Louis Cardinals,363,6,31.8,True,1,-7.0,-1.5,-1.7,0.7,3,0.5,99.0,3.3,120,Just a guy,Solid regular,1
+50,Josh Lowe,2024,26,RF,Tampa Bay Rays,353,10,31.8,True,1,-2.0,-0.6,0.7,5.0,4,1.49,99.0,3.6,125,Just a guy,Solid regular,1
+51,Colby Rasmus,2015,28,LF,Houston Astros,432,25,31.8,False,1,-3.0,0.1,3.0,20.4,8,3.85,132.0,5.0,139,Solid regular,All-Star,1
+52,Jarred Kelenic,2023,23,LF,Seattle Mariners,372,11,31.7,True,1,3.0,-0.0,2.1,-0.1,3,0.32,87.0,2.1,102,Just a guy,Just a guy,0
+53,Davis Schneider,2024,25,LF,Toronto Blue Jays,397,13,31.7,True,1,-1.0,-0.4,-0.1,2.8,1,-0.05,,-0.1,76,Below replacement,Below replacement,0
+54,Ryan McMahon,2023,28,3B,Colorado Rockies,555,23,31.6,True,2,14.0,2.0,2.9,17.3,7,3.37,111.0,4.0,114,Solid regular,Solid regular,0
+55,Luke Raley,2023,28,1B,Tampa Bay Rays,357,19,31.5,True,1,1.0,-0.4,2.7,5.3,2,1.95,,3.1,124,Just a guy,Solid regular,1
+56,Luke Voit,2022,31,DH,Washington Nationals,500,22,31.5,True,1,-1.0,-1.0,0.7,5.5,2,0.71,,1.4,126,Just a guy,Solid regular,1
+57,Bo Naylor,2024,24,C,Cleveland Guardians,354,13,31.4,True,1,2.0,1.0,0.7,2.9,2,0.75,,1.6,83,Just a guy,Just a guy,0
+58,Adam Duvall,2021,32,LF,Atlanta Braves,513,38,31.4,False,1,8.0,1.2,2.9,10.6,7,2.78,114.0,3.4,122,Just a guy,Solid regular,1
+59,Trevor Story,2016,23,SS,Colorado Rockies,372,27,31.3,False,3,16.0,1.8,4.1,35.4,7,5.83,146.0,6.9,151,All-Star,All-Star,0
+60,Tyler O'Neill,2021,26,LF,St. Louis Cardinals,482,34,31.3,False,2,9.0,0.9,6.4,12.9,3,3.44,128.0,6.4,149,Solid regular,All-Star,1
+61,José Hernández,2001,31,SS,Milwaukee Brewers,542,25,31.2,False,3,6.4,1.3,1.9,13.3,7,2.87,108.0,4.5,125,Just a guy,Solid regular,1
+62,Ian Happ,2017,22,CF,Chicago Cubs,364,24,31.2,False,2,0.0,-0.1,1.6,25.3,8,4.06,121.0,4.3,122,Solid regular,Solid regular,0
+63,Eric Haase,2021,28,C,Detroit Tigers,351,22,31.2,False,1,0.0,0.4,1.9,3.0,2,1.27,,1.9,109,Just a guy,Just a guy,0
+64,Adolis García,2021,28,CF,Texas Rangers,581,31,31.2,False,1,6.0,1.7,3.9,14.3,5,4.03,113.0,4.5,126,Solid regular,Solid regular,0
+65,Hunter Renfroe,2019,27,RF,San Diego Padres,440,33,31.2,False,1,12.0,1.1,2.3,8.9,7,2.43,122.0,2.4,127,Solid regular,Solid regular,0
+66,Teoscar Hernández,2018,25,LF,Toronto Blue Jays,476,22,31.2,False,3,-9.0,-1.6,0.5,19.8,8,3.55,134.0,4.1,139,Solid regular,Solid regular,0
+67,Eugenio Suárez,2022,30,3B,Seattle Mariners,543,31,31.2,True,2,-1.0,0.1,4.1,27.3,11,3.81,138.0,4.1,145,Solid regular,All-Star,1
+68,Mark Reynolds,2007,23,3B,Arizona Diamondbacks,366,17,31.2,False,6,-6.0,-0.2,1.3,6.9,11,2.0,130.0,3.3,138,Solid regular,Solid regular,0
+69,Chad Pinder,2022,30,LF,Oakland Athletics,361,12,31.1,True,1,-4.0,-1.2,-0.6,3.9,4,1.57,99.0,2.0,114,Just a guy,Just a guy,0
+70,Giancarlo Stanton,2010,20,RF,Florida Marlins,359,22,31.1,False,3,10.0,0.9,2.8,47.0,13,6.66,168.0,8.1,172,MVP candidate,MVP candidate,0
+71,Korey Lee,2024,25,C,Chicago White Sox,377,12,31.0,True,1,0.0,0.4,0.0,-0.8,1,0.01,,0.0,62,Just a guy,Just a guy,0
+72,Oswaldo Arcia,2013,22,LF,Minnesota Twins,351,14,31.0,False,2,-17.0,-2.1,-0.7,-1.7,2,-0.09,,0.5,113,Below replacement,Just a guy,1
+73,Michael A. Taylor,2015,24,CF,Washington Nationals,472,14,30.9,False,4,3.0,0.9,0.4,12.8,8,3.0,99.0,3.4,113,Solid regular,Solid regular,0
+74,Tony Clark,1996,24,1B,Detroit Tigers,376,27,30.9,False,1,-8.8,-1.2,-0.3,12.3,6,3.4,143.0,3.5,164,All-Star,All-Star,0
+75,Craig Wilson,2006,29,1B,New York Yankees,359,17,30.9,False,1,-9.0,-1.4,-0.7,3.4,4,0.9,125.0,1.3,132,Solid regular,Solid regular,0
+76,Nick Kurtz,2025,22,1B,Athletics,420,36,30.9,True,1,1.0,-0.4,5.0,8.7,2,2.91,,5.0,176,Just a guy,MVP candidate,3
+77,Kyle Schwarber,2017,24,LF,Chicago Cubs,422,30,30.9,False,1,-4.0,-1.3,-0.0,22.2,9,3.8,150.0,4.6,156,All-Star,All-Star,0
+78,Jackie Bradley Jr.,2021,31,CF,Milwaukee Brewers,387,6,30.8,False,1,8.0,1.1,-0.7,16.6,7,3.84,106.0,5.7,126,Solid regular,All-Star,1
+79,Jarrod Saltalamacchia,2011,26,C,Boston Red Sox,358,16,30.8,False,3,0.0,-0.1,0.7,5.9,6,1.74,111.0,2.9,127,Just a guy,Solid regular,1
+80,Logan O'Hoppe,2025,25,C,Los Angeles Angels,423,19,30.8,True,1,0.0,0.3,0.0,2.2,2,0.88,,2.6,101,Just a guy,Just a guy,0
+81,Jazz Chisholm Jr.,2023,25,CF,Miami Marlins,352,19,30.8,True,1,-6.0,-0.7,0.9,14.2,5,3.09,115.0,4.1,126,Solid regular,Solid regular,0
+82,Pedro Álvarez,2012,25,3B,Pittsburgh Pirates,525,30,30.7,False,2,-2.0,-0.2,2.6,4.9,6,2.27,118.0,3.3,123,Solid regular,Solid regular,0
+83,Ryan Howard,2007,27,1B,Philadelphia Phillies,529,47,30.7,False,1,-4.0,-1.2,2.9,14.5,11,4.03,156.0,5.2,174,All-Star,MVP candidate,1
+84,Adam Dunn,2010,30,1B,Washington Nationals,558,38,30.7,False,5,-9.0,-2.1,2.5,18.0,13,3.33,149.0,4.7,150,All-Star,All-Star,0
+85,Riley Greene,2025,24,LF,Detroit Tigers,600,36,30.7,True,1,-1.0,-1.3,2.2,13.3,5,3.36,130.0,5.3,135,Solid regular,All-Star,1
+86,Aaron Judge,2017,25,RF,New York Yankees,542,52,30.7,False,3,6.0,0.3,8.1,64.2,8,10.44,212.0,10.9,219,MVP candidate,MVP candidate,0
+87,Colton Cowser,2024,24,LF,Baltimore Orioles,499,24,30.7,True,1,5.0,-0.1,2.8,5.7,3,2.11,97.0,2.8,115,Just a guy,Solid regular,1
+88,Rougned Odor,2019,25,2B,Texas Rangers,522,30,30.6,False,1,-8.0,-0.2,-0.2,6.4,8,2.5,112.0,2.8,116,Just a guy,Solid regular,1
+89,Kris Bryant,2015,23,3B,Chicago Cubs,559,26,30.6,False,1,-2.0,-0.1,5.4,27.3,7,6.13,151.0,7.2,156,All-Star,All-Star,0
+90,Pete Incaviglia,1986,22,RF,Texas Rangers,540,30,30.5,False,2,-7.8,-1.9,0.7,10.3,9,2.53,126.0,3.0,129,Solid regular,Solid regular,0
+91,Eric Thames,2019,32,1B,Milwaukee Brewers,396,25,30.5,False,1,-1.0,-0.9,1.3,2.3,3,0.99,124.0,1.3,134,Solid regular,Solid regular,0
+92,JaCoby Jones,2018,26,CF,Detroit Tigers,429,11,30.4,False,1,13.0,2.1,1.7,1.0,2,0.49,,1.7,95,Just a guy,Just a guy,0
+93,Jared Walsh,2022,28,1B,Los Angeles Angels,423,15,30.4,True,1,-2.0,-0.8,-0.7,1.4,2,0.67,,2.7,131,Just a guy,Solid regular,1
+94,Brandon Moss,2016,32,1B,St. Louis Cardinals,413,28,30.4,False,2,0.0,-0.9,0.8,5.4,6,1.85,125.0,2.6,143,Solid regular,All-Star,1
+95,Derek Norris,2016,27,C,San Diego Padres,415,14,30.3,False,1,0.0,1.4,0.4,8.9,4,2.54,113.0,3.2,125,Just a guy,Solid regular,1
+96,Miguel Olivo,2009,30,C,Kansas City Royals,390,23,30.3,False,1,0.0,0.0,1.4,8.0,9,1.77,100.0,2.5,106,Just a guy,Just a guy,0
+97,Jonathan Villar,2017,26,2B,Milwaukee Brewers,403,11,30.3,False,1,-2.0,-0.0,-0.1,12.4,5,3.59,113.0,4.4,127,Solid regular,Solid regular,0
+98,Paul DeJong,2023,29,SS,San Francisco Giants,372,14,30.2,True,2,2.0,0.6,-0.5,13.1,6,3.6,111.0,5.2,128,Solid regular,All-Star,1
+99,Oneil Cruz,2024,25,SS,Pittsburgh Pirates,541,21,30.2,True,2,-10.0,-0.5,2.6,8.2,4,2.57,121.0,2.8,139,Solid regular,Solid regular,0
+100,Ruben Rivera,1999,25,CF,San Diego Padres,411,23,30.1,False,1,8.4,1.0,1.4,5.6,2,0.76,,1.4,80,Just a guy,Just a guy,0
+101,Drew Stubbs,2011,26,CF,Cincinnati Reds,604,15,30.1,False,3,-8.0,-0.0,1.8,8.0,5,2.35,115.0,3.0,138,Solid regular,Solid regular,0
+102,Randal Grichuk,2017,25,LF,St. Louis Cardinals,412,22,30.1,False,1,2.0,-0.3,0.6,15.4,8,2.73,124.0,3.1,143,Solid regular,All-Star,1
+103,Carlos Gómez,2016,30,LF,Texas Rangers,411,13,30.0,False,1,-10.0,-0.8,-0.0,24.4,10,4.84,133.0,7.6,145,Solid regular,MVP candidate,2
