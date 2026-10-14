@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["scripts/history.py", ".github/workflows/history.yml"]
+    paths: ["scripts/history.py", "scripts/war.py", ".github/workflows/history.yml"]
 
 permissions:
   contents: write
@@ -28,6 +28,10 @@ jobs:
 
       - name: Download every season, MLB and minor leagues
         run: python scripts/history.py
+
+      - name: Download Baseball-Reference WAR
+        run: python scripts/war.py
+        continue-on-error: true
 
       - name: Save updated history
         run: |
