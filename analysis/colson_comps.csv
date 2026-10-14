@@ -1,0 +1,151 @@
+rank,name,season,age,team,AB,HR,K,relK,relISO,relBB,dist,career_war,qual_seasons,war3,wrc3,peak_war,peak_wrc,tier,peak,jump
+1,Travis Fryman,1994,25,Detroit Tigers,464,18,24.2,1.57,1.33,0.93,0.067,34.4,12,4.94,132.0,5.2,140,Solid regular,All-Star,1
+2,Mike Shannon,1966,26,St. Louis Cardinals,459,16,21.2,1.52,1.3,0.92,0.087,7.8,4,2.45,122.0,3.6,140,Solid regular,All-Star,1
+3,Jack Howell,1988,26,California Angels,500,16,23.3,1.65,1.33,0.99,0.108,9.6,4,2.02,110.0,2.6,114,Just a guy,Just a guy,0
+4,Richie Sexson,2000,25,Milwaukee Brewers,537,30,26.2,1.64,1.33,0.99,0.111,18.0,9,3.43,141.0,3.9,146,All-Star,All-Star,0
+5,Jim Hickman,1963,26,New York Mets,494,17,22.0,1.58,1.28,0.99,0.125,13.0,8,2.95,162.0,5.0,188,All-Star,MVP candidate,1
+6,Geoff Jenkins,2001,26,Milwaukee Brewers,397,20,26.9,1.6,1.25,0.93,0.155,21.9,9,4.57,139.0,4.6,141,Solid regular,All-Star,1
+7,Sam Chapman,1939,23,Philadelphia Athletics,498,15,11.2,1.66,1.29,1.01,0.155,17.0,10,3.56,137.0,4.8,162,Solid regular,All-Star,1
+8,Josh Phelps,2003,25,Toronto Blue Jays,396,20,25.4,1.59,1.25,0.99,0.192,3.2,2,0.39,,1.2,122,Just a guy,Solid regular,1
+9,Reggie Sanders,1994,26,Cincinnati Reds,400,17,25.5,1.65,1.37,1.0,0.192,39.8,15,4.77,146.0,6.6,158,All-Star,All-Star,0
+10,Bernie Friberg,1923,23,Chicago Cubs,547,12,7.9,1.69,1.38,0.9,0.195,4.3,9,2.24,122.0,3.9,129,Solid regular,Solid regular,0
+11,Lance Parrish,1979,23,Detroit Tigers,493,19,19.2,1.6,1.34,1.03,0.22,39.5,15,4.74,136.0,5.0,146,Solid regular,All-Star,1
+12,Trevor Story,2017,24,Colorado Rockies,503,24,34.4,1.63,1.25,1.01,0.225,35.4,7,5.83,146.0,6.9,151,All-Star,All-Star,0
+13,Carlos Pena,2002,24,Detroit Tigers,397,19,25.1,1.54,1.3,1.04,0.238,25.5,10,5.13,147.0,7.2,170,All-Star,MVP candidate,1
+14,Wilson Betemit,2006,24,Los Angeles Dodgers,373,18,24.8,1.52,1.24,1.02,0.245,2.8,4,0.78,124.0,1.1,148,Solid regular,All-Star,1
+15,Franklin Stubbs,1986,25,Los Angeles Dodgers,420,23,23.0,1.55,1.39,0.88,0.257,2.7,5,1.02,103.0,2.8,130,Just a guy,Solid regular,1
+16,Al Martin,1993,25,Pittsburgh Pirates,480,18,23.1,1.58,1.41,0.9,0.269,7.4,9,1.65,119.0,1.9,122,Solid regular,Solid regular,0
+17,Kurt Abbott,1995,26,Florida Marlins,420,17,23.5,1.5,1.29,0.83,0.331,0.5,4,0.57,93.0,2.0,101,Just a guy,Just a guy,0
+18,Jim Bottomley,1923,23,St. Louis Cardinals,523,8,7.5,1.59,1.46,0.95,0.337,35.9,14,5.2,166.0,5.6,177,MVP candidate,MVP candidate,0
+19,Pete Incaviglia,1990,26,Texas Rangers,529,24,24.9,1.73,1.44,0.87,0.357,10.3,9,2.53,126.0,3.0,129,Solid regular,Solid regular,0
+20,George Mitterwald,1970,25,Minnesota Twins,369,15,20.5,1.52,1.2,0.87,0.363,6.1,5,2.17,100.0,2.6,111,Just a guy,Just a guy,0
+21,Chris Shelton,2006,26,Detroit Tigers,373,16,26.0,1.59,1.16,0.96,0.368,3.9,2,1.3,,2.6,134,Just a guy,Solid regular,1
+22,Drew Stubbs,2010,25,Cincinnati Reds,514,22,28.8,1.6,1.27,1.09,0.376,8.0,5,2.35,115.0,3.0,138,Solid regular,Solid regular,0
+23,Ken Wood,1950,25,St. Louis Browns,369,13,14.1,1.57,1.19,0.86,0.387,-3.3,2,-0.91,,-0.6,97,Below replacement,Just a guy,1
+24,Ryan Klesko,1997,26,Atlanta Braves,467,24,24.8,1.5,1.47,1.01,0.387,26.9,12,4.11,151.0,4.6,162,All-Star,All-Star,0
+25,Juan Samuel,1987,26,Philadelphia Phillies,655,28,22.3,1.49,1.48,0.91,0.399,17.0,8,3.27,113.0,3.7,122,Solid regular,Solid regular,0
+26,José Canseco,1987,22,Oakland Athletics,630,31,22.7,1.51,1.36,0.8,0.425,42.4,14,5.99,168.0,7.3,182,MVP candidate,MVP candidate,0
+27,Nick Esasky,1985,25,Cincinnati Reds,413,21,22.0,1.63,1.49,1.01,0.425,8.3,7,2.59,134.0,3.9,151,Solid regular,All-Star,1
+28,Lou Klein,1943,24,St. Louis Cardinals,627,7,10.1,1.51,1.29,0.79,0.427,8.0,1,2.17,,6.5,125,Just a guy,All-Star,2
+29,J.P. Arencibia,2011,25,Toronto Blue Jays,443,23,27.4,1.51,1.49,0.9,0.432,1.9,3,0.84,82.0,1.5,96,Just a guy,Just a guy,0
+30,Charlie Grimm,1923,24,Pittsburgh Pirates,563,7,7.0,1.49,1.2,0.83,0.433,12.5,14,2.77,128.0,3.2,135,Solid regular,Solid regular,0
+31,Dave Duncan,1971,25,Oakland Athletics,363,15,19.3,1.5,1.35,0.79,0.439,6.5,6,2.0,107.0,2.8,114,Just a guy,Just a guy,0
+32,Carlos Delgado,1996,24,Toronto Blue Jays,488,25,24.7,1.54,1.37,1.11,0.444,44.4,13,6.2,170.0,7.3,186,MVP candidate,MVP candidate,0
+33,Travis Jackson,1928,24,New York Giants,537,14,7.3,1.51,1.38,1.11,0.453,44.0,12,5.53,131.0,5.9,132,All-Star,All-Star,0
+34,Tommie Agee,1967,24,Chicago White Sox,529,14,22.1,1.53,1.12,0.91,0.468,25.3,7,5.67,137.0,6.4,142,All-Star,All-Star,0
+35,Johnny Lindell,1943,26,New York Yankees,441,4,11.0,1.64,1.26,1.12,0.47,12.1,5,3.27,139.0,5.4,151,Solid regular,All-Star,1
+36,Bill Wilson,1954,25,Philadelphia Athletics,358,17,15.5,1.61,1.31,1.13,0.484,0.8,2,0.39,,1.2,108,Just a guy,Just a guy,0
+37,Bobby Brown,1980,26,New York Yankees,412,14,18.4,1.53,1.24,0.78,0.494,2.0,1,0.48,,1.4,100,Just a guy,Just a guy,0
+38,Marty McManus,1923,23,St. Louis Browns,582,15,7.6,1.61,1.52,0.92,0.498,34.1,14,4.18,129.0,4.5,135,Solid regular,Solid regular,0
+39,Jody Davis,1982,25,Chicago Cubs,418,12,19.7,1.57,1.1,0.92,0.516,15.9,6,3.28,108.0,4.0,121,Solid regular,Solid regular,0
+40,Pinky Higgins,1934,25,Philadelphia Athletics,543,16,11.6,1.67,1.48,1.08,0.517,25.8,12,3.87,145.0,4.4,148,All-Star,All-Star,0
+41,Michael A. Taylor,2017,26,Washington Nationals,399,19,31.7,1.5,1.23,0.77,0.519,12.8,8,3.0,99.0,3.4,113,Solid regular,Solid regular,0
+42,Rob Mackowiak,2002,26,Pittsburgh Pirates,385,16,27.3,1.68,1.14,1.08,0.523,5.5,4,1.52,96.0,2.3,101,Just a guy,Just a guy,0
+43,Craig Wilson,2002,25,Pittsburgh Pirates,368,16,27.4,1.68,1.13,0.85,0.523,3.4,4,0.9,125.0,1.3,132,Solid regular,Solid regular,0
+44,Goose Goslin,1923,22,Washington Senators,600,9,8.1,1.72,1.36,0.76,0.531,65.8,15,6.96,173.0,7.5,188,MVP candidate,MVP candidate,0
+45,Daryl Spencer,1953,23,New York Giants,408,20,16.3,1.67,1.54,0.97,0.532,13.7,7,2.74,112.0,3.3,121,Just a guy,Solid regular,1
+46,Dale Sveum,1987,23,Milwaukee Brewers,535,25,22.7,1.51,1.29,0.75,0.532,-2.4,5,0.29,99.0,0.6,102,Just a guy,Just a guy,0
+47,Ross Youngs,1922,25,New York Giants,559,7,7.8,1.55,1.14,1.09,0.549,32.4,9,5.47,160.0,6.6,168,All-Star,MVP candidate,1
+48,Colby Rasmus,2013,26,Toronto Blue Jays,417,22,29.5,1.52,1.54,1.0,0.551,20.4,8,3.85,132.0,5.0,139,Solid regular,All-Star,1
+49,Oswaldo Arcia,2013,22,Minnesota Twins,351,14,31.0,1.6,1.23,0.75,0.566,-1.7,2,-0.09,,0.5,113,Below replacement,Just a guy,1
+50,Claudell Washington,1980,25,New York Mets,374,11,20.3,1.7,1.38,0.75,0.572,19.6,14,3.57,131.0,4.9,142,Solid regular,All-Star,1
+51,Chris Davis,2012,26,Baltimore Orioles,515,33,30.1,1.57,1.5,0.81,0.573,11.5,10,4.98,158.0,7.0,182,All-Star,MVP candidate,1
+52,Shane Andrews,1998,26,Montreal Expos,492,25,24.5,1.49,1.38,1.17,0.584,2.0,3,0.88,84.0,2.0,101,Just a guy,Just a guy,0
+53,Doug Rader,1971,26,Houston Astros,484,12,21.0,1.63,1.1,0.84,0.589,24.3,10,3.39,124.0,3.6,132,Solid regular,Solid regular,0
+54,Larry Hisle,1973,26,Minnesota Twins,545,15,20.7,1.59,1.21,1.15,0.594,25.0,7,4.92,152.0,5.3,166,All-Star,MVP candidate,1
+55,Duke Snider,1951,24,Brooklyn Dodgers,606,29,14.4,1.65,1.57,0.92,0.606,66.0,12,8.6,192.0,9.1,202,MVP candidate,MVP candidate,0
+56,Daniel Palka,2018,26,Chicago White Sox,417,27,34.1,1.57,1.48,0.77,0.614,-1.0,1,0.19,,0.6,111,Just a guy,Just a guy,0
+57,Bob Chance,1964,23,Cleveland Indians,390,14,23.0,1.63,1.14,1.13,0.616,-0.9,1,-0.09,,-0.3,126,Below replacement,Solid regular,2
+58,Milt Byrnes,1943,26,St. Louis Browns,429,4,10.0,1.49,1.32,1.19,0.62,7.1,3,2.38,132.0,2.7,139,Solid regular,Solid regular,0
+59,Roy Sievers,1949,22,St. Louis Browns,471,16,13.8,1.65,1.29,1.19,0.629,25.5,13,3.94,165.0,4.6,175,MVP candidate,MVP candidate,0
+60,Jarrod Saltalamacchia,2011,26,Boston Red Sox,358,16,30.8,1.7,1.46,0.75,0.633,5.9,6,1.74,111.0,2.9,127,Just a guy,Solid regular,1
+61,Andy Etchebarren,1966,23,Baltimore Orioles,412,11,23.1,1.66,1.07,1.04,0.634,10.8,2,0.56,,1.3,84,Just a guy,Just a guy,0
+62,Mel Hall,1983,22,Chicago Cubs,410,17,22.1,1.7,1.56,1.07,0.651,8.7,9,2.33,128.0,3.0,137,Solid regular,Solid regular,0
+63,George Scott,1966,22,Boston Red Sox,601,27,22.3,1.6,1.4,1.19,0.673,36.5,14,5.32,153.0,6.7,161,All-Star,All-Star,0
+64,Wally Berger,1931,25,Boston Braves,617,19,10.3,1.54,1.6,0.98,0.675,42.3,10,6.18,152.0,6.9,164,All-Star,All-Star,0
+65,Charles Johnson,1998,26,Los Angeles Dodgers,459,19,25.5,1.55,1.03,1.0,0.677,22.6,9,4.16,122.0,5.1,146,Solid regular,All-Star,1
+66,Bill Serena,1950,25,Chicago Cubs,435,17,14.9,1.66,1.26,1.2,0.679,5.7,3,1.68,118.0,2.4,136,Solid regular,Solid regular,0
+67,Tony Lazzeri,1930,26,New York Yankees,571,9,9.5,1.63,1.13,1.15,0.682,47.5,12,6.28,153.0,7.8,156,All-Star,MVP candidate,1
+68,Ed Stevens,1948,23,Pittsburgh Pirates,429,10,11.3,1.56,1.17,0.73,0.686,3.0,2,0.55,,1.0,108,Just a guy,Just a guy,0
+69,Larry Walker,1990,23,Montreal Expos,419,19,23.4,1.63,1.48,1.16,0.687,72.7,16,7.92,200.0,9.8,210,MVP candidate,MVP candidate,0
+70,Swede Risberg,1920,25,Chicago White Sox,458,2,8.9,1.61,1.07,0.82,0.692,3.0,4,1.08,99.0,1.6,105,Just a guy,Just a guy,0
+71,Greg Luzinski,1973,22,Philadelphia Phillies,610,29,20.1,1.54,1.59,0.85,0.705,26.3,13,4.21,169.0,5.2,171,MVP candidate,MVP candidate,0
+72,Pedro Álvarez,2012,25,Pittsburgh Pirates,525,30,30.7,1.6,1.44,1.19,0.709,4.9,6,2.27,118.0,3.3,123,Solid regular,Solid regular,0
+73,José Cruz Jr.,1997,23,Toronto Blue Jays,395,26,26.5,1.61,1.61,1.02,0.71,19.6,9,2.79,121.0,3.1,126,Solid regular,Solid regular,0
+74,Dan Pasqua,1988,26,Chicago White Sox,422,20,21.1,1.49,1.5,1.16,0.713,10.7,6,2.42,145.0,2.5,162,All-Star,All-Star,0
+75,Jason Bay,2004,25,Pittsburgh Pirates,411,26,27.3,1.67,1.62,0.99,0.716,24.7,8,5.11,149.0,5.7,158,All-Star,All-Star,0
+76,Corey Patterson,2004,24,Chicago Cubs,631,24,24.5,1.5,1.12,0.75,0.719,9.7,9,3.0,106.0,4.2,120,Solid regular,Solid regular,0
+77,Leon Roberts,1975,24,Detroit Tigers,447,10,19.0,1.53,1.07,0.79,0.73,12.2,4,3.37,128.0,4.4,157,Solid regular,All-Star,1
+78,Pete Mackanin,1975,23,Montreal Expos,448,12,20.0,1.62,1.25,0.68,0.733,-2.1,3,0.14,75.0,1.0,80,Just a guy,Just a guy,0
+79,Jerry Priddy,1946,26,Washington Senators,511,6,12.7,1.65,1.02,1.03,0.733,18.5,8,4.03,132.0,4.5,138,Solid regular,Solid regular,0
+80,Nelson Mathews,1964,22,Kansas City Athletics,573,14,23.1,1.63,1.02,0.86,0.737,-0.7,1,-0.03,,-0.1,91,Below replacement,Just a guy,1
+81,Lou Brock,1962,23,Chicago Cubs,434,9,20.1,1.58,1.05,0.81,0.75,45.3,18,5.77,146.0,5.9,148,All-Star,All-Star,0
+82,Hector Cruz,1976,23,St. Louis Cardinals,526,13,20.6,1.7,1.02,0.85,0.751,-3.6,3,-0.97,84.0,0.0,90,Below replacement,Just a guy,1
+83,Curtis Granderson,2006,25,Detroit Tigers,596,19,25.6,1.57,1.07,1.13,0.751,47.5,13,6.28,144.0,7.6,158,All-Star,MVP candidate,1
+84,Odell Hale,1933,24,Cleveland Indians,351,10,9.6,1.55,1.63,0.98,0.751,14.6,6,3.76,128.0,4.6,133,Solid regular,Solid regular,0
+85,Greg Vaughn,1992,26,Milwaukee Brewers,501,23,21.5,1.51,1.46,1.2,0.754,30.8,12,5.44,139.0,6.7,152,All-Star,All-Star,0
+86,Jerry Buchek,1967,25,New York Mets,411,14,22.7,1.57,1.15,0.71,0.766,-1.3,2,0.14,,0.6,95,Just a guy,Just a guy,0
+87,Austin McHenry,1921,25,St. Louis Cardinals,574,17,7.6,1.52,1.6,0.81,0.771,9.6,4,2.83,126.0,5.2,151,Solid regular,All-Star,1
+88,Gil Hodges,1948,24,Brooklyn Dodgers,481,11,11.6,1.59,1.04,0.8,0.771,43.8,12,5.64,161.0,6.2,163,All-Star,All-Star,0
+89,Steve Henderson,1977,24,New York Mets,350,12,19.8,1.53,1.31,1.25,0.782,11.5,7,2.57,134.0,2.6,137,Solid regular,Solid regular,0
+90,Danny Espinosa,2012,25,Washington Nationals,594,17,28.7,1.5,1.0,0.86,0.782,8.7,5,2.58,101.0,2.9,106,Just a guy,Just a guy,0
+91,Jim Presley,1987,25,Seattle Mariners,575,24,25.2,1.68,1.19,0.67,0.794,0.3,6,1.7,109.0,2.0,123,Just a guy,Solid regular,1
+92,Dick Allen,1965,23,Philadelphia Phillies,619,20,21.2,1.49,1.45,1.23,0.806,58.8,12,8.31,211.0,8.8,224,MVP candidate,MVP candidate,0
+93,Frankie Hayes,1940,25,Philadelphia Athletics,465,16,11.2,1.6,1.33,1.26,0.826,10.3,8,2.48,137.0,2.8,141,Solid regular,All-Star,1
+94,Larry Parrish,1978,24,Montreal Expos,520,15,18.4,1.53,1.43,0.66,0.831,15.7,14,3.12,138.0,4.6,150,Solid regular,All-Star,1
+95,Ray Lankford,1992,25,St. Louis Cardinals,598,20,21.6,1.52,1.51,1.21,0.831,38.2,11,5.49,153.0,6.2,162,All-Star,All-Star,0
+96,Greg Gagne,1988,26,Minnesota Twins,461,14,21.7,1.53,1.27,0.64,0.839,26.3,13,3.71,101.0,4.0,106,Solid regular,Solid regular,0
+97,B.J. Upton,2010,25,Tampa Bay Rays,536,18,26.9,1.5,1.25,1.27,0.845,16.5,9,3.67,122.0,4.4,138,Solid regular,Solid regular,0
+98,Alex Gonzalez,1995,22,Toronto Blue Jays,367,10,26.8,1.71,1.01,1.12,0.847,11.2,10,2.13,94.0,2.2,96,Just a guy,Just a guy,0
+99,Jimmy Bloodworth,1942,24,Detroit Tigers,533,13,10.9,1.7,1.18,0.65,0.858,0.7,7,0.7,90.0,0.8,92,Just a guy,Just a guy,0
+100,Johnny Rizzo,1938,25,Pittsburgh Pirates,555,23,9.9,1.54,1.68,0.94,0.864,8.0,3,2.74,124.0,3.9,138,Solid regular,Solid regular,0
+101,Ray Mack,1943,26,Cleveland Indians,545,7,10.0,1.5,0.96,0.85,0.875,4.6,5,1.7,89.0,2.6,109,Just a guy,Just a guy,0
+102,Gary Gaetti,1982,23,Minnesota Twins,508,25,18.9,1.51,1.63,0.78,0.877,42.1,18,4.51,144.0,5.8,164,All-Star,All-Star,0
+103,Austin Kearns,2005,25,Cincinnati Reds,387,18,23.9,1.5,1.34,1.29,0.886,13.0,7,3.31,129.0,4.1,148,Solid regular,All-Star,1
+104,George Metkovich,1944,23,Boston Red Sox,549,9,9.7,1.5,1.27,0.62,0.888,5.8,8,1.56,107.0,2.0,110,Just a guy,Just a guy,0
+105,Lloyd Moseby,1982,22,Toronto Blue Jays,487,9,19.9,1.58,1.02,0.74,0.899,27.5,11,5.75,138.0,7.3,150,All-Star,All-Star,0
+106,Miguel Sanó,2017,24,Minnesota Twins,424,28,35.8,1.69,1.39,1.28,0.899,8.0,5,2.67,143.0,3.0,159,All-Star,All-Star,0
+107,Ian Stewart,2009,24,Colorado Rockies,425,25,28.1,1.61,1.48,1.26,0.904,3.3,3,1.38,112.0,2.1,115,Just a guy,Solid regular,1
+108,Marv Rickert,1946,25,Chicago Cubs,392,7,12.7,1.66,1.07,0.69,0.912,-0.9,3,0.14,90.0,1.4,116,Just a guy,Solid regular,1
+109,Larry Herndon,1979,25,San Francisco Giants,354,7,18.0,1.51,0.94,0.86,0.918,15.2,10,3.2,126.0,3.9,134,Solid regular,Solid regular,0
+110,Danny Litwhiler,1943,26,St. Louis Cardinals,397,12,10.4,1.55,1.64,0.76,0.92,18.4,6,2.86,133.0,3.8,138,Solid regular,Solid regular,0
+111,Bobby Smith,1998,24,Tampa Bay Devil Rays,370,11,26.4,1.61,0.92,0.92,0.932,0.0,1,0.73,,2.2,104,Just a guy,Just a guy,0
+112,Max West,1939,22,Boston Bees,449,19,10.7,1.59,1.68,1.09,0.935,13.2,5,3.64,132.0,4.6,134,Solid regular,Solid regular,0
+113,Ron Swoboda,1968,24,New York Mets,450,11,22.2,1.56,1.21,1.29,0.941,8.0,5,2.15,124.0,3.0,135,Solid regular,Solid regular,0
+114,Johnny Vergez,1932,25,New York Giants,376,6,8.8,1.54,0.98,0.77,0.944,4.9,5,2.01,101.0,3.3,120,Just a guy,Solid regular,1
+115,Pat Burrell,2001,24,Philadelphia Phillies,539,27,26.2,1.56,1.27,1.31,0.96,18.9,11,3.53,143.0,4.6,146,All-Star,All-Star,0
+116,Jim Rice,1975,22,Boston Red Sox,564,22,19.9,1.61,1.53,0.64,0.968,47.7,14,6.53,174.0,7.6,183,MVP candidate,MVP candidate,0
+117,Larry Doby,1949,25,Cleveland Indians,547,24,13.8,1.66,1.47,1.3,0.976,56.8,10,6.68,168.0,7.0,170,MVP candidate,MVP candidate,0
+118,Babe Herman,1929,26,Brooklyn Robins,569,21,7.1,1.55,1.73,1.0,0.983,39.5,11,5.94,170.0,6.9,185,MVP candidate,MVP candidate,0
+119,Chris Young,2009,25,Arizona Diamondbacks,433,15,26.5,1.52,1.18,1.3,0.983,16.6,9,4.0,115.0,5.4,121,Solid regular,All-Star,1
+120,Roy Howell,1976,22,Texas Rangers,491,8,20.0,1.64,1.05,0.66,0.991,11.0,7,2.26,112.0,2.4,126,Just a guy,Solid regular,1
+121,Ben Chapman,1931,22,New York Yankees,600,17,11.2,1.67,1.42,1.31,0.993,41.2,12,5.09,144.0,5.9,149,All-Star,All-Star,0
+122,Yoán Moncada,2018,23,Chicago White Sox,578,17,33.4,1.54,1.0,1.19,0.994,14.8,5,3.51,120.0,5.1,140,Solid regular,All-Star,1
+123,Lee Walls,1959,26,Chicago Cubs,354,8,17.8,1.5,0.95,1.14,1.002,8.1,5,2.76,124.0,4.4,147,Solid regular,All-Star,1
+124,Sixto Lezcano,1976,22,Milwaukee Brewers,513,7,19.1,1.58,0.9,1.03,1.002,28.3,8,5.19,155.0,5.9,176,All-Star,MVP candidate,1
+125,Earle Combs,1925,26,New York Yankees,593,3,6.4,1.53,0.96,1.16,1.004,44.9,10,5.87,144.0,7.1,152,All-Star,All-Star,0
+126,Marv Blaylock,1956,26,Philadelphia Phillies,460,10,16.5,1.5,0.89,0.98,1.013,0.9,1,0.26,,0.8,96,Just a guy,Just a guy,0
+127,Kirk Gibson,1983,26,Detroit Tigers,401,15,20.6,1.59,1.42,1.32,1.015,38.4,11,5.68,152.0,6.5,155,All-Star,All-Star,0
+128,Jorge Soler,2015,23,Chicago Cubs,366,10,30.0,1.51,0.89,1.01,1.021,6.3,8,2.0,131.0,3.5,141,Solid regular,All-Star,1
+129,Cito Gaston,1970,26,San Diego Padres,584,29,22.6,1.67,1.62,0.68,1.022,-0.8,5,1.57,118.0,5.1,160,Solid regular,All-Star,1
+130,Richie Zisk,1975,26,Pittsburgh Pirates,504,20,18.9,1.53,1.54,1.28,1.028,25.1,11,4.45,158.0,5.2,160,All-Star,All-Star,0
+131,Tony Piet,1932,25,Pittsburgh Pirates,574,7,8.8,1.54,0.88,0.9,1.037,9.8,6,2.44,118.0,2.6,124,Solid regular,Solid regular,0
+132,Glenn Wright,1927,26,Pittsburgh Pirates,570,9,7.3,1.71,0.93,0.76,1.042,25.3,7,5.02,119.0,5.6,128,All-Star,All-Star,0
+133,Clete Boyer,1960,23,New York Yankees,393,14,19.7,1.61,1.16,0.59,1.042,27.8,10,4.14,110.0,4.6,116,Solid regular,Solid regular,0
+134,Dick Wakefield,1946,25,Detroit Tigers,396,12,12.0,1.56,1.34,1.35,1.052,13.0,5,3.08,170.0,3.8,215,MVP candidate,MVP candidate,0
+135,Jim Tabor,1940,23,Boston Red Sox,459,21,11.5,1.65,1.76,0.91,1.058,9.0,7,2.13,127.0,2.8,134,Solid regular,Solid regular,0
+136,Willie Stargell,1965,25,Pittsburgh Pirates,533,27,21.8,1.54,1.72,0.79,1.058,57.6,16,6.84,198.0,7.9,209,MVP candidate,MVP candidate,0
+137,Evar Swanson,1929,26,Cincinnati Reds,574,4,7.4,1.62,0.93,0.75,1.066,6.7,4,2.04,113.0,4.0,133,Just a guy,Solid regular,1
+138,Wally Post,1954,24,Cincinnati Redlegs,451,18,14.4,1.5,1.32,0.55,1.075,18.2,9,3.84,155.0,5.2,164,All-Star,All-Star,0
+139,Johnny Lewis,1965,25,New York Mets,477,15,21.5,1.51,1.04,1.28,1.078,2.6,1,0.82,,2.5,114,Just a guy,Just a guy,0
+140,Dick Stuart,1959,26,Pittsburgh Pirates,397,27,19.1,1.6,1.77,1.04,1.088,7.9,7,2.27,152.0,3.2,154,All-Star,All-Star,0
+141,Mike Young,1985,25,Baltimore Orioles,450,28,20.6,1.53,1.75,1.08,1.091,6.4,4,2.22,125.0,3.2,144,Solid regular,All-Star,1
+142,Phil Todt,1928,26,Boston Red Sox,539,12,7.8,1.61,1.28,0.54,1.097,3.6,6,1.3,93.0,1.6,105,Just a guy,Just a guy,0
+143,Howard Freigau,1926,23,Chicago Cubs,508,3,7.4,1.67,0.85,0.89,1.106,1.9,4,0.86,89.0,1.3,102,Just a guy,Just a guy,0
+144,Chili Davis,1983,23,San Francisco Giants,486,11,19.5,1.5,0.91,1.16,1.108,38.3,17,4.25,153.0,5.2,155,All-Star,All-Star,0
+145,Austin Jackson,2011,24,Detroit Tigers,591,10,27.1,1.49,0.85,1.01,1.113,21.9,8,5.05,130.0,5.5,142,All-Star,All-Star,0
+146,Chick Galloway,1921,24,Philadelphia Athletics,465,3,8.5,1.69,0.89,0.77,1.115,-2.1,7,1.2,94.0,2.7,115,Just a guy,Solid regular,1
+147,Rick Sofield,1980,23,Minnesota Twins,417,9,20.0,1.67,1.01,0.63,1.125,-0.7,1,-0.07,,-0.2,80,Below replacement,Below replacement,0
+148,Nate Colbert,1969,23,San Diego Padres,483,24,23.1,1.7,1.79,0.9,1.131,14.2,6,3.98,144.0,5.4,157,All-Star,All-Star,0
+149,Horace Ford,1923,25,Boston Braves,380,2,7.1,1.5,0.84,0.9,1.132,10.7,8,1.84,84.0,2.0,86,Just a guy,Just a guy,0
+150,Bill Hall,2006,26,Milwaukee Brewers,537,35,26.6,1.64,1.7,1.21,1.133,9.6,7,3.74,123.0,5.8,131,Solid regular,All-Star,1
