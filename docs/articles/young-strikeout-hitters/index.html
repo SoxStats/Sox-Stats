@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do young strikeout hitters cut it down? | Sox Fan. Stat Fan.</title>
+<meta name="description" content="Everybody says young strikeout hitters grow out of it. We checked every one since 1980, then looked at what kind of strikeout hitter Colson Montgomery is.">
+<meta property="og:title" content="Do young strikeout hitters cut it down?">
+<meta property="og:description" content="Everybody says young strikeout hitters grow out of it. We checked every one since 1980, then looked at what kind of strikeout hitter Colson Montgomery is.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+/* chart colors for this article: career tiers and the two miss rates (checked for color-blind separation) */
+:root{--mvp:#A87700;--star:#2457B0;--reg:#2E8540;--haze:#9AA2AD;--grid:#DDE1E6}
+@media (prefers-color-scheme:dark){:root{--mvp:#B88A12;--star:#5E8FE8;--reg:#3FA85E;--haze:#5A616B;--grid:#2A2E35}}
+figure{margin:0;display:grid;gap:8px;min-width:0}
+.chart{background:var(--card);border:1px solid var(--rule);border-radius:4px;min-width:0}
+.chart svg{display:block;width:100%;height:auto;touch-action:manipulation}
+.chart svg text{font-family:var(--body)}
+.info{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:10px 12px;font-size:14.5px;min-height:48px}
+.info b{font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;font-weight:500}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.part{display:grid;gap:16px;padding-top:12px}
+.part .num{font:600 12.5px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+.numbers{overflow-x:auto;background:var(--card);border:1px solid var(--rule);border-radius:4px}
+.numbers table{border-collapse:collapse;width:100%;font-size:15px}
+.numbers th,.numbers td{padding:8px 12px;text-align:right;white-space:nowrap}
+.numbers th{font:600 12.5px var(--body);color:var(--steel);border-bottom:1.5px solid var(--ink)}
+.numbers td{border-bottom:1px solid var(--rule)} .numbers tr:last-child td{border-bottom:0}
+.numbers th:first-child,.numbers td:first-child{text-align:left}
+</style>
+</head>
+<body data-section="articles">
+<div id="site-header"></div><script src="../../assets/site.js" data-root="../../"></script>
+<main class="page gut"><div class="col stack">
+
+<div class="head">
+  <span class="tag myth">Says Who?</span>
+  <h1>Do young strikeout hitters cut it down?</h1>
+  <p class="meta">By Aaron Simac · October 2026 · 6 min read</p>
+</div>
+
+<div class="prose">
+  <p>I've been wondering whether Colson Montgomery can be a star. He struck out 35.6% of the time this year. Before I could answer the star question, I had to answer a simpler one first: do young guys who strike out this much ever actually cut it down? Everybody says they'll grow out of it. So I went and looked.</p>
+</div>
+
+<div class="answer">
+  <span class="eyebrow">Short answer</span>
+  <p>Most cut it a little. About 1 in 5 cut it a lot. The ones who busted never did. And Colson's strikeouts come from a very specific place.</p>
+  <a href="#conclusion">Jump to the conclusion ↓</a>
+</div>
+
+<details class="method">
+  <summary>How we did this</summary>
+  <ul>
+    <li><b>Who's in it:</b> every hitter since 1980 whose first season striking out 30% or more (in 350+ at-bats) came at age 25 or younger. That's 29 players.</li>
+    <li><b>What we measured:</b> his strikeout rate over the next three seasons combined. That's all his strikeouts divided by all his plate appearances, so a short or injured season counts for less.</li>
+    <li><b>Why three seasons:</b> so one fluky year can't fake an improvement. It also means anyone whose big-strikeout year came after 2022 isn't in the group yet.</li>
+    <li><b>The luck check:</b> almost everybody comes down a little after a 30% year, just from luck evening out. To measure that, we ran the same test on hitters aged 28 to 31, who are past developing. They came down 1.8 points. A young guy only gets credit for real improvement if he beat that.</li>
+    <li><b>Career outcome:</b> each player's best three seasons, using the same tiers as the rest of the site. <a href="../../how/">How we do tiers</a>.</li>
+    <li><b>Sensitivity:</b> we also ran it with a 28% cutoff and with age 24 and 26. The picture didn't change.</li>
+    <li><b>The second chart:</b> every 2026 hitter with 300+ plate appearances, from Statcast.</li>
+  </ul>
+</details>
+
+<section class="part">
+  <span class="num">Part 1</span>
+  <h2>Who cut their strikeouts</h2>
+  <div class="prose">
+    <p>Each dot is one of the 29 hitters. Left to right is his strikeout rate in that first big-strikeout season. Up and down is how many points he cut over the next three seasons. The higher the dot, the bigger the cut.</p>
+    <p>The solid line means no change. The dashed line is the normal bounce-back from luck. Above the dashed line, he really got better. Below the solid line, he got worse. The color is how his career turned out. Tap any dot to see who it is.</p>
+  </div>
+  <figure>
+    <div class="legend"><span><i style="background:var(--mvp)"></i>MVP level</span><span><i style="background:var(--star)"></i>All-Star</span><span><i style="background:var(--reg)"></i>Solid regular</span><span><i style="background:var(--haze)"></i>Just a guy or below</span></div>
+    <div class="chart" id="c1"></div>
+    <div class="info" id="i1">Tap any dot to see the player.</div>
+  </figure>
+  <div class="prose">
+    <p>Most of the dots sit just above the solid line. Young hitters did come down about 2.6 points on average, compared with 1.8 for the older guys. So youth is worth a little real improvement, but not much.</p>
+    <p>Five of the 29 cut five points or more: Kris Bryant, Tony Clark, Chris Davis, Bo Jackson and Yoán Moncada. All five became at least solid regulars, and three of them became All-Stars.</p>
+    <p>Now look at the gray dots. Zunino, Nieves, Reyes, Morel, Odor, Sandberg. None of them really cut their strikeouts. The guys who busted are the guys who stayed put.</p>
+    <p>But cutting strikeouts isn't the only way to make it. Aaron Judge sits right on the no-change line, and he's an MVP. Gallo and Sanó never cut theirs either, and they still had real careers. What they had was huge power.</p>
+  </div>
+  <div class="numbers"><table>
+    <thead><tr><th>Over the next 3 seasons</th><th>Players</th><th>Became a regular or better</th><th>All-Star or better</th></tr></thead>
+    <tbody>
+      <tr><td>Cut it a lot (5+ points)</td><td>5</td><td>5</td><td>3</td></tr>
+      <tr><td>Cut it some (2 to 5)</td><td>12</td><td>8</td><td>3</td></tr>
+      <tr><td>About the same</td><td>8</td><td>6</td><td>2</td></tr>
+      <tr><td>Got worse</td><td>3</td><td>1</td><td>0</td></tr>
+      <tr><td>Out of the majors</td><td>1</td><td>0</td><td>0</td></tr>
+    </tbody>
+  </table></div>
+  <p class="takeaway">About 1 in 5 young strikeout hitters cut it a lot, and they all made it. The ones who never cut it needed big power to survive.</p>
+  <p class="meta">Colson isn't on this chart. He needs three more seasons first.</p>
+</section>
+
+<section class="part">
+  <span class="num">Part 2</span>
+  <h2>What kind of strikeout hitter is Colson?</h2>
+  <div class="prose">
+    <p>Two guys can strike out the same amount for different reasons. One swings at junk. The other swings at good pitches and misses. So this chart splits it up.</p>
+    <p>Every 2026 hitter with 300+ plate appearances shows up twice. Left to right is chase rate: how often he swings at pitches outside the strike zone. The blue dot is how often he misses when he swings at a strike. The gold dot is how often he misses when he chases. Colson's two dots are black, joined by a line.</p>
+  </div>
+  <figure>
+    <div class="legend"><span><i style="background:var(--star)"></i>Misses on strikes</span><span><i style="background:var(--mvp)"></i>Misses when he chases</span><span><i style="background:var(--ink)"></i>Colson</span></div>
+    <div class="chart" id="c2"></div>
+    <div class="info" id="i2">Tap any dot to see the player.</div>
+  </figure>
+  <div class="prose">
+    <p>Everybody misses more on bad pitches, which is why the gold cloud sits above the blue one. Colson's line is the tallest on the chart.</p>
+  </div>
+  <div class="numbers"><table>
+    <thead><tr><th>Colson, 2026</th><th>Colson</th><th>League middle</th><th>Rank of 267</th></tr></thead>
+    <tbody>
+      <tr><td>Chase rate</td><td>32.4%</td><td>29.7%</td><td>86th highest</td></tr>
+      <tr><td>Misses on strikes</td><td>22.1%</td><td>15.2%</td><td>23rd highest</td></tr>
+      <tr><td>Misses when he chases</td><td>68.1%</td><td>42.3%</td><td>Highest</td></tr>
+    </tbody>
+  </table></div>
+  <p class="takeaway">He chases a little more than average. When he does, he misses more often than any hitter in baseball.</p>
+</section>
+
+<div class="prose" id="conclusion">
+  <h2>The conclusion</h2>
+  <p>Young strikeout hitters don't usually grow out of it. Most come down a point or two. About 1 in 5 cut it a lot, and every one of those guys made it. The busts were the guys who never cut it, and the ones who survived without cutting it had big power.</p>
+  <p>Colson's strikeouts mostly come from swinging at pitches he has no chance to hit. Whether that can change, and whether he can be a star either way, is the next post.</p>
+</div>
+
+<div class="fb">
+  <p>Think I'm wrong? Argue with me on Facebook.</p>
+  <a class="btn" href="https://www.facebook.com/aaron.simac" target="_blank" rel="noopener">Join the discussion</a>
+</div>
+
+<div class="agency">
+  <span class="eyebrow">You made it to the bottom</span>
+  <h3>I look at insurance the same way.</h3>
+  <p>I'm Aaron Simac, an independent insurance agent in Indiana and Illinois. Send me your current declarations page and I'll look for the gaps. It takes about 30 seconds.</p>
+  <div class="btns">
+    <a class="btn solid" href="https://www.leadmanagementlab.com/Form.aspx?id=b9f88dcd-0046-43a9-9866-7195957a39b6" target="_blank" rel="noopener">Get a coverage review</a>
+    <a class="btn" href="https://www.leadmanagementlab.com/Form.aspx?id=b9f88dcd-0046-43a9-9866-7195957a39b6" target="_blank" rel="noopener">Get a quote</a>
+  </div>
+</div>
+
+<p class="meta">Sources: MLB Stats API, Baseball-Reference WAR, Baseball Savant.</p>
+</div></main>
+<div id="site-footer"></div>
+<script>
+const P1=[["Pete Incaviglia", 1986, 22, 30.5, 30.0, "Solid regular", 10.3], ["Rob Deer", 1986, 25, 32.8, 30.0, "Solid regular", 13.8], ["Bo Jackson", 1987, 24, 36.4, 30.0, "Solid regular", 8.3], ["Benji Gil", 1995, 22, 32.4, 27.6, "Just a guy", 2.8], ["Tony Clark", 1996, 24, 30.9, 20.6, "All-Star", 12.3], ["Melvin Nieves", 1996, 24, 32.6, 36.0, "Below replacement", -2.3], ["Ruben Rivera", 1999, 25, 30.1, 27.8, "Just a guy", 5.6], ["Jared Sandberg", 2002, 24, 34.7, 33.3, "Just a guy", 2.3], ["Mark Reynolds", 2007, 23, 31.2, 34.1, "Solid regular", 6.9], ["Chris Davis", 2009, 23, 35.8, 30.0, "All-Star", 11.5], ["Giancarlo Stanton", 2010, 20, 31.1, 28.0, "MVP candidate", 47.0], ["Pedro Álvarez", 2012, 25, 30.7, 27.7, "Solid regular", 4.9], ["Oswaldo Arcia", 2013, 22, 30.9, 31.9, "Below replacement", -1.7], ["Mike Zunino", 2014, 23, 33.2, 35.2, "Just a guy", 9.0], ["Kris Bryant", 2015, 23, 30.6, 21.4, "All-Star", 27.3], ["Michael A. Taylor", 2015, 24, 30.9, 31.3, "Solid regular", 12.8], ["Trevor Story", 2016, 23, 31.3, 28.5, "All-Star", 35.4], ["Miguel Sanó", 2016, 23, 36.0, 36.6, "All-Star", 8.0], ["Aaron Judge", 2017, 25, 30.7, 30.7, "MVP candidate", 64.2], ["Ian Happ", 2017, 22, 31.2, 31.7, "Solid regular", 25.3], ["Randal Grichuk", 2017, 25, 30.1, 25.3, "Solid regular", 15.4], ["Kyle Schwarber", 2017, 24, 30.9, 26.9, "All-Star", 22.2], ["Joey Gallo", 2017, 23, 36.8, 36.4, "Solid regular", 15.5], ["Teoscar Hernández", 2018, 25, 31.2, 28.7, "Solid regular", 19.8], ["Yoán Moncada", 2018, 23, 33.4, 27.2, "Solid regular", 14.8], ["Rougned Odor", 2019, 25, 30.6, 26.1, "Just a guy", 6.4], ["Franmil Reyes", 2021, 25, 32.0, 33.6, "Just a guy", 2.7], ["Brandon Marsh", 2022, 24, 34.3, 29.7, "Solid regular", 10.4], ["Christopher Morel", 2022, 23, 32.2, 29.8, "Just a guy", 0.9]];
+const RU=[["Joe Mack", 28.1, 16.9, 45.9], ["Cal Raleigh", 35.8, 22.6, 45.0], ["Josh Bell", 29.6, 16.3, 35.9], ["Brandon Lowe", 33.6, 20.5, 61.8], ["Josh Naylor", 37.8, 9.7, 27.6], ["Trea Turner", 34.6, 15.4, 48.8], ["Patrick Bailey", 31.2, 15.9, 49.1], ["Junior Caminero", 30.5, 15.5, 37.5], ["Braden Montgomery", 27.4, 19.0, 57.6], ["Heriberto Hernández", 23.9, 22.0, 59.4], ["Dansby Swanson", 26.4, 19.9, 55.7], ["Daylen Lile", 38.5, 14.5, 39.0], ["Gabriel Moreno", 28.7, 9.6, 24.9], ["Xavier Edwards", 24.4, 10.7, 34.0], ["Kyle Stowers", 33.7, 23.9, 57.1], ["Christian Yelich", 24.4, 20.2, 53.8], ["Jonah Heim", 33.6, 14.0, 35.6], ["Andy Pages", 31.6, 11.1, 41.1], ["Tommy Edman", 30.4, 9.0, 49.0], ["Pete Crow-Armstrong", 34.2, 17.2, 42.0], ["Luis García Jr.", 38.4, 12.4, 33.3], ["Jordan Walker", 35.9, 21.3, 50.9], ["Austin Martin", 18.0, 12.0, 47.2], ["Cole Young", 30.6, 14.3, 30.6], ["Yainer Diaz", 42.1, 11.5, 39.1], ["Jacob Wilson", 42.3, 9.1, 23.7], ["Nick Gonzales", 31.2, 14.6, 40.9], ["José Caballero", 37.0, 21.3, 38.3], ["Mike Trout", 20.7, 15.8, 51.2], ["Fernando Tatis Jr.", 26.4, 14.2, 53.3], ["Andrew Benintendi", 33.8, 21.7, 40.6], ["Marcus Semien", 27.3, 14.2, 45.9], ["Caleb Durbin", 28.2, 10.8, 29.2], ["Xander Bogaerts", 22.8, 14.7, 44.6], ["Dillon Dingler", 33.4, 12.0, 40.4], ["Willy Adames", 31.6, 17.1, 51.7], ["Carson Benge", 28.0, 13.7, 38.7], ["Jeremy Peña", 39.3, 18.5, 53.0], ["Jackson Holliday", 26.8, 18.2, 46.5], ["Corbin Carroll", 29.7, 21.0, 38.4], ["Nathan Lukes", 34.1, 13.2, 21.1], ["Jonny DeLuca", 35.9, 14.5, 44.0], ["Ryan McMahon", 28.2, 17.7, 57.3], ["Kody Clemens", 32.6, 16.5, 40.1], ["Myles Straw", 23.1, 9.0, 22.2], ["Juan Soto", 20.9, 14.6, 37.9], ["Spencer Steer", 26.2, 15.1, 49.5], ["Joc Pederson", 30.1, 21.3, 47.6], ["Nolan Arenado", 31.9, 16.8, 36.6], ["Chase Meidroth", 28.9, 13.9, 30.6], ["Ronald Acuña Jr.", 28.6, 22.3, 43.0], ["Angel Martínez", 42.8, 11.3, 33.9], ["Jorbit Vivas", 29.1, 9.0, 37.3], ["Nico Hoerner", 33.7, 4.9, 24.5], ["Alex Bregman", 23.3, 9.7, 30.8], ["Willi Castro", 37.7, 18.9, 49.2], ["Shohei Ohtani", 30.0, 22.8, 48.3], ["Konnor Griffin", 37.6, 19.5, 43.8], ["Jared Young", 27.5, 17.7, 39.5], ["Vinnie Pasquantino", 30.6, 8.3, 27.3], ["Jake McCarthy", 37.8, 12.8, 37.1], ["Nick Fortes", 37.3, 12.0, 28.6], ["Wyatt Langford", 26.2, 17.3, 44.7], ["Brandon Marsh", 36.3, 12.8, 46.0], ["Daulton Varsho", 36.5, 14.6, 34.2], ["Dylan Crews", 32.1, 17.9, 53.3], ["Royce Lewis", 33.4, 20.7, 54.8], ["Owen Caissie", 30.0, 22.4, 60.6], ["Freddie Freeman", 29.3, 17.3, 36.4], ["Richie Palacios", 32.5, 14.6, 29.1], ["Evan Carter", 21.5, 19.2, 57.7], ["Yandy Díaz", 29.0, 11.3, 22.5], ["Nick Loftin", 25.4, 9.2, 35.7], ["Kazuma Okamoto", 27.3, 22.1, 57.9], ["Kevin McGonigle", 19.6, 11.0, 33.3], ["Wade Meckler", 23.1, 10.7, 48.3], ["CJ Abrams", 36.9, 19.0, 46.0], ["Kyle Tucker", 23.9, 14.0, 40.9], ["Cedric Mullins", 31.2, 16.8, 32.7], ["Matt Olson", 27.9, 19.2, 39.6], ["Jo Adell", 35.3, 17.6, 47.5], ["Moisés Ballesteros", 37.1, 17.0, 44.8], ["James Wood", 21.3, 18.2, 57.2], ["Bryson Stott", 30.0, 11.6, 30.6], ["Bobby Witt Jr.", 33.8, 13.6, 42.6], ["Alec Burleson", 38.1, 16.6, 31.8], ["Brice Turang", 24.8, 17.1, 37.6], ["David Hamilton", 29.6, 13.7, 38.1], ["Nolan Gorman", 31.4, 26.5, 59.9], ["Tyler Soderstrom", 25.9, 12.3, 47.9], ["Andruw Monasterio", 26.6, 11.2, 39.4], ["J.T. Realmuto", 29.9, 15.9, 40.8], ["Lars Nootbaar", 20.7, 12.7, 35.9], ["Rhys Hoskins", 22.2, 25.9, 49.7], ["Josh Lowe", 36.0, 28.0, 40.2], ["Carter Jensen", 24.1, 19.6, 54.9], ["Henry Bolte", 28.4, 20.4, 62.3], ["Jacob Young", 27.5, 12.3, 39.4], ["Ian Happ", 23.9, 21.9, 51.3], ["Taylor Ward", 14.9, 13.0, 42.9], ["Connor Norby", 28.1, 19.1, 53.2], ["Jac Caglianone", 39.6, 17.1, 47.6], ["Bryce Eldridge", 24.6, 17.9, 48.0], ["Eugenio Suárez", 28.5, 20.7, 60.4], ["Spencer Torkelson", 21.5, 20.1, 66.3], ["Colson Montgomery", 32.4, 22.1, 68.1], ["Ozzie Albies", 38.1, 13.8, 33.5], ["Jazz Chisholm Jr.", 29.4, 23.3, 45.4], ["Masyn Winn", 24.0, 15.0, 44.9], ["Michael Busch", 25.0, 16.0, 48.2], ["Ketel Marte", 31.5, 11.0, 36.1], ["Mike Yastrzemski", 26.4, 15.6, 39.9], ["Jose Altuve", 37.2, 13.2, 34.4], ["Mauricio Dubón", 37.6, 10.1, 24.1], ["Kyle Schwarber", 26.1, 22.5, 55.1], ["Kyle Karros", 24.8, 12.1, 53.1], ["Jake Cronenworth", 29.0, 10.4, 43.7], ["Ceddanne Rafaela", 45.3, 15.1, 38.4], ["Michael Conforto", 27.3, 15.5, 50.6], ["Dominic Smith", 31.0, 13.2, 37.8], ["Sal Frelick", 24.6, 5.9, 20.7], ["Brayan Rocchio", 33.2, 13.3, 38.2], ["Hao-Yu Lee", 29.1, 17.2, 48.6], ["Adley Rutschman", 25.7, 10.5, 27.6], ["Trent Grisham", 19.2, 11.1, 40.2], ["Lawrence Butler", 24.6, 21.2, 41.4], ["Casey Schmitt", 36.5, 10.7, 42.4], ["Zach Neto", 36.9, 17.8, 54.0], ["Jakob Marsee", 22.2, 8.1, 43.9], ["Ezequiel Duran", 35.5, 16.2, 43.6], ["Geraldo Perdomo", 20.9, 7.3, 24.2], ["Jared Triolo", 25.7, 13.1, 44.5], ["Shea Langeliers", 33.1, 18.6, 47.2], ["José Fermín", 22.1, 9.9, 24.6], ["Miguel Vargas", 20.9, 17.6, 31.4], ["Justin Crawford", 37.6, 12.0, 28.2], ["Carson Kelly", 25.2, 10.3, 43.3], ["Hunter Goodman", 40.4, 22.1, 50.1], ["Pete Alonso", 26.6, 18.1, 45.5], ["Ildemaro Vargas", 39.2, 8.2, 25.4], ["Max Muncy", 25.8, 19.0, 52.9], ["Mickey Moniak", 44.0, 18.0, 48.7], ["Dominic Canzone", 34.5, 16.4, 42.3], ["Nolan Schanuel", 27.2, 9.4, 31.8], ["Chandler Simpson", 31.2, 6.8, 19.7], ["Christian Walker", 31.6, 16.5, 53.4], ["Austin Riley", 32.3, 21.2, 50.7], ["Brady House", 34.2, 21.5, 43.9], ["Jeff McNeil", 36.1, 8.8, 31.2], ["Brandon Nimmo", 29.0, 17.2, 41.4], ["Luis Arraez", 33.1, 5.8, 9.9], ["JJ Wetherholt", 21.2, 14.6, 36.8], ["Vladimir Guerrero Jr.", 30.6, 13.1, 33.0], ["Steven Kwan", 19.8, 4.8, 17.4], ["Leody Taveras", 32.0, 14.0, 43.2], ["Seiya Suzuki", 22.5, 13.9, 46.3], ["Ryan Jeffers", 26.2, 10.6, 30.3], ["Andrew Vaughn", 23.5, 12.3, 34.5], ["Randy Arozarena", 30.6, 23.3, 31.6], ["Alec Bohm", 26.0, 11.3, 29.7], ["Matt Chapman", 26.4, 15.4, 41.3], ["Samuel Basallo", 39.9, 20.9, 45.7], ["Oswald Peraza", 38.6, 17.6, 52.2], ["Oneil Cruz", 30.1, 24.1, 52.9], ["Taylor Walls", 25.6, 15.2, 37.1], ["Tim Tawa", 31.4, 19.5, 44.4], ["Jake Bauers", 21.7, 17.9, 59.9], ["Dane Myers", 25.2, 17.5, 30.9], ["Keibert Ruiz", 38.7, 6.7, 27.1], ["Jackson Merrill", 37.6, 18.4, 43.7], ["Brett Baty", 28.8, 19.2, 53.6], ["Nathan Church", 42.3, 14.6, 29.1], ["Carlos Cortes", 27.9, 15.8, 36.7], ["Francisco Lindor", 29.5, 15.5, 42.4], ["Andrés Giménez", 43.9, 15.2, 38.0], ["Mookie Betts", 20.3, 5.2, 35.4], ["Willson Contreras", 34.2, 17.9, 50.9], ["Chase DeLauter", 21.1, 8.8, 32.6], ["Corey Seager", 28.8, 21.8, 58.1], ["Riley Greene", 26.0, 18.8, 55.8], ["Gavin Sheets", 31.0, 11.7, 35.2], ["J.P. Crawford", 19.7, 11.7, 33.3], ["Jonathan Aranda", 29.0, 18.2, 30.8], ["Matt McLain", 26.8, 18.8, 49.3], ["Javier Sanoja", 39.6, 7.6, 18.1], ["Ezequiel Tovar", 43.7, 19.7, 44.4], ["Julio Rodríguez", 38.6, 14.8, 43.0], ["Nasim Nuñez", 25.9, 14.8, 39.6], ["Troy Johnston", 36.2, 14.3, 43.1], ["Elly De La Cruz", 25.1, 20.3, 43.8], ["Rafael Devers", 30.0, 25.1, 36.8], ["Alejandro Kirk", 29.1, 9.7, 27.7], ["Francisco Alvarez", 31.8, 22.7, 54.3], ["Colton Cowser", 29.6, 20.5, 55.0], ["Lane Thomas", 20.6, 15.9, 43.5], ["Otto Lopez", 31.2, 9.9, 37.8], ["Isaac Paredes", 27.0, 9.7, 25.0], ["Nick Kurtz", 23.3, 27.0, 60.5], ["George Springer", 25.5, 14.6, 47.8], ["Ben Rice", 24.5, 16.4, 46.6], ["Byron Buxton", 34.4, 16.4, 58.4], ["Munetaka Murakami", 22.2, 33.4, 64.1], ["Bryan Reynolds", 24.7, 16.3, 60.1], ["Luis Rengifo", 30.6, 13.3, 33.2], ["Cole Carrigg", 36.3, 14.7, 42.9], ["Kyle Isbel", 35.7, 6.4, 37.8], ["Jorge Soler", 27.4, 25.1, 64.1], ["Paul Goldschmidt", 32.2, 23.0, 32.7], ["Isaac Collins", 22.0, 11.9, 48.1], ["Nathaniel Lowe", 27.3, 13.2, 42.6], ["Cam Smith", 30.0, 19.5, 49.1], ["Gleyber Torres", 18.9, 15.8, 44.8], ["Jake Mangum", 45.1, 16.8, 27.8], ["William Contreras", 28.3, 12.9, 37.5], ["Yordan Alvarez", 29.0, 10.8, 35.2], ["Teoscar Hernández", 31.2, 23.0, 50.8], ["Spencer Horwitz", 24.5, 8.9, 32.9], ["Drew Gilbert", 25.1, 11.3, 47.3], ["Colt Keith", 24.6, 14.0, 43.7], ["Michael Massey", 38.8, 12.0, 32.1], ["Travis Bazzana", 27.3, 13.8, 44.4], ["José Ramírez", 28.5, 9.3, 27.2], ["Josh Jung", 29.3, 9.4, 37.9], ["Zach McKinstry", 28.0, 9.4, 36.5], ["Luke Keaschall", 22.6, 10.0, 35.4], ["Sam Antonacci", 21.8, 9.9, 28.7], ["Curtis Mead", 25.1, 10.4, 33.9], ["Garrett Mitchell", 22.7, 25.4, 64.4], ["Denzer Guzman", 33.6, 20.4, 40.9], ["Jesús Sánchez", 38.0, 20.2, 40.6], ["Ernie Clement", 44.4, 9.4, 23.2], ["Brooks Lee", 35.1, 10.4, 40.5], ["Cody Bellinger", 30.3, 13.2, 33.9], ["JJ Bleday", 22.8, 18.0, 52.2], ["Salvador Perez", 44.6, 13.8, 38.0], ["Liam Hicks", 26.6, 2.7, 28.6], ["Drake Baldwin", 34.4, 16.3, 39.0], ["Ty France", 34.5, 17.0, 49.6], ["A.J. Ewing", 26.7, 15.5, 45.6], ["Jake Burger", 35.5, 19.9, 56.4], ["Wilyer Abreu", 29.9, 17.6, 38.6], ["Jarren Duran", 34.4, 19.4, 59.3], ["Dylan Beavers", 23.8, 16.8, 46.7], ["Zack Gelof", 25.3, 24.2, 42.6], ["Tristan Peters", 32.6, 16.5, 37.7], ["Iván Herrera", 28.4, 12.6, 36.9], ["Tyler Stephenson", 22.3, 14.7, 63.2], ["TJ Rumfield", 30.4, 8.3, 38.5], ["Griffin Conine", 33.3, 24.5, 58.1], ["Victor Caratini", 25.9, 11.7, 47.2], ["Bryce Harper", 32.4, 19.3, 50.0], ["Sal Stewart", 32.1, 21.2, 38.2], ["Vaughn Grissom", 31.3, 12.8, 42.4], ["Manny Machado", 30.5, 16.5, 42.4], ["Ryan O'Hearn", 31.5, 13.4, 39.3], ["Maikel Garcia", 22.5, 7.3, 31.5], ["Gunnar Henderson", 30.4, 14.4, 41.0], ["Jung Hoo Lee", 31.1, 6.1, 25.9], ["Kyle Manzardo", 30.7, 20.2, 50.0], ["Michael Harris II", 45.1, 11.2, 42.0], ["Joey Ortiz", 32.8, 9.3, 37.5], ["Bo Bichette", 40.9, 10.1, 32.6], ["Trevor Larnach", 29.7, 14.0, 50.0], ["Heliot Ramos", 33.1, 17.4, 52.3], ["Austin Wells", 28.0, 19.0, 46.8], ["Coby Mayo", 31.3, 16.6, 52.9], ["Jackson Chourio", 33.8, 14.7, 42.7]];
+const LUCK = 1.8;
+const tierVar = t => ({"MVP candidate":"var(--mvp)","All-Star":"var(--star)","Solid regular":"var(--reg)"})[t] || "var(--haze)";
+const tierName = t => t === "MVP candidate" ? "MVP level" : t;
+
+function chart(el, o) {
+  const W = Math.max(320, el.clientWidth), narrow = W < 520;
+  const H = Math.round(narrow ? W * 1.05 : W * 0.62), p = {l: 44, r: 14, t: 26, b: 42};
+  const X = v => p.l + (v - o.x0) / (o.x1 - o.x0) * (W - p.l - p.r);
+  const Y = v => H - p.b - (v - o.y0) / (o.y1 - o.y0) * (H - p.t - p.b);
+  const fs = narrow ? 12 : 13;
+  let s = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="${o.label}">`;
+  for (let v = o.y0; v <= o.y1; v += o.ys) s += `<line x1="${p.l}" x2="${W - p.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--grid)"/><text x="${p.l - 7}" y="${Y(v) + 4}" text-anchor="end" font-size="${fs}" fill="var(--steel)">${o.yf(v)}</text>`;
+  for (let v = o.x0; v <= o.x1; v += (narrow ? o.xs * 2 : o.xs)) s += `<text x="${X(v)}" y="${H - p.b + 19}" text-anchor="${v === o.x0 ? "start" : v === o.x1 ? "end" : "middle"}" font-size="${fs}" fill="var(--steel)">${v}%</text>`;
+  s += `<text x="${W - p.r}" y="${H - 6}" text-anchor="end" font-size="${fs}" fill="var(--steel)">${o.xl} →</text>`;
+  s += `<text x="${p.l}" y="${p.t - 10}" font-size="${fs}" fill="var(--steel)">${o.yl}</text>`;
+  s += o.extra(X, Y, W, fs);
+  o.pts.forEach(d => s += `<circle cx="${X(d.x).toFixed(1)}" cy="${Y(d.y).toFixed(1)}" r="${(d.r || 7) * (narrow ? .85 : 1)}" fill="${d.c}" ${d.op ? `fill-opacity="${d.op}"` : `stroke="var(--card)" stroke-width="2"`}/>`);
+  o.pts.forEach(d => { if (d.lab && !(narrow && d.wideOnly)) s += `<text x="${X(d.x) + (d.ldx || 10)}" y="${Y(d.y) + (d.ldy || 4)}" font-size="${fs}" font-weight="600" fill="var(--ink)" stroke="var(--card)" stroke-width="4" paint-order="stroke" text-anchor="${d.anchor || "start"}">${d.lab}</text>`; });
+  o.pts.forEach((d, i) => s += `<circle cx="${X(d.x).toFixed(1)}" cy="${Y(d.y).toFixed(1)}" r="12" fill="transparent" data-i="${i}" style="cursor:pointer"/>`);
+  el.innerHTML = s + "</svg>";
+  const show = e => { const i = e.target.dataset && e.target.dataset.i; if (i != null) o.info(o.pts[i]); };
+  el.onclick = show; el.onmousemove = show;
+}
+
+const LAB = {"Kris Bryant":[10,4],"Tony Clark":[10,4],"Chris Davis":[0,22,"middle"],"Bo Jackson":[10,4],"Yoán Moncada":[10,4],"Joey Gallo":[10,-4],"Miguel Sanó":[10,16],"Aaron Judge":[10,-6],"Giancarlo Stanton":[10,4,0,1],"Mark Reynolds":[10,4],
+  "Mike Zunino":[10,4],"Melvin Nieves":[10,14],"Franmil Reyes":[-10,4,"end",1],"Rougned Odor":[10,4,0,1],"Christopher Morel":[10,4],"Jared Sandberg":[10,4,0,1]};
+function draw() {
+  chart(document.getElementById("c1"), {
+    x0: 30, x1: 38, xs: 2, y0: -6, y1: 12, ys: 3, xl: "strikeout rate, first big season", yl: "Strikeouts cut, next 3 seasons (points)",
+    yf: v => (v > 0 ? "+" : "") + v, label: "Young 30% strikeout hitters: strikeout rate that season against points cut over the next three seasons",
+    pts: P1.map(d => { const L = LAB[d[0]]; return {x: d[3], y: +(d[3] - d[4]).toFixed(1), c: tierVar(d[5]), lab: L ? d[0].split(" ").slice(-1)[0] : null, ldx: L && L[0], ldy: L && L[1], anchor: L && L[2] || null, wideOnly: L && L[3], d}; }),
+    extra: (X, Y, W, fs) => `<line x1="${X(30)}" y1="${Y(0)}" x2="${X(38)}" y2="${Y(0)}" stroke="var(--ink)" stroke-width="1.5"/>
+      <text x="${X(34.6)}" y="${Y(0) + 16}" text-anchor="middle" font-size="${fs}" fill="var(--steel)">no change</text>
+      <line x1="${X(30)}" y1="${Y(LUCK)}" x2="${X(38)}" y2="${Y(LUCK)}" stroke="var(--steel)" stroke-width="1.5" stroke-dasharray="5 5"/>
+      <text x="${X(38) - 4}" y="${Y(LUCK) - 7}" text-anchor="end" font-size="${fs}" fill="var(--steel)">normal bounce-back</text>
+      <text x="${X(38) - 4}" y="${Y(11)}" text-anchor="end" font-size="${fs}" fill="var(--steel)">↑ cut a lot</text>
+      <text x="${X(38) - 4}" y="${Y(-5.4)}" text-anchor="end" font-size="${fs}" fill="var(--steel)">↓ got worse</text>`,
+    info: o => { const d = o.d, ch = d[3] - d[4]; document.getElementById("i1").innerHTML = `<b>${d[0]}</b>, ${d[1]}, age ${d[2]}: struck out ${d[3]}%, then ${d[4]}% over the next three seasons (${ch >= 0 ? "cut " + ch.toFixed(1) : "up " + (-ch).toFixed(1)} points). Career: ${tierName(d[5])}, ${d[6]} WAR.`; }
+  });
+
+  const me = RU.find(d => d[0] === "Colson Montgomery"), pts = [];
+  RU.forEach(d => { if (d === me) return;
+    pts.push({x: d[1], y: d[2], c: "var(--star)", op: .45, r: 4.5, d});
+    pts.push({x: d[1], y: d[3], c: "var(--mvp)", op: .45, r: 4.5, d}); });
+  pts.push({x: me[1], y: me[2], c: "var(--ink)", r: 8, d: me, lab: "Colson, misses on strikes", ldx: -12, ldy: 20, anchor: "end"});
+  pts.push({x: me[1], y: me[3], c: "var(--ink)", r: 8, d: me, lab: "Colson, misses on chases", ldx: -12, ldy: -10, anchor: "end"});
+  chart(document.getElementById("c2"), {
+    x0: 10, x1: 50, xs: 10, y0: 0, y1: 80, ys: 20, xl: "chase rate", yl: "Miss rate", yf: v => v + "%",
+    label: "Every 2026 hitter: chase rate against miss rate on strikes and on chases, Colson Montgomery highlighted", pts,
+    extra: (X, Y) => `<line x1="${X(me[1])}" x2="${X(me[1])}" y1="${Y(me[2])}" y2="${Y(me[3])}" stroke="var(--ink)" stroke-width="2"/>`,
+    info: q => { document.getElementById("i2").innerHTML = `<b>${q.d[0]}</b>, 2026: chases ${q.d[1]}%. Misses on strikes ${q.d[2]}%. Misses when he chases ${q.d[3]}%.`; }
+  });
+}
+draw();
+let rz; addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(draw, 150); });
+</script>
+</body>
+</html>
