@@ -1,7 +1,7 @@
 """How rare is a Harold? Hitters who debuted 1990-2016, tiered on Baseball-Reference WAR.
 
-Tier = average of a player's best 3 seasons of 300+ PA (missing seasons count as 0):
-  MVP candidate 7.5+, All-Star 5+, Solid regular 3+, Just a guy 0+, Below replacement under 0.
+Tier = average of a player's best 3 seasons by WAR, any playing time (the 500 AB filter already applies; missing seasons count as 0):
+  MVP candidate 7.5+, All-Star 5+, Solid regular 3+, Just a guy above 0, Below replacement 0 or less.
 Harold = Harold Baines's career bWAR. Chart baseline: 500+ career MLB at-bats.
 Drafted vs international: birth country from the Lahman register (US, Canada, Puerto Rico
 are in the draft; everyone else signs as an international free agent).
@@ -11,7 +11,7 @@ import json, sys
 import numpy as np, pandas as pd
 
 FIRST, LAST, MIN_PA, MIN_AB = 1990, 2016, 300, 500
-CUTS = [(7.5, "MVP candidate"), (5, "All-Star"), (3, "Solid regular"), (0, "Just a guy")]
+CUTS = [(7.5, "MVP candidate"), (5, "All-Star"), (3, "Solid regular"), (0.01, "Just a guy")]
 ORDER = ["MVP candidate", "All-Star", "Solid regular", "Just a guy", "Below replacement"]
 
 def tier(v):
@@ -30,7 +30,7 @@ HAROLD = round(float(season[season.player_ID == "baineha01"].WAR.sum()), 1)
 LATEST = int(season.year_ID.max())
 
 def career(g):
-    q = g[g.PA >= MIN_PA].WAR.sort_values(ascending=False).head(3).tolist()
+    q = g.WAR.sort_values(ascending=False).head(3).tolist()
     best3 = float(np.mean(q + [0.0] * (3 - len(q))))
     return pd.Series(dict(debut=int(g[g.G > 0].year_ID.min()), last=int(g.year_ID.max()),
                           career_war=round(float(g.WAR.sum()), 1), best3=round(best3, 2),

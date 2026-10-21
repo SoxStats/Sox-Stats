@@ -7,26 +7,26 @@
  "main": {
   "MVP candidate": 15,
   "All-Star": 137,
-  "Solid regular": 238,
-  "Just a guy": 841,
-  "Below replacement": 87,
+  "Solid regular": 244,
+  "Just a guy": 879,
+  "Below replacement": 43,
   "total": 1318,
   "harolds": 92,
   "one_in": {
    "MVP candidate": 87.9,
    "All-Star": 9.6,
-   "Solid regular": 5.5,
-   "Just a guy": 1.6,
-   "Below replacement": 15.1,
+   "Solid regular": 5.4,
+   "Just a guy": 1.5,
+   "Below replacement": 30.7,
    "harolds": 14.3
   }
  },
  "per_year": {
   "MVP candidate": 0.6,
   "All-Star": 5.1,
-  "Solid regular": 8.8,
-  "Just a guy": 31.1,
-  "Below replacement": 3.2,
+  "Solid regular": 9.0,
+  "Just a guy": 32.6,
+  "Below replacement": 1.6,
   "total": 48.8,
   "harolds": 3.4
  },
@@ -34,34 +34,34 @@
   "Drafted pool (US/CAN/PR)": {
    "MVP candidate": 10,
    "All-Star": 111,
-   "Solid regular": 175,
-   "Just a guy": 643,
-   "Below replacement": 73,
+   "Solid regular": 179,
+   "Just a guy": 681,
+   "Below replacement": 31,
    "total": 1012,
    "harolds": 73,
    "one_in": {
     "MVP candidate": 101.2,
     "All-Star": 9.1,
-    "Solid regular": 5.8,
-    "Just a guy": 1.6,
-    "Below replacement": 13.9,
+    "Solid regular": 5.7,
+    "Just a guy": 1.5,
+    "Below replacement": 32.6,
     "harolds": 13.9
    }
   },
   "International signing": {
    "MVP candidate": 5,
    "All-Star": 26,
-   "Solid regular": 63,
+   "Solid regular": 65,
    "Just a guy": 198,
-   "Below replacement": 14,
+   "Below replacement": 12,
    "total": 306,
    "harolds": 19,
    "one_in": {
     "MVP candidate": 61.2,
     "All-Star": 11.8,
-    "Solid regular": 4.9,
+    "Solid regular": 4.7,
     "Just a guy": 1.5,
-    "Below replacement": 21.9,
+    "Below replacement": 25.5,
     "harolds": 16.1
    }
   }
@@ -943,7 +943,7 @@
    "name_common": "Byron Buxton",
    "debut": 2015.0,
    "career_war": 33.2,
-   "best3": 4.62,
+   "best3": 4.93,
    "age_now": 32.0
   },
   {
