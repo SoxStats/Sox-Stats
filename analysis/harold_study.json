@@ -1480,10 +1480,35 @@
   }
  ],
  "milb_since_2005": {
-  "reached_high_a": 5310,
-  "made_mlb": 1447,
-  "never_made_it": 3863,
-  "got_500_ab": 680,
-  "harolds": 54
+  "cohort": "first reached High-A 2005-2012",
+  "reached_high_a": 3488,
+  "made_mlb": 771,
+  "never_made_it": 2717,
+  "got_500_ab": 379,
+  "harolds": 22,
+  "harold_names": [
+   "Mike Trout",
+   "Freddie Freeman",
+   "Paul Goldschmidt",
+   "Joey Votto",
+   "Manny Machado",
+   "Nolan Arenado",
+   "Evan Longoria",
+   "Jose Altuve",
+   "Marcus Semien",
+   "Ryan Braun",
+   "Giancarlo Stanton",
+   "Josh Donaldson",
+   "Christian Yelich",
+   "Buster Posey",
+   "Troy Tulowitzki",
+   "Ben Zobrist",
+   "Brett Gardner",
+   "Xander Bogaerts",
+   "George Springer",
+   "Jason Heyward",
+   "Anthony Rizzo",
+   "Carlos Santana"
+  ]
  }
 }

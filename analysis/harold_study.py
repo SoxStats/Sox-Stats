@@ -65,17 +65,24 @@ def counts(df):
 # Still chasing: active, not yet a Harold, 20+ career WAR
 chasing = pool[pool.active & ~pool.harold & (pool.career_war >= 20)].sort_values("career_war", ascending=False)
 
-# Minors: first High-A season 2005-2016, position players, did they ever reach MLB?
+# Minors: position players who first reached High-A in 2005-2012 (minors data starts 2005;
+# ending in 2012 gives the group 10+ years to play out). Big leaguers on rehab stints are
+# excluded: a player only counts if he hadn't played in MLB before his first High-A season.
+MILB_FIRST, MILB_LAST = 2005, 2012
 a = pd.read_csv("data/history/aplus_hitting.csv.gz", usecols=["season", "player_id", "pos"], low_memory=False)
 a = a[a.pos != "P"]
 firstA = a.groupby("player_id").season.min()
-firstA = firstA[(firstA >= 2005) & (firstA <= LAST)]
-mlb_ids = set(ab.player_id) | set(season.mlb_ID)
-reached = firstA.index.isin(mlb_ids)
-milb = dict(reached_high_a=int(len(firstA)), made_mlb=int(reached.sum()),
-            never_made_it=int((~reached).sum()),
-            got_500_ab=int(pool[pool.mlb_ID.isin(firstA.index) & (pool.AB >= MIN_AB)].shape[0]),
-            harolds=int(pool[pool.mlb_ID.isin(firstA.index) & pool.harold].shape[0]))
+mlb_first = season.groupby("mlb_ID").year_ID.min()
+firstA = firstA[(firstA >= MILB_FIRST) & (firstA <= MILB_LAST)]
+firstA = firstA[~(firstA.index.map(mlb_first).fillna(9999) < firstA.values)]
+grp = car[car.mlb_ID.isin(firstA.index)].copy()
+grp["AB"] = grp.mlb_ID.map(ab.groupby("player_id").AB.sum()).fillna(0)
+milb = dict(cohort=f"first reached High-A {MILB_FIRST}-{MILB_LAST}",
+            reached_high_a=int(len(firstA)), made_mlb=int(len(grp)),
+            never_made_it=int(len(firstA) - len(grp)),
+            got_500_ab=int((grp.AB >= MIN_AB).sum()),
+            harolds=int((grp.career_war >= HAROLD).sum()),
+            harold_names=grp[grp.career_war >= HAROLD].sort_values("career_war", ascending=False).name_common.tolist())
 
 res = dict(
     harold_war=HAROLD, pool_years=f"{FIRST}-{LAST}", latest_season=LATEST,
