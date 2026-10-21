@@ -1,0 +1,1489 @@
+{
+ "harold_war": 38.8,
+ "pool_years": "1990-2016",
+ "latest_season": 2026,
+ "debuted": 2504,
+ "under_500_ab": 1186,
+ "main": {
+  "MVP candidate": 15,
+  "All-Star": 137,
+  "Solid regular": 238,
+  "Just a guy": 841,
+  "Below replacement": 87,
+  "total": 1318,
+  "harolds": 92,
+  "one_in": {
+   "MVP candidate": 87.9,
+   "All-Star": 9.6,
+   "Solid regular": 5.5,
+   "Just a guy": 1.6,
+   "Below replacement": 15.1,
+   "harolds": 14.3
+  }
+ },
+ "per_year": {
+  "MVP candidate": 0.6,
+  "All-Star": 5.1,
+  "Solid regular": 8.8,
+  "Just a guy": 31.1,
+  "Below replacement": 3.2,
+  "total": 48.8,
+  "harolds": 3.4
+ },
+ "by_route": {
+  "Drafted pool (US/CAN/PR)": {
+   "MVP candidate": 10,
+   "All-Star": 111,
+   "Solid regular": 175,
+   "Just a guy": 643,
+   "Below replacement": 73,
+   "total": 1012,
+   "harolds": 73,
+   "one_in": {
+    "MVP candidate": 101.2,
+    "All-Star": 9.1,
+    "Solid regular": 5.8,
+    "Just a guy": 1.6,
+    "Below replacement": 13.9,
+    "harolds": 13.9
+   }
+  },
+  "International signing": {
+   "MVP candidate": 5,
+   "All-Star": 26,
+   "Solid regular": 63,
+   "Just a guy": 198,
+   "Below replacement": 14,
+   "total": 306,
+   "harolds": 19,
+   "one_in": {
+    "MVP candidate": 61.2,
+    "All-Star": 11.8,
+    "Solid regular": 4.9,
+    "Just a guy": 1.5,
+    "Below replacement": 21.9,
+    "harolds": 16.1
+   }
+  }
+ },
+ "harold_list": [
+  {
+   "name_common": "Alex Rodriguez",
+   "debut": 1994.0,
+   "career_war": 117.4,
+   "best3": 9.74,
+   "tier": "MVP candidate",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Albert Pujols",
+   "debut": 2001.0,
+   "career_war": 101.3,
+   "best3": 9.24,
+   "tier": "MVP candidate",
+   "route": "International signing",
+   "active": false
+  },
+  {
+   "name_common": "Adrian Beltr\u00e9",
+   "debut": 1998.0,
+   "career_war": 93.7,
+   "best3": 8.19,
+   "tier": "MVP candidate",
+   "route": "International signing",
+   "active": false
+  },
+  {
+   "name_common": "Mike Trout",
+   "debut": 2011.0,
+   "career_war": 91.7,
+   "best3": 10.28,
+   "tier": "MVP candidate",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Chipper Jones",
+   "debut": 1993.0,
+   "career_war": 85.3,
+   "best3": 7.32,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Jeff Bagwell",
+   "debut": 1991.0,
+   "career_war": 79.9,
+   "best3": 7.78,
+   "tier": "MVP candidate",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Mookie Betts",
+   "debut": 2014.0,
+   "career_war": 79.0,
+   "best3": 9.7,
+   "tier": "MVP candidate",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Frank Thomas",
+   "debut": 1990.0,
+   "career_war": 73.8,
+   "best3": 7.08,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Jim Thome",
+   "debut": 1991.0,
+   "career_war": 72.9,
+   "best3": 6.94,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Derek Jeter",
+   "debut": 1995.0,
+   "career_war": 71.3,
+   "best3": 7.36,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Scott Rolen",
+   "debut": 1996.0,
+   "career_war": 70.1,
+   "best3": 7.42,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Carlos Beltr\u00e1n",
+   "debut": 1998.0,
+   "career_war": 70.0,
+   "best3": 7.32,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Manny Ramirez",
+   "debut": 1993.0,
+   "career_war": 69.3,
+   "best3": 6.43,
+   "tier": "All-Star",
+   "route": "International signing",
+   "active": false
+  },
+  {
+   "name_common": "Iv\u00e1n Rodr\u00edguez",
+   "debut": 1991.0,
+   "career_war": 68.7,
+   "best3": 6.46,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Robinson Can\u00f3",
+   "debut": 2005.0,
+   "career_war": 68.7,
+   "best3": 7.95,
+   "tier": "MVP candidate",
+   "route": "International signing",
+   "active": false
+  },
+  {
+   "name_common": "Kenny Lofton",
+   "debut": 1991.0,
+   "career_war": 68.4,
+   "best3": 7.14,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Miguel Cabrera",
+   "debut": 2003.0,
+   "career_war": 67.2,
+   "best3": 7.42,
+   "tier": "All-Star",
+   "route": "International signing",
+   "active": false
+  },
+  {
+   "name_common": "Freddie Freeman",
+   "debut": 2010.0,
+   "career_war": 66.8,
+   "best3": 6.43,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Paul Goldschmidt",
+   "debut": 2011.0,
+   "career_war": 65.1,
+   "best3": 7.44,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Chase Utley",
+   "debut": 2003.0,
+   "career_war": 64.6,
+   "best3": 8.37,
+   "tier": "MVP candidate",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Aaron Judge",
+   "debut": 2016.0,
+   "career_war": 64.2,
+   "best3": 10.44,
+   "tier": "MVP candidate",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Joey Votto",
+   "debut": 2007.0,
+   "career_war": 63.6,
+   "best3": 7.52,
+   "tier": "MVP candidate",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Manny Machado",
+   "debut": 2012.0,
+   "career_war": 63.3,
+   "best3": 7.15,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Andruw Jones",
+   "debut": 1996.0,
+   "career_war": 62.7,
+   "best3": 7.55,
+   "tier": "MVP candidate",
+   "route": "International signing",
+   "active": false
+  },
+  {
+   "name_common": "Todd Helton",
+   "debut": 1997.0,
+   "career_war": 61.8,
+   "best3": 8.3,
+   "tier": "MVP candidate",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Nolan Arenado",
+   "debut": 2013.0,
+   "career_war": 61.4,
+   "best3": 7.19,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Jim Edmonds",
+   "debut": 1993.0,
+   "career_war": 60.4,
+   "best3": 6.74,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Jos\u00e9 Ram\u00edrez",
+   "debut": 2013.0,
+   "career_war": 60.3,
+   "best3": 7.12,
+   "tier": "All-Star",
+   "route": "International signing",
+   "active": true
+  },
+  {
+   "name_common": "Bobby Abreu",
+   "debut": 1996.0,
+   "career_war": 60.2,
+   "best3": 6.38,
+   "tier": "All-Star",
+   "route": "International signing",
+   "active": false
+  },
+  {
+   "name_common": "Ichiro Suzuki",
+   "debut": 2001.0,
+   "career_war": 60.0,
+   "best3": 7.57,
+   "tier": "MVP candidate",
+   "route": "International signing",
+   "active": false
+  },
+  {
+   "name_common": "Mike Piazza",
+   "debut": 1992.0,
+   "career_war": 59.6,
+   "best3": 7.32,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Vladimir Guerrero",
+   "debut": 1996.0,
+   "career_war": 59.5,
+   "best3": 6.8,
+   "tier": "All-Star",
+   "route": "International signing",
+   "active": false
+  },
+  {
+   "name_common": "Evan Longoria",
+   "debut": 2008.0,
+   "career_war": 58.9,
+   "best3": 7.47,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Francisco Lindor",
+   "debut": 2015.0,
+   "career_war": 57.3,
+   "best3": 6.75,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Bryce Harper",
+   "debut": 2012.0,
+   "career_war": 56.9,
+   "best3": 6.92,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Johnny Damon",
+   "debut": 1995.0,
+   "career_war": 56.3,
+   "best3": 5.45,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Joe Mauer",
+   "debut": 2004.0,
+   "career_war": 55.6,
+   "best3": 6.5,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Jeff Kent",
+   "debut": 1992.0,
+   "career_war": 55.4,
+   "best3": 6.49,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "David Ortiz",
+   "debut": 1997.0,
+   "career_war": 55.0,
+   "best3": 5.79,
+   "tier": "All-Star",
+   "route": "International signing",
+   "active": false
+  },
+  {
+   "name_common": "Ian Kinsler",
+   "debut": 2006.0,
+   "career_war": 53.8,
+   "best3": 6.21,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Jose Altuve",
+   "debut": 2011.0,
+   "career_war": 53.4,
+   "best3": 7.12,
+   "tier": "All-Star",
+   "route": "International signing",
+   "active": true
+  },
+  {
+   "name_common": "Lance Berkman",
+   "debut": 1999.0,
+   "career_war": 52.0,
+   "best3": 6.46,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Dustin Pedroia",
+   "debut": 2006.0,
+   "career_war": 51.8,
+   "best3": 6.98,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Luis Gonzalez",
+   "debut": 1990.0,
+   "career_war": 51.7,
+   "best3": 6.54,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Brian Giles",
+   "debut": 1995.0,
+   "career_war": 51.1,
+   "best3": 6.14,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Torii Hunter",
+   "debut": 1997.0,
+   "career_war": 50.6,
+   "best3": 5.11,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Jason Giambi",
+   "debut": 1995.0,
+   "career_war": 50.5,
+   "best3": 7.99,
+   "tier": "MVP candidate",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Mark Teixeira",
+   "debut": 2003.0,
+   "career_war": 50.5,
+   "best3": 6.77,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Marcus Semien",
+   "debut": 2013.0,
+   "career_war": 49.9,
+   "best3": 7.76,
+   "tier": "MVP candidate",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Bernie Williams",
+   "debut": 1991.0,
+   "career_war": 49.6,
+   "best3": 5.79,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "David Wright",
+   "debut": 2004.0,
+   "career_war": 49.1,
+   "best3": 7.42,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Alex Bregman",
+   "debut": 2016.0,
+   "career_war": 48.9,
+   "best3": 7.43,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Andrew McCutchen",
+   "debut": 2009.0,
+   "career_war": 48.6,
+   "best3": 7.04,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Jimmy Rollins",
+   "debut": 2000.0,
+   "career_war": 47.9,
+   "best3": 5.47,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Curtis Granderson",
+   "debut": 2004.0,
+   "career_war": 47.5,
+   "best3": 6.28,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Ryan Braun",
+   "debut": 2007.0,
+   "career_war": 47.2,
+   "best3": 6.93,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Miguel Tejada",
+   "debut": 1997.0,
+   "career_war": 47.1,
+   "best3": 6.3,
+   "tier": "All-Star",
+   "route": "International signing",
+   "active": false
+  },
+  {
+   "name_common": "Carlos Correa",
+   "debut": 2015.0,
+   "career_war": 47.1,
+   "best3": 7.0,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Giancarlo Stanton",
+   "debut": 2010.0,
+   "career_war": 47.0,
+   "best3": 6.66,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Josh Donaldson",
+   "debut": 2010.0,
+   "career_war": 46.8,
+   "best3": 7.31,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Mike Cameron",
+   "debut": 1995.0,
+   "career_war": 46.7,
+   "best3": 5.4,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Corey Seager",
+   "debut": 2015.0,
+   "career_war": 46.4,
+   "best3": 6.18,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Christian Yelich",
+   "debut": 2013.0,
+   "career_war": 45.1,
+   "best3": 6.46,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Buster Posey",
+   "debut": 2009.0,
+   "career_war": 45.0,
+   "best3": 6.28,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "J.D. Drew",
+   "debut": 1998.0,
+   "career_war": 44.9,
+   "best3": 6.07,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Troy Tulowitzki",
+   "debut": 2006.0,
+   "career_war": 44.8,
+   "best3": 6.66,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Ben Zobrist",
+   "debut": 2006.0,
+   "career_war": 44.7,
+   "best3": 7.33,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Chuck Knoblauch",
+   "debut": 1991.0,
+   "career_war": 44.6,
+   "best3": 7.36,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Matt Holliday",
+   "debut": 2004.0,
+   "career_war": 44.4,
+   "best3": 5.92,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Carlos Delgado",
+   "debut": 1993.0,
+   "career_war": 44.4,
+   "best3": 6.2,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Xander Bogaerts",
+   "debut": 2013.0,
+   "career_war": 44.3,
+   "best3": 5.71,
+   "tier": "All-Star",
+   "route": "International signing",
+   "active": true
+  },
+  {
+   "name_common": "Brett Gardner",
+   "debut": 2008.0,
+   "career_war": 44.3,
+   "best3": 5.51,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Nomar Garciaparra",
+   "debut": 1996.0,
+   "career_war": 44.3,
+   "best3": 7.1,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Matt Olson",
+   "debut": 2016.0,
+   "career_war": 44.2,
+   "best3": 6.56,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Adri\u00e1n Gonz\u00e1lez",
+   "debut": 2004.0,
+   "career_war": 43.6,
+   "best3": 6.17,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Jorge Posada",
+   "debut": 1995.0,
+   "career_war": 42.7,
+   "best3": 5.6,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "George Springer",
+   "debut": 2014.0,
+   "career_war": 42.7,
+   "best3": 5.55,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Nelson Cruz",
+   "debut": 2005.0,
+   "career_war": 42.0,
+   "best3": 4.79,
+   "tier": "Solid regular",
+   "route": "International signing",
+   "active": false
+  },
+  {
+   "name_common": "Pl\u00e1cido Polanco",
+   "debut": 1998.0,
+   "career_war": 41.9,
+   "best3": 5.6,
+   "tier": "All-Star",
+   "route": "International signing",
+   "active": false
+  },
+  {
+   "name_common": "Jason Kendall",
+   "debut": 1996.0,
+   "career_war": 41.7,
+   "best3": 4.87,
+   "tier": "Solid regular",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Yadier Molina",
+   "debut": 2004.0,
+   "career_war": 41.7,
+   "best3": 5.53,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Trea Turner",
+   "debut": 2015.0,
+   "career_war": 41.6,
+   "best3": 5.71,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": true
+  },
+  {
+   "name_common": "Jason Heyward",
+   "debut": 2010.0,
+   "career_war": 41.5,
+   "best3": 6.3,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Tim Salmon",
+   "debut": 1992.0,
+   "career_war": 40.6,
+   "best3": 5.6,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Anthony Rizzo",
+   "debut": 2011.0,
+   "career_war": 40.4,
+   "best3": 5.96,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Ryan Zimmerman",
+   "debut": 2005.0,
+   "career_war": 40.1,
+   "best3": 6.08,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Mois\u00e9s Alou",
+   "debut": 1990.0,
+   "career_war": 39.9,
+   "best3": 5.07,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Reggie Sanders",
+   "debut": 1991.0,
+   "career_war": 39.8,
+   "best3": 4.77,
+   "tier": "Solid regular",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Rafael Furcal",
+   "debut": 2000.0,
+   "career_war": 39.5,
+   "best3": 5.25,
+   "tier": "All-Star",
+   "route": "International signing",
+   "active": false
+  },
+  {
+   "name_common": "Carl Crawford",
+   "debut": 2002.0,
+   "career_war": 39.2,
+   "best3": 5.63,
+   "tier": "All-Star",
+   "route": "Drafted pool (US/CAN/PR)",
+   "active": false
+  },
+  {
+   "name_common": "Magglio Ord\u00f3\u00f1ez",
+   "debut": 1997.0,
+   "career_war": 38.8,
+   "best3": 6.21,
+   "tier": "All-Star",
+   "route": "International signing",
+   "active": false
+  },
+  {
+   "name_common": "Carlos Santana",
+   "debut": 2010.0,
+   "career_war": 38.8,
+   "best3": 4.4,
+   "tier": "Solid regular",
+   "route": "International signing",
+   "active": true
+  }
+ ],
+ "chasing": [
+  {
+   "name_common": "Starling Marte",
+   "debut": 2012.0,
+   "career_war": 38.6,
+   "best3": 4.94,
+   "age_now": 37.0
+  },
+  {
+   "name_common": "J.T. Realmuto",
+   "debut": 2014.0,
+   "career_war": 38.5,
+   "best3": 5.18,
+   "age_now": 35.0
+  },
+  {
+   "name_common": "Ketel Marte",
+   "debut": 2015.0,
+   "career_war": 38.1,
+   "best3": 6.17,
+   "age_now": 32.0
+  },
+  {
+   "name_common": "Trevor Story",
+   "debut": 2016.0,
+   "career_war": 35.4,
+   "best3": 5.83,
+   "age_now": 33.0
+  },
+  {
+   "name_common": "Salvador Perez",
+   "debut": 2011.0,
+   "career_war": 35.3,
+   "best3": 4.33,
+   "age_now": 36.0
+  },
+  {
+   "name_common": "Willson Contreras",
+   "debut": 2016.0,
+   "career_war": 33.9,
+   "best3": 4.18,
+   "age_now": 34.0
+  },
+  {
+   "name_common": "Byron Buxton",
+   "debut": 2015.0,
+   "career_war": 33.2,
+   "best3": 4.62,
+   "age_now": 32.0
+  },
+  {
+   "name_common": "Dansby Swanson",
+   "debut": 2016.0,
+   "career_war": 31.6,
+   "best3": 5.04,
+   "age_now": 32.0
+  },
+  {
+   "name_common": "Max Muncy",
+   "debut": 2015.0,
+   "career_war": 30.8,
+   "best3": 4.72,
+   "age_now": 35.0
+  },
+  {
+   "name_common": "Marcell Ozuna",
+   "debut": 2013.0,
+   "career_war": 28.7,
+   "best3": 4.8,
+   "age_now": 35.0
+  },
+  {
+   "name_common": "Eugenio Su\u00e1rez",
+   "debut": 2014.0,
+   "career_war": 27.3,
+   "best3": 3.81,
+   "age_now": 34.0
+  },
+  {
+   "name_common": "Brandon Nimmo",
+   "debut": 2016.0,
+   "career_war": 27.2,
+   "best3": 4.52,
+   "age_now": 33.0
+  },
+  {
+   "name_common": "Javier B\u00e1ez",
+   "debut": 2014.0,
+   "career_war": 26.9,
+   "best3": 5.94,
+   "age_now": 33.0
+  },
+  {
+   "name_common": "Kyle Schwarber",
+   "debut": 2015.0,
+   "career_war": 22.2,
+   "best3": 3.8,
+   "age_now": 33.0
+  },
+  {
+   "name_common": "Miguel Rojas",
+   "debut": 2014.0,
+   "career_war": 20.0,
+   "best3": 2.8,
+   "age_now": 37.0
+  }
+ ],
+ "harold_not_star": [
+  {
+   "name_common": "Jason Kendall",
+   "career_war": 41.7,
+   "best3": 4.87,
+   "tier": "Solid regular"
+  },
+  {
+   "name_common": "Reggie Sanders",
+   "career_war": 39.8,
+   "best3": 4.77,
+   "tier": "Solid regular"
+  },
+  {
+   "name_common": "Nelson Cruz",
+   "career_war": 42.0,
+   "best3": 4.79,
+   "tier": "Solid regular"
+  },
+  {
+   "name_common": "Carlos Santana",
+   "career_war": 38.8,
+   "best3": 4.4,
+   "tier": "Solid regular"
+  }
+ ],
+ "star_not_harold": [
+  {
+   "name_common": "Edgardo Alfonzo",
+   "career_war": 28.8,
+   "best3": 6.22,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Bret Boone",
+   "career_war": 22.8,
+   "best3": 6.33,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Jeff Cirillo",
+   "career_war": 34.5,
+   "best3": 5.35,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Darin Erstad",
+   "career_war": 32.3,
+   "best3": 5.98,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Cliff Floyd",
+   "career_war": 25.9,
+   "best3": 5.31,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Bernard Gilkey",
+   "career_war": 21.6,
+   "best3": 5.35,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Shawn Green",
+   "career_war": 34.7,
+   "best3": 6.78,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Brian Jordan",
+   "career_war": 32.9,
+   "best3": 5.88,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Ray Lankford",
+   "career_war": 38.2,
+   "best3": 5.49,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Derrek Lee",
+   "career_war": 34.6,
+   "best3": 5.55,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Javy L\u00f3pez",
+   "career_war": 29.7,
+   "best3": 5.02,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Ra\u00fal Mondes\u00ed",
+   "career_war": 29.5,
+   "best3": 5.05,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "John Valentin",
+   "career_war": 32.5,
+   "best3": 6.1,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Mo Vaughn",
+   "career_war": 27.1,
+   "best3": 5.18,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Aramis Ram\u00edrez",
+   "career_war": 32.3,
+   "best3": 5.07,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Troy Glaus",
+   "career_war": 38.1,
+   "best3": 5.83,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Eric Chavez",
+   "career_war": 38.3,
+   "best3": 5.62,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Alfonso Soriano",
+   "career_war": 28.6,
+   "best3": 5.46,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Carlos Pe\u00f1a",
+   "career_war": 25.5,
+   "best3": 5.13,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Vernon Wells",
+   "career_war": 28.6,
+   "best3": 5.08,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Melvin Mora",
+   "career_war": 28.2,
+   "best3": 5.01,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Marcus Giles",
+   "career_war": 16.7,
+   "best3": 5.03,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Josh Hamilton",
+   "career_war": 28.1,
+   "best3": 6.06,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Travis Hafner",
+   "career_war": 24.8,
+   "best3": 5.44,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "V\u00edctor Mart\u00ednez",
+   "career_war": 31.8,
+   "best3": 5.0,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Brian Roberts",
+   "career_war": 29.5,
+   "best3": 5.57,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Chone Figgins",
+   "career_war": 22.0,
+   "best3": 5.0,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Jos\u00e9 Reyes",
+   "career_war": 37.2,
+   "best3": 5.26,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Jason Bay",
+   "career_war": 24.7,
+   "best3": 5.11,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Alex R\u00edos",
+   "career_war": 27.4,
+   "best3": 5.44,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Shane Victorino",
+   "career_war": 31.4,
+   "best3": 5.32,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Shin-Soo Choo",
+   "career_war": 34.7,
+   "best3": 5.34,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Prince Fielder",
+   "career_war": 23.6,
+   "best3": 5.18,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Kevin Youkilis",
+   "career_war": 32.4,
+   "best3": 6.08,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Grady Sizemore",
+   "career_war": 27.7,
+   "best3": 6.38,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Jos\u00e9 Bautista",
+   "career_war": 36.8,
+   "best3": 7.38,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Aaron Hill",
+   "career_war": 24.4,
+   "best3": 5.33,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Russell Martin",
+   "career_war": 38.5,
+   "best3": 5.11,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Hanley Ram\u00edrez",
+   "career_war": 38.3,
+   "best3": 6.44,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Jacoby Ellsbury",
+   "career_war": 31.0,
+   "best3": 5.88,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Michael Bourn",
+   "career_war": 22.8,
+   "best3": 5.48,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Lorenzo Cain",
+   "career_war": 38.2,
+   "best3": 6.39,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Austin Jackson",
+   "career_war": 21.9,
+   "best3": 5.05,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Justin Upton",
+   "career_war": 32.2,
+   "best3": 5.08,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Justin Turner",
+   "career_war": 38.6,
+   "best3": 5.26,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Alex Gordon",
+   "career_war": 34.9,
+   "best3": 6.54,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Matt Kemp",
+   "career_war": 21.6,
+   "best3": 5.58,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Carlos Gonz\u00e1lez",
+   "career_war": 24.5,
+   "best3": 5.12,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Michael Brantley",
+   "career_war": 34.1,
+   "best3": 5.24,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "J.D. Martinez",
+   "career_war": 30.8,
+   "best3": 5.59,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Brandon Crawford",
+   "career_war": 29.5,
+   "best3": 5.86,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Anthony Rendon",
+   "career_war": 34.2,
+   "best3": 6.63,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Kyle Seager",
+   "career_war": 37.0,
+   "best3": 6.18,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Matt Carpenter",
+   "career_war": 28.7,
+   "best3": 5.33,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Brian Dozier",
+   "career_war": 24.4,
+   "best3": 5.35,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Kris Bryant",
+   "career_war": 27.3,
+   "best3": 6.13,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "J.T. Realmuto",
+   "career_war": 38.5,
+   "best3": 5.18,
+   "tier": "All-Star",
+   "active": true
+  },
+  {
+   "name_common": "Andrelton Simmons",
+   "career_war": 36.6,
+   "best3": 6.43,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Adam Eaton",
+   "career_war": 18.8,
+   "best3": 5.34,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Kevin Kiermaier",
+   "career_war": 36.2,
+   "best3": 5.66,
+   "tier": "All-Star",
+   "active": false
+  },
+  {
+   "name_common": "Javier B\u00e1ez",
+   "career_war": 26.9,
+   "best3": 5.94,
+   "tier": "All-Star",
+   "active": true
+  },
+  {
+   "name_common": "Trevor Story",
+   "career_war": 35.4,
+   "best3": 5.83,
+   "tier": "All-Star",
+   "active": true
+  },
+  {
+   "name_common": "Ketel Marte",
+   "career_war": 38.1,
+   "best3": 6.17,
+   "tier": "All-Star",
+   "active": true
+  },
+  {
+   "name_common": "Dansby Swanson",
+   "career_war": 31.6,
+   "best3": 5.04,
+   "tier": "All-Star",
+   "active": true
+  }
+ ],
+ "milb_since_2005": {
+  "reached_high_a": 5310,
+  "made_mlb": 1447,
+  "never_made_it": 3863,
+  "got_500_ab": 680,
+  "harolds": 54
+ }
+}
