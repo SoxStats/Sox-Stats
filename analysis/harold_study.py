@@ -1,7 +1,9 @@
 """How rare is a Harold? Hitters who debuted 1990-2016, tiered on Baseball-Reference WAR.
 
 Tier = average of a player's best 3 seasons by WAR, any playing time (the 500 AB filter already applies; missing seasons count as 0):
-  MVP candidate 7.5+, All-Star 5+, Solid regular 3+, Just a guy above 0, Below replacement 0 or less.
+  MVP candidate 7.5+, All-Star 5+, Solid regular 3+, Borderline starter 2+, Role player 1+,
+  Fringe above 0, Below replacement 0 or less. Anyone with negative career WAR is also
+  Below replacement, whatever his best 3 say (flagged as "neg_career" for the sidebar).
 Harold = Harold Baines's career bWAR. Chart baseline: 500+ career MLB at-bats.
 Drafted vs international: birth country from the Lahman register (US, Canada, Puerto Rico
 are in the draft; everyone else signs as an international free agent).
@@ -11,8 +13,10 @@ import json, sys
 import numpy as np, pandas as pd
 
 FIRST, LAST, MIN_PA, MIN_AB = 1990, 2016, 300, 500
-CUTS = [(7.5, "MVP candidate"), (5, "All-Star"), (3, "Solid regular"), (0.01, "Just a guy")]
-ORDER = ["MVP candidate", "All-Star", "Solid regular", "Just a guy", "Below replacement"]
+CUTS = [(7.5, "MVP candidate"), (5, "All-Star"), (3, "Solid regular"), (2, "Borderline starter"),
+        (1, "Role player"), (0.01, "Fringe")]
+ORDER = ["MVP candidate", "All-Star", "Solid regular", "Borderline starter", "Role player", "Fringe",
+         "Below replacement"]
 
 def tier(v):
     for c, name in CUTS:
@@ -20,11 +24,12 @@ def tier(v):
     return "Below replacement"
 
 w = pd.read_csv("data/history/war_batting.csv.gz", low_memory=False)
-for c in ["WAR", "PA", "G"]:
+for c in ["WAR", "PA", "G", "runs_bat", "runs_field"]:
     w[c] = pd.to_numeric(w[c], errors="coerce").fillna(0)
 hit = w[w.pitcher != "Y"]
 season = hit.groupby(["mlb_ID", "player_ID", "name_common", "year_ID"], as_index=False).agg(
-    WAR=("WAR", "sum"), PA=("PA", "sum"), G=("G", "sum"), age=("age", "first"))
+    WAR=("WAR", "sum"), PA=("PA", "sum"), G=("G", "sum"), age=("age", "first"),
+    runs_bat=("runs_bat", "sum"), runs_field=("runs_field", "sum"))
 
 HAROLD = round(float(season[season.player_ID == "baineha01"].WAR.sum()), 1)
 LATEST = int(season.year_ID.max())
@@ -34,7 +39,9 @@ def career(g):
     best3 = float(np.mean(q + [0.0] * (3 - len(q))))
     return pd.Series(dict(debut=int(g[g.G > 0].year_ID.min()), last=int(g.year_ID.max()),
                           career_war=round(float(g.WAR.sum()), 1), best3=round(best3, 2),
-                          peak=round(float(g.WAR.max()), 1), age_now=g.age.max()))
+                          peak=round(float(g.WAR.max()), 1), age_now=g.age.max(),
+                          runs_bat=round(float(g.runs_bat.sum()), 1),
+                          runs_field=round(float(g.runs_field.sum()), 1)))
 
 car = season.groupby(["mlb_ID", "player_ID", "name_common"]).apply(career, include_groups=False).reset_index()
 pool = car[(car.debut >= FIRST) & (car.debut <= LAST)].copy()
@@ -50,6 +57,8 @@ pool["route"] = np.where(pool.born.isin(["USA", "CAN", "P.R."]), "Drafted pool (
                 np.where(pool.born.isna(), "Unknown", "International signing"))
 
 pool["tier"] = pool.best3.map(tier)
+pool["neg_career"] = (pool.career_war < 0) & (pool.tier != "Below replacement")
+pool.loc[pool.neg_career, "tier"] = "Below replacement"
 pool["harold"] = pool.career_war >= HAROLD
 pool["active"] = pool["last"] == LATEST
 main = pool[pool.AB >= MIN_AB]
@@ -98,10 +107,17 @@ res = dict(
     star_not_harold=main[~main.harold & main.tier.isin(["MVP candidate", "All-Star"])][
         ["name_common", "career_war", "best3", "tier", "active"]].to_dict("records"),
     milb_since_2005=milb,
+    neg_career_sidebar=dict(
+        count=int(main.neg_career.sum()),
+        good_fielders=int((main.neg_career & (main.runs_field > 0)).sum()),
+        median_runs_bat=float(main[main.neg_career].runs_bat.median()),
+        median_runs_field=float(main[main.neg_career].runs_field.median()),
+        most_at_bats=main[main.neg_career].sort_values("AB", ascending=False).head(10)[
+            ["name_common", "AB", "career_war", "best3", "runs_bat", "runs_field"]].to_dict("records")),
 )
 json.dump(res, open("analysis/harold_study.json", "w"), indent=1, default=str)
 main.to_csv("analysis/harold_study.csv", index=False)
-print(json.dumps({k: v for k, v in res.items() if k not in ("harold_list", "chasing", "harold_not_star", "star_not_harold")}, indent=1))
+print(json.dumps({k: v for k, v in res.items() if k not in ("harold_list", "chasing", "harold_not_star", "star_not_harold", "neg_career_sidebar")}, indent=1))
 print("chasing:", [(r["name_common"], r["career_war"], r["age_now"]) for r in res["chasing"]])
 print("harolds:", len(res["harold_list"]), "| star not harold:", len(res["star_not_harold"]), "| harold not star:", len(res["harold_not_star"]))
 print("unknown route:", main[main.route == "Unknown"].name_common.tolist()[:20])
