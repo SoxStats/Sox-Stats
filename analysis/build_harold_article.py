@@ -1,9 +1,9 @@
-"""Fill the data line (const D=...) in docs/articles/how-rare-is-a-harold/index.html
+"""Fill the data line (const D=...) in docs/articles/how-good-is-good/index.html
 from analysis/harold_study.csv and .json. Run harold_study.py first."""
 import json, re
 import pandas as pd
 
-PAGE = "docs/articles/how-rare-is-a-harold/index.html"
+PAGE = "docs/articles/how-good-is-good/index.html"
 m = pd.read_csv("analysis/harold_study.csv")
 r = json.load(open("analysis/harold_study.json"))
 
@@ -34,7 +34,7 @@ neg = r["neg_career_sidebar"]
 D = dict(
     total=len(m), harolds=int(m.harold.sum()), harold=r["harold_war"],
     below=int((m.tier == "Below replacement").sum()),
-    tiers=[[n, rg, int((m.tier == n).sum()), ex, line] for n, rg, ex, line in TIERS],
+    tiers=[[n, rg, int((m.tier == n).sum()), ex, line, int(m[m.tier == n].harold.sum())] for n, rg, ex, line in TIERS],
     funnel=[["Reached High-A", mm["reached_high_a"]], ["Made the majors", mm["made_mlb"]],
             ["Got 500 at-bats", mm["got_500_ab"]], ["Became a Harold", mm["harolds"]]],
     players=[[p.name_common, int(p.debut), int(p.AB), float(p.career_war), float(p.best3), p.tier,
