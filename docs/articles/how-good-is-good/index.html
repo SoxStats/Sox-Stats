@@ -31,6 +31,8 @@
 .row .ex{font-size:14px;color:var(--steel)}
 .row .hx{font-size:14px;font-weight:600;color:var(--harold)}
 .row .hx.none{color:var(--steel);font-weight:500}
+.why{font-size:14.5px;color:var(--steel);border-left:2px solid var(--rule);padding:2px 0 2px 10px;max-width:65ch}
+.why b{color:var(--ink)}
 .sub{font-size:18px;color:var(--steel);max-width:60ch}
 .note{background:var(--card);border:1.5px solid var(--ink);border-radius:4px;padding:12px 14px;display:grid;gap:6px;font-size:15.5px}
 .note .eyebrow{font:600 12.5px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
@@ -75,17 +77,21 @@ details.list summary{cursor:pointer;font-weight:600;color:var(--link);padding:4p
 </div>
 
 <details class="method">
-  <summary>How we did this</summary>
+  <summary>How we did this (and why)</summary>
   <ul>
-    <li><b>Who's in it:</b> every hitter who debuted from 1990 through 2016. That gives every player at least 10 years to show what he was. 2,504 hitters debuted in that span.</li>
-    <li><b>The 500 at-bat line:</b> the main charts only count players with 500+ career at-bats, roughly one full season. That's 1,318 players. The other 1,186 got a cup of coffee and that was it.</li>
-    <li><b>Tiers:</b> the average of each player's best three seasons by WAR, any amount of playing time. A season he didn't play counts as zero. Ranges are in the first chart.</li>
-    <li><b>Below replacement:</b> anyone whose best three averaged zero or less, plus anyone whose whole career added up to negative WAR, no matter how his best three looked.</li>
-    <li><b>A Harold:</b> 38.8 career WAR or more, Harold Baines's total. It's separate from the tiers. A Harold can be an MVP type or a guy who just kept showing up.</li>
-    <li><b>WAR:</b> Baseball-Reference's version for everyone, Baines included. It doesn't count catcher pitch framing, so some catchers are shortchanged.</li>
-    <li><b>The minors chart:</b> our minor league data starts in 2005, so it covers position players who first reached High-A from 2005 to 2012. Big leaguers on rehab stints are left out.</li>
-    <li><b>Drafted vs. international:</b> by birthplace. Players born in the US, Canada or Puerto Rico go through the draft. Everyone else signs as an international free agent.</li>
-    <li><b>Still playing:</b> a few guys who debuted before 2017 are still active and could still pass a Harold. They're in their current tier, and named in Part 4.</li>
+    <li><b>Who's in it:</b> every hitter who debuted in the majors from 1990 through 2016. That's 2,504 players. <i>Why 1990?</i> It's modern baseball, and 27 years of debuts gives us a big enough group to trust. <i>Why 2016?</i> A guy who debuted in 2016 has had 10 seasons. That's long enough to know what he was.</li>
+    <li><b>Hitters only:</b> pitchers are left out, including when they batted. <i>Why?</i> Pitchers' WAR and careers work differently. They'll get their own article.</li>
+    <li><b>The 500 at-bat line:</b> the main charts only count players with 500+ career at-bats. That's 1,318 players. <i>Why 500?</i> It's about one full season. It separates guys who got a real shot from guys who got a September call-up and never came back. The other 1,186 are counted, just not charted.</li>
+    <li><b>Tiers:</b> the average of each player's best three seasons by WAR. If he played fewer than three seasons, the missing ones count as zero. <i>Why best three and not career?</i> Careers get cut short by injuries, late starts and teams that never gave a guy a chance. Best three asks how good he got. The Harold asks how long he lasted.</li>
+    <li><b>Any amount of playing time counts</b> toward a player's best three. <i>Why?</i> The 500 at-bat line already filtered out the cup-of-coffee guys. A half season at 3 WAR is still a good half season.</li>
+    <li><b>The tier lines</b> (7.5, 5, 3, 2, 1, 0): <i>Why these?</i> They follow the rough scale <a href="https://www.baseball-reference.com/about/war_explained.shtml" target="_blank" rel="noopener">Baseball-Reference uses to explain WAR</a>: about 8 is an MVP season, 5 is an All-Star, 2 is a starter, 0 to 2 is a bench player, and under 0 is replacement level. We set MVP at 7.5 and added a 3-WAR "solid regular" line so a good everyday player doesn't get lumped in with an average one.</li>
+    <li><b>Below replacement:</b> anyone whose best three averaged zero or less, plus anyone whose whole career added up to negative WAR, no matter how his best three looked. <i>Why the second rule?</i> Best three skips a player's bad years on purpose. A guy whose bad years outweighed his good ones cost his team wins, so that's where he belongs. There's more on those 161 players in the sidebar.</li>
+    <li><b>A Harold:</b> 38.8 career WAR or more, Harold Baines's total. It's separate from the tiers. <i>Why Baines?</i> He was very good for a very long time, he's a Sox legend, and he made the Hall of Fame. <a href="../../harold/">More on the Harold</a>.</li>
+    <li><b>WAR:</b> Baseball-Reference's version for everyone, Baines included. <i>Why?</i> It's the number most fans look up, so you can check ours. One known gap: it doesn't count catcher pitch framing, so some catchers come out a little low.</li>
+    <li><b>The minors chart:</b> position players who first reached High-A from 2005 to 2012. <i>Why 2005?</i> That's as far back as our minor league numbers go. <i>Why stop at 2012?</i> Guys usually reach High-A two to four years before the majors, so the 2012 group debuted around 2014 to 2016. That keeps the same 10-year rule as everything else. <i>Why High-A?</i> It's the first level where a player is a real prospect, not just a draft pick filling a roster spot.</li>
+    <li><b>Rehab stints are left out</b> of the minors chart. A player only counts if he hadn't played in the majors before his first High-A season. <i>Why?</i> Otherwise a veteran rehabbing an injury in High-A would show up as a "prospect who made it."</li>
+    <li><b>Drafted vs. international:</b> by birthplace. Players born in the US, Canada or Puerto Rico go through the draft. Everyone else signs as an international free agent. <i>Why birthplace?</i> We don't have every signing record back to 1990, and birthplace decides which route a player takes. A few players fall through the cracks, like guys born overseas who played high school or college ball in the US.</li>
+    <li><b>Still playing:</b> a few guys who debuted before 2017 are still active. They're in their current tier. Anyone with 30+ career WAR is listed in Part 4 as still chasing a Harold. <i>Why 30?</i> That's close enough to get there with a couple more good years.</li>
   </ul>
 </details>
 
@@ -95,6 +101,7 @@ details.list summary{cursor:pointer;font-weight:600;color:var(--link);padding:4p
   <div class="prose">
     <p>Here are the 1,318 hitters who got 500 at-bats, by how good their best three seasons were. Each tier has its range, a player you'd know, and how many from that tier became Harolds.</p>
     <p><b>Why best three seasons?</b> Lots of good players have short careers because of injuries, a late start, or a team that never gave them a shot. Best three asks how good a guy got when he was at his best. So "Think Derek Jeter" doesn't mean Jeter played three years. It means his best three seasons averaged All-Star level. How long a guy lasted is a different question, and that's what the Harold measures.</p>
+    <p class="why"><b>Why?</b> <b>500 at-bats</b> is about one full season. It separates guys who got a real shot from guys who got a September call-up. <b>1990 to 2016</b> gives every player at least 10 years. The tier lines follow the rough scale <a href="https://www.baseball-reference.com/about/war_explained.shtml" target="_blank" rel="noopener">Baseball-Reference uses</a> to explain WAR. More in "How we did this" above.</p>
   </div>
   <figure style="margin:0;display:grid;gap:8px">
     <div class="board" id="ladder"></div>
@@ -102,6 +109,7 @@ details.list summary{cursor:pointer;font-weight:600;color:var(--link);padding:4p
   <div class="prose">
     <p>Look at the gold numbers. All 15 MVP types became Harolds. About half of the All-Stars did. Only 4 solid regulars did, and nobody below that.</p>
     <p>Only about 1 in 3 became even a solid regular. More than half topped out as a borderline starter, a role player or bench filler. And about 1 in 6 cost his team wins over his career.</p>
+    <p class="why"><b>Why?</b> <b>Below replacement</b> includes anyone whose whole career added up to negative WAR, even if his best three looked OK. Best three skips a guy's bad years on purpose, so we needed a second check to catch the players who really cost their teams.</p>
     <p>Yes, Paul Konerko is a solid regular here. His best three seasons averaged 3.9 WAR, and he finished with 28. I loved Paulie too. That's what the numbers say.</p>
   </div>
   <p class="takeaway">Getting 500 at-bats means you made it. It doesn't mean you were good. Seven out of ten guys who stick never become even a solid regular.</p>
@@ -116,7 +124,9 @@ details.list summary{cursor:pointer;font-weight:600;color:var(--link);padding:4p
   </div>
   <div class="prose">
     <p>Of everyone who debuted, not just the guys who got 500 at-bats, it's about 1 in 27.</p>
+    <p class="why"><b>Why?</b> <b>38.8 WAR</b> is Harold Baines's career total, on Baseball-Reference. He was very good for a very long time, which is exactly what we're measuring. Unlike the tiers, the Harold counts a player's whole career.</p>
     <p>Spread over 27 years, that's about 3.4 Harolds a year for all of baseball. The average team gets one every 9 years or so. If your team drafted one Harold every single year, you'd be about nine times better at it than everybody else. You'd contend for a decade without trying very hard.</p>
+    <p class="why"><b>The math:</b> 92 Harolds over 27 debut years is 3.4 a year. Split across 30 teams, that's one Harold per team about every 9 years.</p>
     <p>And no, a Harold isn't a Hall of Famer. That's the point. He's the guy who's good for ten years and never a hole in your lineup. Teams can't find enough of them.</p>
   </div>
   <p class="takeaway">A Harold is rarer than an All-Star season. About 3 a year come along in all of baseball.</p>
@@ -132,12 +142,14 @@ details.list summary{cursor:pointer;font-weight:600;color:var(--link);padding:4p
     <span class="eyebrow">This is a different group</span>
     <p>Parts 1 and 2 start in the majors: every hitter who debuted from 1990 to 2016 and got 500 at-bats. This chart starts in the minors instead. Our minor league numbers only go back to 2005, so it covers position players who first reached High-A from 2005 to 2012, with at least 10 years since to see how it played out.</p>
     <p>A lot of the same players are in both. 376 of the 379 who got 500 at-bats here are also in Part 1, and these 22 Harolds are part of the 92. The other 70 Harolds came up through the minors before 2005, where we don't have the numbers.</p>
+    <p><b>Why stop at 2012?</b> These are the years a player <i>reached High-A</i>, not the year he debuted. Guys usually get to the majors two to four years after High-A, so the 2012 group debuted around 2014 to 2016. That gives them the same 10 years as everyone in Part 1. Players who reached High-A in 2013 to 2016 mostly debuted from 2017 to 2019, and some as late as 2024. They haven't had time to become Harolds yet, so counting them would make the odds look worse than they are.</p>
   </div>
   <figure style="margin:0;display:grid;gap:8px">
     <div class="board" id="funnel"></div>
   </figure>
   <div class="prose">
     <p>Reaching High-A means a team thought you were a real prospect. Nearly 4 out of 5 of those guys never played a game in the majors. Fewer than 1 in 150 became a Harold.</p>
+    <p class="why"><b>Why?</b> <b>High-A</b> is the first level where a player is a real prospect, not just a draft pick filling out a roster. <b>Position players only</b>, to match the rest of the article. <b>Rehab stints are left out</b>, so a big leaguer working his way back from an injury doesn't get counted as a prospect who made it.</p>
   </div>
   <p class="takeaway">From High-A, your odds of a Harold are about 1 in 159. Once you get 500 big league at-bats, they jump to 1 in 14. The hard part is getting there.</p>
 </section>
@@ -158,6 +170,7 @@ details.list summary{cursor:pointer;font-weight:600;color:var(--link);padding:4p
   </details>
   <div class="prose">
     <p>A few guys from this group are still playing and close. Here's how far each one has to go.</p>
+    <p class="why"><b>Why?</b> We list every active player from this group with 30 or more career WAR. That's close enough to reach a Harold with a couple more good seasons. Until they cross it, they count as not a Harold.</p>
   </div>
   <figure style="margin:0;display:grid;gap:8px">
     <div class="board" id="chase"></div>
@@ -171,6 +184,7 @@ details.list summary{cursor:pointer;font-weight:600;color:var(--link);padding:4p
   <div class="prose">
     <p>Here's the part I didn't expect. Almost every Harold had an All-Star-level peak. Only 4 of the 92 got there by just piling up seasons: Jason Kendall, Reggie Sanders, Nelson Cruz and Carlos Santana.</p>
     <p>But it doesn't work the other way. <b id="snh"></b> players had best three seasons at an All-Star level or better and still never reached a Harold.</p>
+    <p class="why"><b>Why?</b> "All-Star level" means a best-three average of 5 WAR or more, the same line as the ladder. These are the guys with a star peak and no Harold.</p>
   </div>
   <div class="numbers" id="peaks"></div>
   <div class="prose">
@@ -183,6 +197,7 @@ details.list summary{cursor:pointer;font-weight:600;color:var(--link);padding:4p
   <span class="num">Part 6</span>
   <h2>Drafted or signed internationally?</h2>
   <div class="numbers" id="route"></div>
+  <p class="why"><b>Why?</b> We sorted by <b>birthplace</b>. Players born in the US, Canada or Puerto Rico go through the draft. Everyone else signs as an international free agent. We don't have every signing record back to 1990, but birthplace decides which route a player takes. A few guys fall through the cracks, like players born overseas who went to high school or college in the US.</p>
   <p class="takeaway">Same odds either way: about 1 in 14 for draftees, 1 in 16 for international signings. International guys actually produced MVP types at a higher rate.</p>
 </section>
 
@@ -192,6 +207,7 @@ details.list summary{cursor:pointer;font-weight:600;color:var(--link);padding:4p
   <p id="negline"></p>
   <div class="numbers" id="neg"></div>
   <p>Were they all great gloves who couldn't hit? Mostly no. Only <b id="negglove"></b> of them graded out as above-average fielders. Most just couldn't hit, and their defense didn't make up for it. Teams kept giving them jobs anyway.</p>
+  <p class="why"><b>Why?</b> "Above-average fielders" means Baseball-Reference credited them with more fielding runs than an average player at their positions over their careers. One gap: it doesn't count catcher pitch framing, so a catcher like Mike Matheny probably deserves more credit than he gets here.</p>
 </div>
 
 <div class="prose" id="conclusion">
