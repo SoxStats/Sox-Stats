@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caleb Bonemer: the company he keeps | Sox Fan. Stat Fan.</title>
+<meta name="description" content="The 10 minor leaguers who hit most like Caleb Bonemer at the same age and level, and what they became.">
+<meta property="og:title" content="Caleb Bonemer: the company he keeps | Sox Fan. Stat Fan.">
+<meta property="og:description" content="The 10 minor leaguers who hit most like Caleb Bonemer at the same age and level, and what they became.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+/* built from templates/prospect.html by analysis/build_prospect.py -- edit the template, not this page */
+:root{--star:#A8820F;--reg:#2F5E8C;--role:#8FB0D3;--miss:#9AA2AD;--band:#CFD6DE;--hl:#DCE6F0}
+@media (prefers-color-scheme:dark){:root{--star:#E2BD4F;--reg:#6E9BD0;--role:#3F5F85;--miss:#5E6672;--band:#3A414B;--hl:#26303C}}
+.part{display:grid;gap:14px;padding-top:10px}
+.part .num{font:600 12.5px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+.sub{font-size:18px;color:var(--steel);max-width:60ch}
+.small{font-size:14px;color:var(--steel);max-width:65ch}
+.sw{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.g-star{background:var(--star)}.g-reg{background:var(--reg)}.g-role{background:var(--role)}.g-miss{background:var(--miss)}
+/* tally bar */
+.seg{display:flex;gap:2px;height:22px}
+.seg i{display:block;border-radius:3px;min-width:4px}
+.key{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:15px;font-weight:500}
+/* comp list */
+.comps{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:2px 14px;display:grid}
+.comp{display:grid;grid-template-columns:22px 1fr auto;gap:2px 8px;padding:11px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.comp:last-child{border-bottom:0}
+.comp .rk{color:var(--steel);font-weight:600;font-size:14px}
+.comp .nm{font:600 19px/1.1 var(--display)}
+.comp .nm small{font:500 13px var(--body);color:var(--steel);margin-left:6px}
+.comp .tier{font-size:13.5px;font-weight:600;white-space:nowrap}
+.comp .ln{grid-column:2/-1;font-size:14px;color:var(--steel)}
+.comp .ln b{color:var(--ink);font-weight:600}
+.comp button{grid-column:2/-1;justify-self:start;font:600 13.5px var(--body);color:var(--link);background:none;border:0;padding:4px 0;cursor:pointer}
+.hb{color:var(--star);font-weight:600}
+/* wide net */
+.board{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:4px 14px;display:grid}
+.brow{display:grid;grid-template-columns:minmax(128px,42%) 1fr 30px;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--rule);font-size:15px}
+.brow:last-child{border-bottom:0}
+.brow .t{height:12px;border-radius:0 3px 3px 0}
+.brow .c{text-align:right;font-weight:600}
+/* fingerprint */
+.ctl{display:grid;gap:8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips button{font:600 14px var(--body);padding:7px 11px;border:1.5px solid var(--ink);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--ink);color:var(--page)}
+.ctl select{font:500 16px var(--body);padding:9px 10px;border:1.5px solid var(--ink);border-radius:4px;background:var(--card);color:var(--ink);width:100%}
+.fp{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:10px 12px 6px}
+.fp-leg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13.5px;font-weight:500;padding-bottom:6px}
+.fp-leg i{display:inline-block;vertical-align:-1px;margin-right:5px}
+.fp-leg .d{width:11px;height:11px;border-radius:50%}
+.fp-leg .b{width:22px;height:9px;border-radius:5px;background:var(--band)}
+.fp-leg .m{width:2px;height:12px;background:var(--steel)}
+.fp-row,.fp-ax{display:grid;grid-template-columns:minmax(120px,41%) 1fr;gap:8px;align-items:center}
+.fp-ax{font-size:11.5px;color:var(--steel)}
+.fp-ax div{display:flex;justify-content:space-between;padding:0 3px}
+.fp-row{padding:6px 0;border-top:1px solid var(--rule);cursor:pointer;min-height:44px}
+.fp-lab b{display:inline;font-weight:600;font-size:14.5px;line-height:1.2;padding:1px 3px;margin-left:-3px;border-radius:2px}
+.fp-lab small{display:block;font-size:12.5px;color:var(--steel)}
+.fp-row.gap .fp-lab b{background:var(--hl)}
+.fp-row.on{background:var(--hl)}
+.fp-t{position:relative;height:24px;margin:0 8px}
+.fp-t::before{content:"";position:absolute;left:0;right:0;top:11.5px;height:1px;background:var(--rule)}
+.fp-t u{position:absolute;top:7px;width:1px;height:10px;background:var(--rule)}
+.fp-band{position:absolute;top:7px;height:10px;border-radius:5px;background:var(--band)}
+.fp-med{position:absolute;top:4px;width:2px;height:16px;margin-left:-1px;background:var(--steel)}
+.fp-link{position:absolute;top:11px;height:2px;background:var(--steel)}
+.fp-dot{position:absolute;top:12px;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;border:2px solid var(--card)}
+.fp-dot.him.halo{width:22px;height:22px;margin:-11px 0 0 -11px}
+.fp-dot.me{background:var(--ink)}.fp-dot.him{background:var(--reg)}
+.info{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:10px 12px;font-size:14.5px}
+.note{background:var(--card);border:1.5px solid var(--ink);border-radius:4px;padding:12px 14px;display:grid;gap:6px;font-size:15.5px}
+.note .eyebrow{font:600 12.5px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+</style>
+</head>
+<body data-section="articles">
+<div id="site-header"></div><script src="../../assets/site.js" data-root="../../"></script>
+<main class="page gut"><div class="col stack">
+<div class="head">
+  <span class="tag">Prospect · The company he keeps</span>
+  <h1>Caleb Bonemer</h1>
+  <p class="meta" id="meta"></p>
+</div>
+
+<div class="answer">
+  <span class="eyebrow">Short answer</span>
+  <p id="short"></p>
+  <a href="#print">See his fingerprint ↓</a>
+</div>
+
+<div class="prose" id="intro"><p>Caleb Bonemer hit 37 home runs in 2026 between High-A and AA. He was 20.</p><p>So I got to wondering: who else has put up numbers like his at his age, and what did they turn into? Here are the 10 closest. Stars and busts both.</p></div>
+
+<div class="part">
+  <span class="num">His road so far</span>
+  <div class="comps" id="road"></div>
+  <p class="small">wRC+ is his whole bat against his own league that year. 100 is league average, so 140 means 40% better.</p>
+</div>
+
+<div class="part">
+  <span class="num">The company he keeps</span>
+  <h2 id="h-comps"></h2>
+  <div class="seg" id="seg10" role="img"></div>
+  <div class="key" id="key10"></div>
+  <div class="comps" id="comps"></div>
+  <p class="takeaway" id="take10"></p>
+</div>
+
+<div class="part">
+  <span class="num">The wider net</span>
+  <h2 id="h-wide"></h2>
+  <p class="small">Ten names is a small group. Here's the same count for a bigger one, junk bucket and all.</p>
+  <div class="board" id="wide"></div>
+  <p class="takeaway" id="takewide"></p>
+</div>
+
+<div class="part" id="print">
+  <span class="num">The fingerprint</span>
+  <h2>Where he matches, and where he doesn't</h2>
+  <p class="small">Each row is a percentile against every hitter at that level since 2005. Farther right means more of it: more power, more walks, and also more strikeouts.</p>
+  <div class="ctl">
+    <div class="chips" id="chips"></div>
+    <select id="who" aria-label="Compare with"></select>
+  </div>
+  <figure style="margin:0;display:grid;gap:8px">
+    <div class="fp" id="fp"></div>
+    <div class="info" id="info">Tap a row for the numbers.</div>
+  </figure>
+  <p class="takeaway" id="takefp"></p>
+</div>
+
+<div class="part" id="soon-wrap">
+  <span class="num">Too soon to call</span>
+  <h2>Recent hitters who looked like him</h2>
+  <p class="small">These are close matches too, but their careers are still being written, so they aren't counted above.</p>
+  <div class="comps" id="soon"></div>
+</div>
+
+<div class="note">
+  <span class="eyebrow">Read this the right way</span>
+  <p>These odds describe the group, not the player. The comps are on the bat only. Defense, injuries and makeup aren't in the numbers.</p>
+</div>
+
+<details class="method">
+  <summary>How we did this</summary>
+  <ul id="method"></ul>
+</details>
+
+<div class="fb">
+  <p>Think I'm wrong? Argue with me on Facebook.</p>
+  <a class="btn" id="fblink" href="https://www.facebook.com/aaron.simac" target="_blank" rel="noopener">Join the discussion</a>
+</div>
+
+<div class="agency">
+  <span class="eyebrow">You made it to the bottom</span>
+  <h3>I look at insurance the same way.</h3>
+  <p>I'm Aaron Simac, an independent insurance agent in Indiana and Illinois. Send me your current declarations page and I'll look for the gaps. It takes about 30 seconds.</p>
+  <div class="btns">
+    <a class="btn solid" href="https://www.leadmanagementlab.com/Form.aspx?id=b9f88dcd-0046-43a9-9866-7195957a39b6" target="_blank" rel="noopener">Get a coverage review</a>
+    <a class="btn" href="https://www.leadmanagementlab.com/Form.aspx?id=b9f88dcd-0046-43a9-9866-7195957a39b6" target="_blank" rel="noopener">Get a quote</a>
+  </div>
+</div>
+</div></main>
+<div id="site-footer"></div>
+<script>
+const D={"name":"Caleb Bonemer","meta":"3B/SS · Age 20 · Finished 2026 at AA Birmingham Barons · Built from his minor league numbers through 2026","short":"Of the 10 hitters most like him through age 20, 5 became stars, 1 a solid regular, 1 had a role and 3 didn't pan out. Two are already Harolds (Yelich, Bogaerts).","take10":"Became regulars or better: Bellinger, Yelich, Rasmus, Riley, Bogaerts, González. Didn't: Blanks, Davidson, Mazara, Winker. Same numbers at the same age, very different careers.","takewide":"Out of 50: 12 stars, 6 solid regulars, 11 who had a role and 21 who didn't pan out, including 10 who got a cup of coffee or never made it at all. About 1 in 4 became a star.","stops":[{"key":"A2025","level":"A","season":2025,"age":19,"team":"Kannapolis Cannon Ballers","PA":432,"AVG":0.281,"OBP":0.4,"SLG":0.458,"HR":10,"SB":27,"K":21.1,"BB":15.7,"ISO":0.178,"BABIP":0.344,"wRC":157,"age_rel":-1.4,"pct":{"young":76,"wRCplus":97,"AVG":78,"OBP":95,"ISO_rel":95,"HR_rel":87,"BB_rel":83,"K_rel":39,"SB_rel":65,"BABIP":78}},{"key":"A+2026","level":"A+","season":2026,"age":20,"team":"Winston-Salem Dash","PA":278,"AVG":0.238,"OBP":0.381,"SLG":0.556,"HR":18,"SB":10,"K":29.1,"BB":13.7,"ISO":0.318,"BABIP":0.278,"wRC":139,"age_rel":-2.0,"pct":{"young":89,"wRCplus":90,"AVG":29,"OBP":88,"ISO_rel":97,"HR_rel":92,"BB_rel":67,"K_rel":77,"SB_rel":50,"BABIP":18}},{"key":"AA2026","level":"AA","season":2026,"age":20,"team":"Birmingham Barons","PA":317,"AVG":0.261,"OBP":0.379,"SLG":0.545,"HR":19,"SB":7,"K":25.2,"BB":14.5,"ISO":0.284,"BABIP":0.299,"wRC":142,"age_rel":-3.7,"pct":{"young":98,"wRCplus":92,"AVG":55,"OBP":88,"ISO_rel":95,"HR_rel":91,"BB_rel":84,"K_rel":59,"SB_rel":36,"BABIP":40}}],"comps":[{"name":"Cody Bellinger","pos":"1B","tier":"All-Star","war":35.0,"harold":false,"active":true,"ab":4726,"stops":{"A+2026":{"level":"A+","season":2015,"age":19,"team":"Rancho Cucamonga Quakes","PA":544,"AVG":0.264,"OBP":0.336,"SLG":0.538,"HR":30,"SB":10,"K":27.6,"BB":9.6,"ISO":0.274,"BABIP":0.314,"wRC":133,"age_rel":-3.5,"pct":{"young":99,"wRCplus":86,"AVG":57,"OBP":52,"ISO_rel":97,"HR_rel":97,"BB_rel":76,"K_rel":84,"SB_rel":50,"BABIP":50}},"AA2026":{"level":"AA","season":2016,"age":20,"team":"Tulsa Drillers","PA":465,"AVG":0.263,"OBP":0.359,"SLG":0.484,"HR":23,"SB":8,"K":20.2,"BB":12.7,"ISO":0.221,"BABIP":0.287,"wRC":145,"age_rel":-3.7,"pct":{"young":98,"wRCplus":93,"AVG":57,"OBP":74,"ISO_rel":94,"HR_rel":96,"BB_rel":94,"K_rel":48,"SB_rel":44,"BABIP":28}}}},{"name":"Kyle Blanks","pos":"1B","tier":"Fringe","war":4.1,"harold":false,"active":false,"ab":827,"stops":{"A2025":{"level":"A","season":2006,"age":19,"team":"Fort Wayne Wizards","PA":360,"AVG":0.291,"OBP":0.381,"SLG":0.453,"HR":10,"SB":2,"K":21.9,"BB":10.0,"ISO":0.162,"BABIP":0.357,"wRC":145,"age_rel":-2.8,"pct":{"young":97,"wRCplus":93,"AVG":86,"OBP":87,"ISO_rel":84,"HR_rel":87,"BB_rel":71,"K_rel":71,"SB_rel":9,"BABIP":87}},"A+2026":{"level":"A+","season":2007,"age":20,"team":"Lake Elsinore Storm","PA":531,"AVG":0.301,"OBP":0.38,"SLG":0.54,"HR":24,"SB":11,"K":18.5,"BB":8.3,"ISO":0.239,"BABIP":0.334,"wRC":135,"age_rel":-2.8,"pct":{"young":96,"wRCplus":88,"AVG":89,"OBP":87,"ISO_rel":89,"HR_rel":88,"BB_rel":44,"K_rel":51,"SB_rel":46,"BABIP":69}},"AA2026":{"level":"AA","season":2008,"age":21,"team":"San Antonio Missions","PA":565,"AVG":0.325,"OBP":0.404,"SLG":0.514,"HR":20,"SB":5,"K":15.9,"BB":9.0,"ISO":0.189,"BABIP":0.362,"wRC":145,"age_rel":-3.3,"pct":{"young":97,"wRCplus":93,"AVG":97,"OBP":96,"ISO_rel":80,"HR_rel":81,"BB_rel":54,"K_rel":39,"SB_rel":28,"BABIP":92}}}},{"name":"Christian Yelich","pos":"CF","tier":"All-Star","war":45.1,"harold":true,"active":true,"ab":6550,"stops":{"A2025":{"level":"A","season":2011,"age":19,"team":"Greensboro Grasshoppers","PA":521,"AVG":0.312,"OBP":0.388,"SLG":0.484,"HR":15,"SB":32,"K":19.6,"BB":10.6,"ISO":0.171,"BABIP":0.373,"wRC":142,"age_rel":-2.4,"pct":{"young":92,"wRCplus":91,"AVG":95,"OBP":91,"ISO_rel":76,"HR_rel":78,"BB_rel":77,"K_rel":51,"SB_rel":81,"BABIP":93}},"A+2026":{"level":"A+","season":2012,"age":20,"team":"Jupiter Hammerheads","PA":447,"AVG":0.33,"OBP":0.404,"SLG":0.519,"HR":12,"SB":20,"K":19.0,"BB":11.0,"ISO":0.189,"BABIP":0.397,"wRC":168,"age_rel":-2.7,"pct":{"young":96,"wRCplus":99,"AVG":98,"OBP":95,"ISO_rel":91,"HR_rel":85,"BB_rel":80,"K_rel":53,"SB_rel":73,"BABIP":98}},"AA2026":{"level":"AA","season":2013,"age":21,"team":"Jacksonville Suns","PA":222,"AVG":0.28,"OBP":0.365,"SLG":0.518,"HR":7,"SB":5,"K":23.4,"BB":11.7,"ISO":0.238,"BABIP":0.346,"wRC":157,"age_rel":-3.1,"pct":{"young":95,"wRCplus":97,"AVG":75,"OBP":79,"ISO_rel":98,"HR_rel":85,"BB_rel":78,"K_rel":80,"SB_rel":73,"BABIP":84}}}},{"name":"Colby Rasmus","pos":"CF","tier":"Solid regular","war":20.4,"harold":false,"active":false,"ab":3704,"stops":{"A2025":{"level":"A","season":2006,"age":19,"team":"Swing of the Quad Cities","PA":341,"AVG":0.31,"OBP":0.373,"SLG":0.512,"HR":11,"SB":17,"K":16.1,"BB":8.5,"ISO":0.201,"BABIP":0.346,"wRC":157,"age_rel":-2.8,"pct":{"young":97,"wRCplus":97,"AVG":95,"OBP":84,"ISO_rel":95,"HR_rel":93,"BB_rel":54,"K_rel":31,"SB_rel":82,"BABIP":80}},"A+2026":{"level":"A+","season":2006,"age":19,"team":"Palm Beach Cardinals","PA":225,"AVG":0.254,"OBP":0.351,"SLG":0.404,"HR":5,"SB":11,"K":15.6,"BB":12.0,"ISO":0.15,"BABIP":0.284,"wRC":114,"age_rel":-4.0,"pct":{"young":100,"wRCplus":67,"AVG":46,"OBP":68,"ISO_rel":72,"HR_rel":67,"BB_rel":87,"K_rel":27,"SB_rel":78,"BABIP":22}},"AA2026":{"level":"AA","season":2007,"age":20,"team":"Springfield Cardinals","PA":556,"AVG":0.275,"OBP":0.381,"SLG":0.551,"HR":29,"SB":18,"K":19.4,"BB":12.6,"ISO":0.275,"BABIP":0.3,"wRC":149,"age_rel":-4.3,"pct":{"young":99,"wRCplus":95,"AVG":70,"OBP":89,"ISO_rel":98,"HR_rel":95,"BB_rel":88,"K_rel":68,"SB_rel":75,"BABIP":41}}}},{"name":"Matt Davidson","pos":"3B","tier":"Below replacement","war":-1.0,"harold":false,"active":false,"ab":1003,"stops":{"A2025":{"level":"A","season":2010,"age":19,"team":"South Bend Silver Hawks","PA":476,"AVG":0.289,"OBP":0.371,"SLG":0.504,"HR":16,"SB":0,"K":22.9,"BB":9.0,"ISO":0.214,"BABIP":0.354,"wRC":142,"age_rel":-2.4,"pct":{"young":92,"wRCplus":92,"AVG":85,"OBP":83,"ISO_rel":93,"HR_rel":90,"BB_rel":53,"K_rel":70,"SB_rel":7,"BABIP":85}},"A+2026":{"level":"A+","season":2011,"age":20,"team":"Visalia Rawhide","PA":606,"AVG":0.277,"OBP":0.348,"SLG":0.465,"HR":20,"SB":0,"K":24.3,"BB":8.6,"ISO":0.189,"BABIP":0.34,"wRC":107,"age_rel":-2.5,"pct":{"young":94,"wRCplus":57,"AVG":70,"OBP":65,"ISO_rel":71,"HR_rel":73,"BB_rel":49,"K_rel":80,"SB_rel":4,"BABIP":75}},"AA2026":{"level":"AA","season":2012,"age":21,"team":"Mobile BayBears","PA":576,"AVG":0.259,"OBP":0.365,"SLG":0.467,"HR":23,"SB":3,"K":22.0,"BB":12.0,"ISO":0.208,"BABIP":0.302,"wRC":134,"age_rel":-3.2,"pct":{"young":95,"wRCplus":87,"AVG":53,"OBP":79,"ISO_rel":93,"HR_rel":95,"BB_rel":75,"K_rel":73,"SB_rel":26,"BABIP":44}}}},{"name":"Austin Riley","pos":"3B","tier":"All-Star","war":23.7,"harold":false,"active":true,"ab":3710,"stops":{"A2025":{"level":"A","season":2016,"age":19,"team":"Rome Braves","PA":543,"AVG":0.271,"OBP":0.324,"SLG":0.479,"HR":20,"SB":3,"K":27.1,"BB":7.2,"ISO":0.208,"BABIP":0.341,"wRC":131,"age_rel":-2.4,"pct":{"young":93,"wRCplus":84,"AVG":69,"OBP":43,"ISO_rel":93,"HR_rel":92,"BB_rel":42,"K_rel":82,"SB_rel":23,"BABIP":76}},"A+2026":{"level":"A+","season":2017,"age":20,"team":"Florida Fire Frogs","PA":339,"AVG":0.252,"OBP":0.31,"SLG":0.408,"HR":12,"SB":0,"K":21.8,"BB":6.8,"ISO":0.157,"BABIP":0.289,"wRC":110,"age_rel":-2.7,"pct":{"young":96,"wRCplus":61,"AVG":43,"OBP":28,"ISO_rel":83,"HR_rel":95,"BB_rel":35,"K_rel":57,"SB_rel":13,"BABIP":26}},"AA2026":{"level":"AA","season":2017,"age":20,"team":"Mississippi Braves","PA":203,"AVG":0.315,"OBP":0.389,"SLG":0.511,"HR":8,"SB":2,"K":24.6,"BB":9.9,"ISO":0.197,"BABIP":0.393,"wRC":167,"age_rel":-4.0,"pct":{"young":98,"wRCplus":98,"AVG":95,"OBP":92,"ISO_rel":91,"HR_rel":94,"BB_rel":61,"K_rel":74,"SB_rel":23,"BABIP":98}}}},{"name":"Nomar Mazara","pos":"RF","tier":"Fringe","war":1.1,"harold":false,"active":false,"ab":2448,"stops":{"A2025":{"level":"A","season":2014,"age":19,"team":"Hickory Crawdads","PA":461,"AVG":0.264,"OBP":0.358,"SLG":0.47,"HR":19,"SB":4,"K":21.5,"BB":12.4,"ISO":0.206,"BABIP":0.304,"wRC":133,"age_rel":-2.5,"pct":{"young":94,"wRCplus":86,"AVG":62,"OBP":74,"ISO_rel":94,"HR_rel":97,"BB_rel":91,"K_rel":65,"SB_rel":27,"BABIP":40}},"AA2026":{"level":"AA","season":2015,"age":20,"team":"Frisco RoughRiders","PA":470,"AVG":0.284,"OBP":0.357,"SLG":0.443,"HR":13,"SB":2,"K":19.6,"BB":10.0,"ISO":0.159,"BABIP":0.329,"wRC":125,"age_rel":-4.2,"pct":{"young":99,"wRCplus":80,"AVG":79,"OBP":73,"ISO_rel":73,"HR_rel":75,"BB_rel":63,"K_rel":54,"SB_rel":11,"BABIP":71}}}},{"name":"Xander Bogaerts","pos":"SS","tier":"All-Star","war":44.3,"harold":true,"active":true,"ab":6869,"stops":{"A2025":{"level":"A","season":2011,"age":18,"team":"Greenville Drive","PA":296,"AVG":0.26,"OBP":0.324,"SLG":0.509,"HR":16,"SB":1,"K":24.0,"BB":8.4,"ISO":0.249,"BABIP":0.291,"wRC":126,"age_rel":-3.4,"pct":{"young":99,"wRCplus":80,"AVG":58,"OBP":43,"ISO_rel":97,"HR_rel":98,"BB_rel":53,"K_rel":77,"SB_rel":29,"BABIP":28}},"A+2026":{"level":"A+","season":2012,"age":19,"team":"Salem Red Sox","PA":435,"AVG":0.302,"OBP":0.378,"SLG":0.505,"HR":15,"SB":4,"K":19.5,"BB":9.9,"ISO":0.203,"BABIP":0.353,"wRC":148,"age_rel":-3.5,"pct":{"young":99,"wRCplus":94,"AVG":90,"OBP":86,"ISO_rel":88,"HR_rel":87,"BB_rel":74,"K_rel":51,"SB_rel":30,"BABIP":85}},"AA2026":{"level":"AA","season":2013,"age":20,"team":"Portland Sea Dogs","PA":259,"AVG":0.311,"OBP":0.407,"SLG":0.502,"HR":6,"SB":5,"K":19.7,"BB":13.5,"ISO":0.192,"BABIP":0.378,"wRC":156,"age_rel":-4.3,"pct":{"young":99,"wRCplus":97,"AVG":94,"OBP":97,"ISO_rel":85,"HR_rel":63,"BB_rel":92,"K_rel":52,"SB_rel":42,"BABIP":96}}}},{"name":"Jesse Winker","pos":"LF","tier":"Role player","war":6.4,"harold":false,"active":false,"ab":2434,"stops":{"A2025":{"level":"A","season":2013,"age":19,"team":"Dayton Dragons","PA":486,"AVG":0.281,"OBP":0.379,"SLG":0.463,"HR":16,"SB":6,"K":15.4,"BB":13.0,"ISO":0.182,"BABIP":0.308,"wRC":142,"age_rel":-2.3,"pct":{"young":91,"wRCplus":91,"AVG":78,"OBP":86,"ISO_rel":87,"HR_rel":91,"BB_rel":89,"K_rel":26,"SB_rel":23,"BABIP":44}},"A+2026":{"level":"A+","season":2014,"age":20,"team":"Bakersfield Blaze","PA":249,"AVG":0.317,"OBP":0.426,"SLG":0.58,"HR":13,"SB":5,"K":18.5,"BB":16.1,"ISO":0.263,"BABIP":0.349,"wRC":160,"age_rel":-2.8,"pct":{"young":97,"wRCplus":97,"AVG":95,"OBP":98,"ISO_rel":94,"HR_rel":92,"BB_rel":98,"K_rel":39,"SB_rel":36,"BABIP":81}},"AA2026":{"level":"AA","season":2015,"age":21,"team":"Pensacola Blue Wahoos","PA":526,"AVG":0.282,"OBP":0.39,"SLG":0.433,"HR":13,"SB":8,"K":15.8,"BB":14.1,"ISO":0.151,"BABIP":0.32,"wRC":138,"age_rel":-3.0,"pct":{"young":95,"wRCplus":90,"AVG":77,"OBP":92,"ISO_rel":75,"HR_rel":84,"BB_rel":91,"K_rel":30,"SB_rel":42,"BABIP":62}}}},{"name":"Carlos González","pos":"RF","tier":"All-Star","war":24.5,"harold":false,"active":false,"ab":5033,"stops":{"A2025":{"level":"A","season":2005,"age":19,"team":"South Bend Silver Hawks","PA":569,"AVG":0.307,"OBP":0.371,"SLG":0.489,"HR":18,"SB":7,"K":15.1,"BB":8.4,"ISO":0.183,"BABIP":0.34,"wRC":134,"age_rel":-2.9,"pct":{"young":98,"wRCplus":86,"AVG":93,"OBP":83,"ISO_rel":83,"HR_rel":84,"BB_rel":44,"K_rel":32,"SB_rel":31,"BABIP":75}},"A+2026":{"level":"A+","season":2006,"age":20,"team":"Lancaster JetHawks","PA":452,"AVG":0.3,"OBP":0.356,"SLG":0.563,"HR":21,"SB":15,"K":23.0,"BB":6.6,"ISO":0.263,"BABIP":0.348,"wRC":132,"age_rel":-3.0,"pct":{"young":98,"wRCplus":85,"AVG":89,"OBP":72,"ISO_rel":97,"HR_rel":94,"BB_rel":24,"K_rel":79,"SB_rel":84,"BABIP":81}},"AA2026":{"level":"AA","season":2007,"age":21,"team":"Mobile BayBears","PA":499,"AVG":0.286,"OBP":0.33,"SLG":0.476,"HR":16,"SB":9,"K":20.6,"BB":6.4,"ISO":0.19,"BABIP":0.333,"wRC":115,"age_rel":-3.4,"pct":{"young":97,"wRCplus":69,"AVG":81,"OBP":47,"ISO_rel":83,"HR_rel":82,"BB_rel":18,"K_rel":64,"SB_rel":60,"BABIP":75}}}}],"tally":{"MVP candidate":0,"All-Star":5,"Solid regular":1,"Borderline starter":0,"Role player":1,"Fringe":2,"Below replacement":1,"Cup of coffee":0,"Never made it":0},"wide":{"n":50,"tally":{"MVP candidate":1,"All-Star":11,"Solid regular":6,"Borderline starter":3,"Role player":8,"Fringe":4,"Below replacement":7,"Cup of coffee":7,"Never made it":3}},"recent":[{"name":"Lazaro Montes","pos":"RF","tier":"Cup of coffee","war":0.1,"harold":false,"active":true,"ab":52,"stops":{"A2025":{"level":"A","season":2024,"age":19,"team":"Modesto Nuts","PA":309,"AVG":0.309,"OBP":0.411,"SLG":0.527,"HR":13,"SB":1,"K":19.1,"BB":13.9,"ISO":0.219,"BABIP":0.349,"wRC":151,"age_rel":-2.1,"pct":{"young":89,"wRCplus":95,"AVG":94,"OBP":97,"ISO_rel":93,"HR_rel":95,"BB_rel":72,"K_rel":26,"SB_rel":5,"BABIP":82}},"A+2026":{"level":"A+","season":2025,"age":20,"team":"Everett AquaSox","PA":301,"AVG":0.268,"OBP":0.387,"SLG":0.572,"HR":18,"SB":3,"K":27.6,"BB":15.9,"ISO":0.304,"BABIP":0.327,"wRC":159,"age_rel":-2.3,"pct":{"young":92,"wRCplus":97,"AVG":61,"OBP":90,"ISO_rel":99,"HR_rel":96,"BB_rel":88,"K_rel":75,"SB_rel":26,"BABIP":62}},"AA2026":{"level":"AA","season":2025,"age":20,"team":"Arkansas Travelers","PA":282,"AVG":0.212,"OBP":0.319,"SLG":0.433,"HR":14,"SB":4,"K":30.5,"BB":12.4,"ISO":0.221,"BABIP":0.259,"wRC":111,"age_rel":-3.8,"pct":{"young":98,"wRCplus":64,"AVG":10,"OBP":36,"ISO_rel":94,"HR_rel":96,"BB_rel":72,"K_rel":88,"SB_rel":39,"BABIP":9}}}},{"name":"Zyhir Hope","pos":"RF","tier":"Never made it","war":null,"harold":false,"active":false,"ab":null,"stops":{"A2025":{"level":"A","season":2024,"age":19,"team":"Rancho Cucamonga Quakes","PA":248,"AVG":0.287,"OBP":0.415,"SLG":0.49,"HR":9,"SB":8,"K":24.2,"BB":14.9,"ISO":0.203,"BABIP":0.368,"wRC":147,"age_rel":-2.1,"pct":{"young":89,"wRCplus":94,"AVG":83,"OBP":98,"ISO_rel":89,"HR_rel":91,"BB_rel":79,"K_rel":55,"SB_rel":58,"BABIP":92}},"A+2026":{"level":"A+","season":2025,"age":20,"team":"Great Lakes Loons","PA":524,"AVG":0.264,"OBP":0.377,"SLG":0.428,"HR":13,"SB":26,"K":26.5,"BB":14.9,"ISO":0.164,"BABIP":0.355,"wRC":134,"age_rel":-2.2,"pct":{"young":91,"wRCplus":87,"AVG":58,"OBP":85,"ISO_rel":79,"HR_rel":75,"BB_rel":82,"K_rel":77,"SB_rel":63,"BABIP":86}},"AA2026":{"level":"AA","season":2026,"age":21,"team":"Erie SeaWolves","PA":564,"AVG":0.287,"OBP":0.367,"SLG":0.513,"HR":29,"SB":26,"K":25.0,"BB":11.0,"ISO":0.226,"BABIP":0.341,"wRC":129,"age_rel":-2.6,"pct":{"young":91,"wRCplus":84,"AVG":82,"OBP":80,"ISO_rel":81,"HR_rel":84,"BB_rel":56,"K_rel":55,"SB_rel":65,"BABIP":81}}}},{"name":"Carson Williams","pos":"SS","tier":"Cup of coffee","war":-0.7,"harold":false,"active":true,"ab":136,"stops":{"A2025":{"level":"A","season":2022,"age":19,"team":"Charleston RiverDogs","PA":523,"AVG":0.252,"OBP":0.347,"SLG":0.471,"HR":19,"SB":28,"K":32.1,"BB":10.9,"ISO":0.219,"BABIP":0.354,"wRC":127,"age_rel":-1.7,"pct":{"young":85,"wRCplus":81,"AVG":49,"OBP":65,"ISO_rel":93,"HR_rel":87,"BB_rel":48,"K_rel":83,"SB_rel":80,"BABIP":85}},"A+2026":{"level":"A+","season":2023,"age":20,"team":"Bowling Green Hot Rods","PA":462,"AVG":0.254,"OBP":0.351,"SLG":0.506,"HR":23,"SB":17,"K":31.8,"BB":11.5,"ISO":0.252,"BABIP":0.341,"wRC":134,"age_rel":-2.2,"pct":{"young":91,"wRCplus":87,"AVG":46,"OBP":67,"ISO_rel":94,"HR_rel":91,"BB_rel":61,"K_rel":82,"SB_rel":69,"BABIP":75}},"AA2026":{"level":"AA","season":2024,"age":21,"team":"Montgomery Biscuits","PA":505,"AVG":0.256,"OBP":0.352,"SLG":0.469,"HR":20,"SB":33,"K":28.5,"BB":11.5,"ISO":0.212,"BABIP":0.332,"wRC":147,"age_rel":-2.7,"pct":{"young":93,"wRCplus":94,"AVG":49,"OBP":69,"ISO_rel":96,"HR_rel":93,"BB_rel":73,"K_rel":74,"SB_rel":86,"BABIP":74}}}},{"name":"Theo Gillen","pos":"RF","tier":"Never made it","war":null,"harold":false,"active":false,"ab":null,"stops":{"A2025":{"level":"A","season":2025,"age":19,"team":"Charleston RiverDogs","PA":324,"AVG":0.267,"OBP":0.433,"SLG":0.387,"HR":5,"SB":36,"K":23.1,"BB":19.8,"ISO":0.119,"BABIP":0.359,"wRC":155,"age_rel":-1.4,"pct":{"young":76,"wRCplus":96,"AVG":65,"OBP":99,"ISO_rel":68,"HR_rel":66,"BB_rel":96,"K_rel":51,"SB_rel":74,"BABIP":88}},"A+2026":{"level":"A+","season":2026,"age":20,"team":"Bowling Green Hot Rods","PA":265,"AVG":0.342,"OBP":0.449,"SLG":0.589,"HR":12,"SB":28,"K":23.8,"BB":14.3,"ISO":0.247,"BABIP":0.432,"wRC":164,"age_rel":-2.0,"pct":{"young":89,"wRCplus":98,"AVG":99,"OBP":100,"ISO_rel":86,"HR_rel":76,"BB_rel":73,"K_rel":49,"SB_rel":80,"BABIP":100}},"AA2026":{"level":"AA","season":2026,"age":20,"team":"Montgomery Biscuits","PA":268,"AVG":0.288,"OBP":0.39,"SLG":0.504,"HR":10,"SB":16,"K":19.8,"BB":13.4,"ISO":0.217,"BABIP":0.333,"wRC":136,"age_rel":-3.7,"pct":{"young":98,"wRCplus":89,"AVG":82,"OBP":92,"ISO_rel":77,"HR_rel":65,"BB_rel":77,"K_rel":29,"SB_rel":71,"BABIP":75}}}},{"name":"James Wood","pos":"RF","tier":"Borderline starter","war":8.3,"harold":false,"active":true,"ab":1406,"stops":{"A2025":{"level":"A","season":2022,"age":19,"team":"Fredericksburg Nationals","PA":329,"AVG":0.324,"OBP":0.429,"SLG":0.56,"HR":12,"SB":19,"K":20.7,"BB":14.3,"ISO":0.236,"BABIP":0.391,"wRC":174,"age_rel":-1.7,"pct":{"young":85,"wRCplus":99,"AVG":98,"OBP":99,"ISO_rel":96,"HR_rel":87,"BB_rel":78,"K_rel":29,"SB_rel":71,"BABIP":97}},"AA2026":{"level":"AA","season":2023,"age":20,"team":"Harrisburg Senators","PA":368,"AVG":0.248,"OBP":0.334,"SLG":0.492,"HR":18,"SB":10,"K":33.7,"BB":10.6,"ISO":0.245,"BABIP":0.339,"wRC":126,"age_rel":-3.6,"pct":{"young":98,"wRCplus":80,"AVG":39,"OBP":51,"ISO_rel":92,"HR_rel":87,"BB_rel":50,"K_rel":90,"SB_rel":58,"BABIP":79}}}},{"name":"Marco Luciano","pos":"SS","tier":"Cup of coffee","war":-0.3,"harold":false,"active":false,"ab":115,"stops":{"A2025":{"level":"A","season":2021,"age":19,"team":"San Jose Giants","PA":308,"AVG":0.278,"OBP":0.373,"SLG":0.556,"HR":18,"SB":5,"K":22.1,"BB":12.3,"ISO":0.278,"BABIP":0.309,"wRC":140,"age_rel":-2.0,"pct":{"young":88,"wRCplus":90,"AVG":76,"OBP":84,"ISO_rel":96,"HR_rel":96,"BB_rel":76,"K_rel":33,"SB_rel":48,"BABIP":46}},"A+2026":{"level":"A+","season":2022,"age":20,"team":"Eugene Emeralds","PA":230,"AVG":0.263,"OBP":0.339,"SLG":0.459,"HR":10,"SB":0,"K":22.2,"BB":9.6,"ISO":0.195,"BABIP":0.303,"wRC":123,"age_rel":-2.5,"pct":{"young":94,"wRCplus":77,"AVG":57,"OBP":55,"ISO_rel":78,"HR_rel":86,"BB_rel":49,"K_rel":31,"SB_rel":2,"BABIP":39}},"AA2026":{"level":"AA","season":2023,"age":21,"team":"Richmond Flying Squirrels","PA":242,"AVG":0.228,"OBP":0.339,"SLG":0.45,"HR":11,"SB":6,"K":29.8,"BB":14.9,"ISO":0.223,"BABIP":0.285,"wRC":116,"age_rel":-2.6,"pct":{"young":92,"wRCplus":70,"AVG":20,"OBP":56,"ISO_rel":86,"HR_rel":84,"BB_rel":86,"K_rel":78,"SB_rel":45,"BABIP":26}}}}],"order":["MVP candidate","All-Star","Solid regular","Borderline starter","Role player","Fringe","Below replacement","Cup of coffee","Never made it"],"finger":[["young","Young for the level"],["wRCplus","Overall bat (wRC+)"],["AVG","Batting average"],["OBP","On-base"],["ISO_rel","Power (ISO)"],["HR_rel","Home run rate"],["BB_rel","Walk rate"],["K_rel","Strikeout rate"],["SB_rel","Steals"],["BABIP","BABIP (luck check)"]],"method":["<b>The pool.</b> Every minor league hitter since 2005 (as far back as our minor league numbers go) at Single-A, High-A, AA and AAA. One stop is one player at one level in one season, with 200+ plate appearances. Big leaguers on rehab or sent back down don't count.","<b>Who can be a comp.</b> He had to play AA within a year of the same age (20). That left 559 hitters. Age matters most, so every year of age gap costs a comp heavily.","<b>What gets compared.</b> Overall bat (wRC+), strikeout rate, walk rate, power and steals. Each one is measured against the player's own league that season, so a 25% strikeout rate in 2006 and in 2026 aren't treated as the same thing.","<b>His whole road, not one stop.</b> Each of his stops is compared, weighted by playing time, with higher levels counting a bit more. A comp who skipped one of his earlier levels, or had under 200 plate appearances there, gets charged a penalty for it.","<b>Who gets a grade.</b> Only comps who played AA in 2018 or earlier, so they've had 8+ years to show what they are (337 hitters). Newer ones are listed under Too soon to call.","<b>The grades.</b> Same tiers as <a href=\"../../articles/how-good-is-good/\">How good is good?</a>: the average of a player's best 3 seasons by Baseball-Reference WAR, for anyone with 500+ big league at-bats. Under 500 at-bats is a cup of coffee. A Harold is 38.8 career WAR.","<b>What's not in here.</b> Defense, position, injuries, scouting. This is the bat only. A first baseman and a shortstop with the same line are the same comp here, and they aren't the same player."]};
+(function(){
+var $=function(id){return document.getElementById(id)};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
+var GROUPS=[["star","Stars",["MVP candidate","All-Star"],"Star"],["reg","Solid regulars",["Solid regular"],"Solid regular"],
+  ["role","Had a role",["Borderline starter","Role player"],"Had a role"],["miss","Didn't pan out",["Fringe","Below replacement","Cup of coffee","Never made it"],"Didn't pan out"]];
+var groupOf=function(t){for(var i=0;i<GROUPS.length;i++)if(GROUPS[i][2].indexOf(t)>=0)return GROUPS[i]};
+var f3=function(v){return v==null?"":v.toFixed(3).replace(/^0/,"")};
+var slash=function(s){return f3(s.AVG)+"/"+f3(s.OBP)+"/"+f3(s.SLG)};
+var ord=function(n){var s=["th","st","nd","rd"],v=n%100;return n+(s[(v-20)%10]||s[v]||s[0])};
+var last=D.name.split(" ").slice(1).join(" ");
+var A=D.stops[D.stops.length-1];
+
+$("meta").textContent=D.meta;
+$("short").textContent=D.short;
+
+// road
+$("road").innerHTML=D.stops.map(function(s){return '<div class="comp"><span class="nm" style="grid-column:1/3">'+s.level+" at "+s.age+"<small>"+s.season+" "+esc(s.team)+
+  '</small></span><span class="tier">wRC+ '+s.wRC+'</span><span class="ln" style="grid-column:1/-1"><b>'+slash(s)+"</b> in "+s.PA+" PA · "+s.HR+" HR · "+s.SB+
+  ' SB</span><span class="ln" style="grid-column:1/-1">Strikeouts '+s.K.toFixed(1)+"% · Walks "+s.BB.toFixed(1)+"%</span></div>"}).join("");
+
+// tally bar + key
+function tally(el,key,t,n){
+  var parts=GROUPS.map(function(g){return [g,g[2].reduce(function(a,k){return a+(t[k]||0)},0)]}).filter(function(p){return p[1]>0});
+  el.innerHTML=parts.map(function(p){return '<i class="g-'+p[0][0]+'" style="flex:'+p[1]+'"></i>'}).join("");
+  el.setAttribute("aria-label",parts.map(function(p){return p[1]+" "+p[0][1]}).join(", "));
+  key.innerHTML=parts.map(function(p){return '<span><i class="sw g-'+p[0][0]+'"></i>'+p[1]+" "+(p[1]===1?p[0][3]:p[0][1]).toLowerCase()+"</span>"}).join("");
+}
+$("h-comps").textContent="The "+D.comps.length+" hitters most like him through age "+A.age;
+tally($("seg10"),$("key10"),D.tally,D.comps.length);
+
+function career(c,soon){
+  if(c.tier==="Never made it")return soon?"Hasn't reached the majors yet":"Never reached the majors";
+  var w=(c.war==null?"0.0":c.war.toFixed(1))+" career WAR";
+  if(soon)return "MLB so far: "+w+" in "+(c.ab||0)+" at-bats";
+  return w+(c.harold?' · <span class="hb">a Harold</span>':"")+(c.active?" · still playing":"");
+}
+function row(c,i,soon){
+  var s=c.stops[A.key]||{}, g=groupOf(c.tier);
+  return '<div class="comp"><span class="rk">'+(i+1)+'</span><span class="nm">'+esc(c.name)+"<small>"+esc(c.pos)+"</small></span>"+
+    (soon?"<span></span>":'<span class="tier"><i class="sw g-'+g[0]+'"></i>'+esc(c.tier)+"</span>")+
+    '<span class="ln">'+A.level+" at "+s.age+" ("+s.season+"): <b>"+slash(s)+"</b>, "+s.HR+" HR, wRC+ "+s.wRC+"</span>"+
+    '<span class="ln">'+career(c,soon)+"</span>"+
+    (soon?"":'<button data-i="'+i+'">Compare on the chart ↓</button>')+"</div>";
+}
+$("comps").innerHTML=D.comps.map(function(c,i){return row(c,i,false)}).join("");
+$("take10").textContent=D.take10;
+if(D.recent.length)$("soon").innerHTML=D.recent.map(function(c,i){return row(c,i,true)}).join("");else $("soon-wrap").hidden=true;
+
+// wide net
+$("h-wide").textContent="His "+D.wide.n+" closest";
+var mx=Math.max.apply(null,D.order.map(function(t){return D.wide.tally[t]||0}));
+$("wide").innerHTML=D.order.map(function(t){var n=D.wide.tally[t]||0,g=groupOf(t);
+  return '<div class="brow"><span>'+t+'</span><span><i class="t g-'+g[0]+'" style="display:block;width:'+(n?Math.max(2,100*n/mx):0)+'%"></i></span><span class="c">'+n+"</span></div>"}).join("");
+$("takewide").textContent=D.takewide;
+
+// fingerprint
+var RAW={young:function(s){var a=s.age_rel;return Math.abs(a).toFixed(1)+" yrs "+(a<=0?"younger":"older")+" than league"},
+  wRCplus:function(s){return "wRC+ "+s.wRC},AVG:function(s){return f3(s.AVG)},OBP:function(s){return f3(s.OBP)},
+  ISO_rel:function(s){return f3(s.ISO)+" ISO"},HR_rel:function(s){return s.HR+" HR in "+s.PA+" PA"},
+  BB_rel:function(s){return s.BB.toFixed(1)+"%"},K_rel:function(s){return s.K.toFixed(1)+"%"},
+  SB_rel:function(s){return s.SB+" steals"},BABIP:function(s){return f3(s.BABIP)}};
+var cur=A.key, who=-1, sel=null;
+var low=function(l){l=l.replace(/ \(.*\)$/,"");return l==="BABIP"?l:l.toLowerCase()};
+$("chips").innerHTML=D.stops.map(function(s){return '<button data-k="'+s.key+'">'+s.level+" at "+s.age+"</button>"}).join("");
+$("who").innerHTML='<option value="-1">Against all '+D.comps.length+" comps (range)</option>"+
+  D.comps.map(function(c,i){return '<option value="'+i+'">vs. '+esc(c.name)+" ("+esc(c.tier)+")</option>"}).join("");
+function stopOf(k){return D.stops.filter(function(s){return s.key===k})[0]}
+function draw(){
+  var me=stopOf(cur), have=D.comps.filter(function(c){return c.stops[cur]}), him=who>=0?D.comps[who]:null, hs=him&&him.stops[cur];
+  Array.prototype.forEach.call($("chips").children,function(b){b.setAttribute("aria-pressed",String(b.dataset.k===cur))});
+  var rows=D.finger.map(function(f){
+    var k=f[0], p=me.pct[k], v=have.map(function(c){return c.stops[cur].pct[k]}).sort(function(a,b){return a-b});
+    var med=v.length?(v.length%2?v[(v.length-1)/2]:Math.round((v[v.length/2-1]+v[v.length/2])/2)):null;
+    var other=him?(hs?hs.pct[k]:null):med;
+    return {k:k,label:f[1],p:p,lo:v[0],hi:v[v.length-1],med:med,other:other,gap:other==null?-1:Math.abs(p-other)};
+  });
+  var top=rows.slice().sort(function(a,b){return b.gap-a.gap})[0];
+  var leg='<span><i class="d" style="background:var(--ink)"></i>'+esc(last)+"</span>"+
+    (him?'<span><i class="d" style="background:var(--reg)"></i>'+esc(him.name)+"</span>"
+        :'<span><i class="b"></i>Range of his comps</span><span><i class="m"></i>Middle comp</span>');
+  var html='<div class="fp-leg">'+leg+'</div><div class="fp-ax"><span>percentile</span><div><span>0</span><span>50</span><span>100</span></div></div>';
+  rows.forEach(function(r){
+    var t='<u style="left:0"></u><u style="left:50%"></u><u style="left:100%"></u>';
+    if(him){if(r.other!=null)t+='<i class="fp-link" style="left:'+Math.min(r.p,r.other)+"%;width:"+Math.abs(r.p-r.other)+'%"></i><i class="fp-dot him'+(Math.abs(r.p-r.other)<4?" halo":"")+'" style="left:'+r.other+'%"></i>'}
+    else if(r.med!=null)t+='<i class="fp-band" style="left:'+r.lo+"%;width:"+Math.max(1,r.hi-r.lo)+'%"></i><i class="fp-med" style="left:'+r.med+'%"></i>';
+    t+='<i class="fp-dot me" style="left:'+r.p+'%"></i>';
+    html+='<div class="fp-row'+(r===top&&r.gap>=10?" gap":"")+(sel===r.k?" on":"")+'" data-k="'+r.k+'"><span class="fp-lab"><b>'+r.label+"</b><small>"+RAW[r.k](me)+'</small></span><div class="fp-t">'+t+"</div></div>";
+  });
+  $("fp").innerHTML=html;
+  var note=him&&!hs?esc(him.name)+" didn't have 200 plate appearances at "+me.level+" around that age, so there's nothing to compare here. ":"";
+  var miss=!him&&have.length<D.comps.length?" ("+have.length+" of his "+D.comps.length+" comps played "+me.level+" around that age.)":"";
+  if(top.gap>=10)$("takefp").textContent=note+(him?"The real gap at "+me.level+": "+low(top.label)+". "+last+" sits at the "+ord(top.p)+" percentile, "+him.name+" was at the "+ord(top.other)+"."
+    :"Where he's least like his comps at "+me.level+": "+low(top.label)+". He's at the "+ord(top.p)+" percentile; the middle comp was at the "+ord(top.other)+"."+miss);
+  else $("takefp").textContent=note||("At "+me.level+" he's within 10 percentile points of "+(him?him.name:"the middle comp")+" on every row. Same fingerprint."+miss);
+  var r=sel&&rows.filter(function(x){return x.k===sel})[0];
+  if(!r){$("info").textContent="Tap a row for the numbers.";return}
+  var txt="<b>"+r.label+", "+me.level+" at "+me.age+".</b> "+esc(last)+": "+RAW[r.k](me)+", "+ord(r.p)+" percentile. ";
+  if(him)txt+=hs?esc(him.name)+" ("+hs.season+", age "+hs.age+"): "+RAW[r.k](hs)+", "+ord(r.other)+" percentile.":"";
+  else if(r.med!=null)txt+="His comps ran from the "+ord(r.lo)+" to the "+ord(r.hi)+", with the middle one at the "+ord(r.med)+".";
+  $("info").innerHTML=txt;
+}
+$("chips").addEventListener("click",function(e){var b=e.target.closest("button");if(b){cur=b.dataset.k;draw()}});
+$("who").addEventListener("change",function(){who=+this.value;draw()});
+$("fp").addEventListener("click",function(e){var r=e.target.closest(".fp-row");if(r){sel=sel===r.dataset.k?null:r.dataset.k;draw()}});
+$("comps").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;who=+b.dataset.i;$("who").value=who;draw();
+  $("print").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth"})});
+draw();
+
+$("method").innerHTML=D.method.map(function(m){return "<li>"+m+"</li>"}).join("");
+})();
+</script>
+</body>
+</html>

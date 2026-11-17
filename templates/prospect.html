@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{NAME}}: the company he keeps | Sox Fan. Stat Fan.</title>
+<meta name="description" content="{{DESC}}">
+<meta property="og:title" content="{{NAME}}: the company he keeps | Sox Fan. Stat Fan.">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+/* built from templates/prospect.html by analysis/build_prospect.py -- edit the template, not this page */
+:root{--star:#A8820F;--reg:#2F5E8C;--role:#8FB0D3;--miss:#9AA2AD;--band:#CFD6DE;--hl:#DCE6F0}
+@media (prefers-color-scheme:dark){:root{--star:#E2BD4F;--reg:#6E9BD0;--role:#3F5F85;--miss:#5E6672;--band:#3A414B;--hl:#26303C}}
+.part{display:grid;gap:14px;padding-top:10px}
+.part .num{font:600 12.5px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+.sub{font-size:18px;color:var(--steel);max-width:60ch}
+.small{font-size:14px;color:var(--steel);max-width:65ch}
+.sw{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.g-star{background:var(--star)}.g-reg{background:var(--reg)}.g-role{background:var(--role)}.g-miss{background:var(--miss)}
+/* tally bar */
+.seg{display:flex;gap:2px;height:22px}
+.seg i{display:block;border-radius:3px;min-width:4px}
+.key{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:15px;font-weight:500}
+/* comp list */
+.comps{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:2px 14px;display:grid}
+.comp{display:grid;grid-template-columns:22px 1fr auto;gap:2px 8px;padding:11px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.comp:last-child{border-bottom:0}
+.comp .rk{color:var(--steel);font-weight:600;font-size:14px}
+.comp .nm{font:600 19px/1.1 var(--display)}
+.comp .nm small{font:500 13px var(--body);color:var(--steel);margin-left:6px}
+.comp .tier{font-size:13.5px;font-weight:600;white-space:nowrap}
+.comp .ln{grid-column:2/-1;font-size:14px;color:var(--steel)}
+.comp .ln b{color:var(--ink);font-weight:600}
+.comp button{grid-column:2/-1;justify-self:start;font:600 13.5px var(--body);color:var(--link);background:none;border:0;padding:4px 0;cursor:pointer}
+.hb{color:var(--star);font-weight:600}
+/* wide net */
+.board{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:4px 14px;display:grid}
+.brow{display:grid;grid-template-columns:minmax(128px,42%) 1fr 30px;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--rule);font-size:15px}
+.brow:last-child{border-bottom:0}
+.brow .t{height:12px;border-radius:0 3px 3px 0}
+.brow .c{text-align:right;font-weight:600}
+/* fingerprint */
+.ctl{display:grid;gap:8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips button{font:600 14px var(--body);padding:7px 11px;border:1.5px solid var(--ink);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--ink);color:var(--page)}
+.ctl select{font:500 16px var(--body);padding:9px 10px;border:1.5px solid var(--ink);border-radius:4px;background:var(--card);color:var(--ink);width:100%}
+.fp{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:10px 12px 6px}
+.fp-leg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13.5px;font-weight:500;padding-bottom:6px}
+.fp-leg i{display:inline-block;vertical-align:-1px;margin-right:5px}
+.fp-leg .d{width:11px;height:11px;border-radius:50%}
+.fp-leg .b{width:22px;height:9px;border-radius:5px;background:var(--band)}
+.fp-leg .m{width:2px;height:12px;background:var(--steel)}
+.fp-row,.fp-ax{display:grid;grid-template-columns:minmax(120px,41%) 1fr;gap:8px;align-items:center}
+.fp-ax{font-size:11.5px;color:var(--steel)}
+.fp-ax div{display:flex;justify-content:space-between;padding:0 3px}
+.fp-row{padding:6px 0;border-top:1px solid var(--rule);cursor:pointer;min-height:44px}
+.fp-lab b{display:inline;font-weight:600;font-size:14.5px;line-height:1.2;padding:1px 3px;margin-left:-3px;border-radius:2px}
+.fp-lab small{display:block;font-size:12.5px;color:var(--steel)}
+.fp-row.gap .fp-lab b{background:var(--hl)}
+.fp-row.on{background:var(--hl)}
+.fp-t{position:relative;height:24px;margin:0 8px}
+.fp-t::before{content:"";position:absolute;left:0;right:0;top:11.5px;height:1px;background:var(--rule)}
+.fp-t u{position:absolute;top:7px;width:1px;height:10px;background:var(--rule)}
+.fp-band{position:absolute;top:7px;height:10px;border-radius:5px;background:var(--band)}
+.fp-med{position:absolute;top:4px;width:2px;height:16px;margin-left:-1px;background:var(--steel)}
+.fp-link{position:absolute;top:11px;height:2px;background:var(--steel)}
+.fp-dot{position:absolute;top:12px;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;border:2px solid var(--card)}
+.fp-dot.him.halo{width:22px;height:22px;margin:-11px 0 0 -11px}
+.fp-dot.me{background:var(--ink)}.fp-dot.him{background:var(--reg)}
+.info{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:10px 12px;font-size:14.5px}
+.note{background:var(--card);border:1.5px solid var(--ink);border-radius:4px;padding:12px 14px;display:grid;gap:6px;font-size:15.5px}
+.note .eyebrow{font:600 12.5px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+</style>
+</head>
+<body data-section="articles">
+<div id="site-header"></div><script src="../../assets/site.js" data-root="../../"></script>
+<main class="page gut"><div class="col stack">
+<div class="head">
+  <span class="tag">Prospect · The company he keeps</span>
+  <h1>{{NAME}}</h1>
+  <p class="meta" id="meta"></p>
+</div>
+
+<div class="answer">
+  <span class="eyebrow">Short answer</span>
+  <p id="short"></p>
+  <a href="#print">See his fingerprint ↓</a>
+</div>
+
+<div class="prose" id="intro">{{INTRO}}</div>
+
+<div class="part">
+  <span class="num">His road so far</span>
+  <div class="comps" id="road"></div>
+  <p class="small">wRC+ is his whole bat against his own league that year. 100 is league average, so 140 means 40% better.</p>
+</div>
+
+<div class="part">
+  <span class="num">The company he keeps</span>
+  <h2 id="h-comps"></h2>
+  <div class="seg" id="seg10" role="img"></div>
+  <div class="key" id="key10"></div>
+  <div class="comps" id="comps"></div>
+  <p class="takeaway" id="take10"></p>
+</div>
+
+<div class="part">
+  <span class="num">The wider net</span>
+  <h2 id="h-wide"></h2>
+  <p class="small">Ten names is a small group. Here's the same count for a bigger one, junk bucket and all.</p>
+  <div class="board" id="wide"></div>
+  <p class="takeaway" id="takewide"></p>
+</div>
+
+<div class="part" id="print">
+  <span class="num">The fingerprint</span>
+  <h2>Where he matches, and where he doesn't</h2>
+  <p class="small">Each row is a percentile against every hitter at that level since 2005. Farther right means more of it: more power, more walks, and also more strikeouts.</p>
+  <div class="ctl">
+    <div class="chips" id="chips"></div>
+    <select id="who" aria-label="Compare with"></select>
+  </div>
+  <figure style="margin:0;display:grid;gap:8px">
+    <div class="fp" id="fp"></div>
+    <div class="info" id="info">Tap a row for the numbers.</div>
+  </figure>
+  <p class="takeaway" id="takefp"></p>
+</div>
+
+<div class="part" id="soon-wrap">
+  <span class="num">Too soon to call</span>
+  <h2>Recent hitters who looked like him</h2>
+  <p class="small">These are close matches too, but their careers are still being written, so they aren't counted above.</p>
+  <div class="comps" id="soon"></div>
+</div>
+
+<div class="note">
+  <span class="eyebrow">Read this the right way</span>
+  <p>These odds describe the group, not the player. The comps are on the bat only. Defense, injuries and makeup aren't in the numbers.</p>
+</div>
+
+<details class="method">
+  <summary>How we did this</summary>
+  <ul id="method"></ul>
+</details>
+
+<div class="fb">
+  <p>Think I'm wrong? Argue with me on Facebook.</p>
+  <a class="btn" id="fblink" href="https://www.facebook.com/aaron.simac" target="_blank" rel="noopener">Join the discussion</a>
+</div>
+
+<div class="agency">
+  <span class="eyebrow">You made it to the bottom</span>
+  <h3>I look at insurance the same way.</h3>
+  <p>I'm Aaron Simac, an independent insurance agent in Indiana and Illinois. Send me your current declarations page and I'll look for the gaps. It takes about 30 seconds.</p>
+  <div class="btns">
+    <a class="btn solid" href="https://www.leadmanagementlab.com/Form.aspx?id=b9f88dcd-0046-43a9-9866-7195957a39b6" target="_blank" rel="noopener">Get a coverage review</a>
+    <a class="btn" href="https://www.leadmanagementlab.com/Form.aspx?id=b9f88dcd-0046-43a9-9866-7195957a39b6" target="_blank" rel="noopener">Get a quote</a>
+  </div>
+</div>
+</div></main>
+<div id="site-footer"></div>
+<script>
+const D={};
+(function(){
+var $=function(id){return document.getElementById(id)};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
+var GROUPS=[["star","Stars",["MVP candidate","All-Star"],"Star"],["reg","Solid regulars",["Solid regular"],"Solid regular"],
+  ["role","Had a role",["Borderline starter","Role player"],"Had a role"],["miss","Didn't pan out",["Fringe","Below replacement","Cup of coffee","Never made it"],"Didn't pan out"]];
+var groupOf=function(t){for(var i=0;i<GROUPS.length;i++)if(GROUPS[i][2].indexOf(t)>=0)return GROUPS[i]};
+var f3=function(v){return v==null?"":v.toFixed(3).replace(/^0/,"")};
+var slash=function(s){return f3(s.AVG)+"/"+f3(s.OBP)+"/"+f3(s.SLG)};
+var ord=function(n){var s=["th","st","nd","rd"],v=n%100;return n+(s[(v-20)%10]||s[v]||s[0])};
+var last=D.name.split(" ").slice(1).join(" ");
+var A=D.stops[D.stops.length-1];
+
+$("meta").textContent=D.meta;
+$("short").textContent=D.short;
+
+// road
+$("road").innerHTML=D.stops.map(function(s){return '<div class="comp"><span class="nm" style="grid-column:1/3">'+s.level+" at "+s.age+"<small>"+s.season+" "+esc(s.team)+
+  '</small></span><span class="tier">wRC+ '+s.wRC+'</span><span class="ln" style="grid-column:1/-1"><b>'+slash(s)+"</b> in "+s.PA+" PA · "+s.HR+" HR · "+s.SB+
+  ' SB</span><span class="ln" style="grid-column:1/-1">Strikeouts '+s.K.toFixed(1)+"% · Walks "+s.BB.toFixed(1)+"%</span></div>"}).join("");
+
+// tally bar + key
+function tally(el,key,t,n){
+  var parts=GROUPS.map(function(g){return [g,g[2].reduce(function(a,k){return a+(t[k]||0)},0)]}).filter(function(p){return p[1]>0});
+  el.innerHTML=parts.map(function(p){return '<i class="g-'+p[0][0]+'" style="flex:'+p[1]+'"></i>'}).join("");
+  el.setAttribute("aria-label",parts.map(function(p){return p[1]+" "+p[0][1]}).join(", "));
+  key.innerHTML=parts.map(function(p){return '<span><i class="sw g-'+p[0][0]+'"></i>'+p[1]+" "+(p[1]===1?p[0][3]:p[0][1]).toLowerCase()+"</span>"}).join("");
+}
+$("h-comps").textContent="The "+D.comps.length+" hitters most like him through age "+A.age;
+tally($("seg10"),$("key10"),D.tally,D.comps.length);
+
+function career(c,soon){
+  if(c.tier==="Never made it")return soon?"Hasn't reached the majors yet":"Never reached the majors";
+  var w=(c.war==null?"0.0":c.war.toFixed(1))+" career WAR";
+  if(soon)return "MLB so far: "+w+" in "+(c.ab||0)+" at-bats";
+  return w+(c.harold?' · <span class="hb">a Harold</span>':"")+(c.active?" · still playing":"");
+}
+function row(c,i,soon){
+  var s=c.stops[A.key]||{}, g=groupOf(c.tier);
+  return '<div class="comp"><span class="rk">'+(i+1)+'</span><span class="nm">'+esc(c.name)+"<small>"+esc(c.pos)+"</small></span>"+
+    (soon?"<span></span>":'<span class="tier"><i class="sw g-'+g[0]+'"></i>'+esc(c.tier)+"</span>")+
+    '<span class="ln">'+A.level+" at "+s.age+" ("+s.season+"): <b>"+slash(s)+"</b>, "+s.HR+" HR, wRC+ "+s.wRC+"</span>"+
+    '<span class="ln">'+career(c,soon)+"</span>"+
+    (soon?"":'<button data-i="'+i+'">Compare on the chart ↓</button>')+"</div>";
+}
+$("comps").innerHTML=D.comps.map(function(c,i){return row(c,i,false)}).join("");
+$("take10").textContent=D.take10;
+if(D.recent.length)$("soon").innerHTML=D.recent.map(function(c,i){return row(c,i,true)}).join("");else $("soon-wrap").hidden=true;
+
+// wide net
+$("h-wide").textContent="His "+D.wide.n+" closest";
+var mx=Math.max.apply(null,D.order.map(function(t){return D.wide.tally[t]||0}));
+$("wide").innerHTML=D.order.map(function(t){var n=D.wide.tally[t]||0,g=groupOf(t);
+  return '<div class="brow"><span>'+t+'</span><span><i class="t g-'+g[0]+'" style="display:block;width:'+(n?Math.max(2,100*n/mx):0)+'%"></i></span><span class="c">'+n+"</span></div>"}).join("");
+$("takewide").textContent=D.takewide;
+
+// fingerprint
+var RAW={young:function(s){var a=s.age_rel;return Math.abs(a).toFixed(1)+" yrs "+(a<=0?"younger":"older")+" than league"},
+  wRCplus:function(s){return "wRC+ "+s.wRC},AVG:function(s){return f3(s.AVG)},OBP:function(s){return f3(s.OBP)},
+  ISO_rel:function(s){return f3(s.ISO)+" ISO"},HR_rel:function(s){return s.HR+" HR in "+s.PA+" PA"},
+  BB_rel:function(s){return s.BB.toFixed(1)+"%"},K_rel:function(s){return s.K.toFixed(1)+"%"},
+  SB_rel:function(s){return s.SB+" steals"},BABIP:function(s){return f3(s.BABIP)}};
+var cur=A.key, who=-1, sel=null;
+var low=function(l){l=l.replace(/ \(.*\)$/,"");return l==="BABIP"?l:l.toLowerCase()};
+$("chips").innerHTML=D.stops.map(function(s){return '<button data-k="'+s.key+'">'+s.level+" at "+s.age+"</button>"}).join("");
+$("who").innerHTML='<option value="-1">Against all '+D.comps.length+" comps (range)</option>"+
+  D.comps.map(function(c,i){return '<option value="'+i+'">vs. '+esc(c.name)+" ("+esc(c.tier)+")</option>"}).join("");
+function stopOf(k){return D.stops.filter(function(s){return s.key===k})[0]}
+function draw(){
+  var me=stopOf(cur), have=D.comps.filter(function(c){return c.stops[cur]}), him=who>=0?D.comps[who]:null, hs=him&&him.stops[cur];
+  Array.prototype.forEach.call($("chips").children,function(b){b.setAttribute("aria-pressed",String(b.dataset.k===cur))});
+  var rows=D.finger.map(function(f){
+    var k=f[0], p=me.pct[k], v=have.map(function(c){return c.stops[cur].pct[k]}).sort(function(a,b){return a-b});
+    var med=v.length?(v.length%2?v[(v.length-1)/2]:Math.round((v[v.length/2-1]+v[v.length/2])/2)):null;
+    var other=him?(hs?hs.pct[k]:null):med;
+    return {k:k,label:f[1],p:p,lo:v[0],hi:v[v.length-1],med:med,other:other,gap:other==null?-1:Math.abs(p-other)};
+  });
+  var top=rows.slice().sort(function(a,b){return b.gap-a.gap})[0];
+  var leg='<span><i class="d" style="background:var(--ink)"></i>'+esc(last)+"</span>"+
+    (him?'<span><i class="d" style="background:var(--reg)"></i>'+esc(him.name)+"</span>"
+        :'<span><i class="b"></i>Range of his comps</span><span><i class="m"></i>Middle comp</span>');
+  var html='<div class="fp-leg">'+leg+'</div><div class="fp-ax"><span>percentile</span><div><span>0</span><span>50</span><span>100</span></div></div>';
+  rows.forEach(function(r){
+    var t='<u style="left:0"></u><u style="left:50%"></u><u style="left:100%"></u>';
+    if(him){if(r.other!=null)t+='<i class="fp-link" style="left:'+Math.min(r.p,r.other)+"%;width:"+Math.abs(r.p-r.other)+'%"></i><i class="fp-dot him'+(Math.abs(r.p-r.other)<4?" halo":"")+'" style="left:'+r.other+'%"></i>'}
+    else if(r.med!=null)t+='<i class="fp-band" style="left:'+r.lo+"%;width:"+Math.max(1,r.hi-r.lo)+'%"></i><i class="fp-med" style="left:'+r.med+'%"></i>';
+    t+='<i class="fp-dot me" style="left:'+r.p+'%"></i>';
+    html+='<div class="fp-row'+(r===top&&r.gap>=10?" gap":"")+(sel===r.k?" on":"")+'" data-k="'+r.k+'"><span class="fp-lab"><b>'+r.label+"</b><small>"+RAW[r.k](me)+'</small></span><div class="fp-t">'+t+"</div></div>";
+  });
+  $("fp").innerHTML=html;
+  var note=him&&!hs?esc(him.name)+" didn't have 200 plate appearances at "+me.level+" around that age, so there's nothing to compare here. ":"";
+  var miss=!him&&have.length<D.comps.length?" ("+have.length+" of his "+D.comps.length+" comps played "+me.level+" around that age.)":"";
+  if(top.gap>=10)$("takefp").textContent=note+(him?"The real gap at "+me.level+": "+low(top.label)+". "+last+" sits at the "+ord(top.p)+" percentile, "+him.name+" was at the "+ord(top.other)+"."
+    :"Where he's least like his comps at "+me.level+": "+low(top.label)+". He's at the "+ord(top.p)+" percentile; the middle comp was at the "+ord(top.other)+"."+miss);
+  else $("takefp").textContent=note||("At "+me.level+" he's within 10 percentile points of "+(him?him.name:"the middle comp")+" on every row. Same fingerprint."+miss);
+  var r=sel&&rows.filter(function(x){return x.k===sel})[0];
+  if(!r){$("info").textContent="Tap a row for the numbers.";return}
+  var txt="<b>"+r.label+", "+me.level+" at "+me.age+".</b> "+esc(last)+": "+RAW[r.k](me)+", "+ord(r.p)+" percentile. ";
+  if(him)txt+=hs?esc(him.name)+" ("+hs.season+", age "+hs.age+"): "+RAW[r.k](hs)+", "+ord(r.other)+" percentile.":"";
+  else if(r.med!=null)txt+="His comps ran from the "+ord(r.lo)+" to the "+ord(r.hi)+", with the middle one at the "+ord(r.med)+".";
+  $("info").innerHTML=txt;
+}
+$("chips").addEventListener("click",function(e){var b=e.target.closest("button");if(b){cur=b.dataset.k;draw()}});
+$("who").addEventListener("change",function(){who=+this.value;draw()});
+$("fp").addEventListener("click",function(e){var r=e.target.closest(".fp-row");if(r){sel=sel===r.dataset.k?null:r.dataset.k;draw()}});
+$("comps").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;who=+b.dataset.i;$("who").value=who;draw();
+  $("print").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth"})});
+draw();
+
+$("method").innerHTML=D.method.map(function(m){return "<li>"+m+"</li>"}).join("");
+})();
+</script>
+</body>
+</html>

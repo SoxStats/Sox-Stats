@@ -9,6 +9,8 @@ Live at https://soxstats.github.io/Sox-Stats/
   - `index.html` home, `live/`, `about/`, `harold/`, `how/` info pages; `stats/` the nightly Sox stat page.
   - `assets/site.css` and `assets/site.js` hold the shared look, header, menu and footer (lead form and Facebook links live in site.js).
   - `docs/data/sox.json` is rebuilt every morning by `scripts/build.py`.
+- `docs/prospects/<slug>/` — one "company he keeps" page per prospect: his 10 most similar minor leaguers, what they became, and the fingerprint chart.
+  - Build: `python3 analysis/company.py PLAYER_ID` then `python3 analysis/build_prospect.py PLAYER_ID SLUG`. Edit `templates/prospect.html`, not the built page.
 - `templates/article.html` — starting point for each new article; copy to `docs/articles/<slug>/index.html`.
 - `data/history/` — season stat lines for every player, rebuilt on the 1st of each month by `scripts/history.py`.
   - MLB: 1876 to the latest season. Minor leagues (AAA, AA, A+, A, A-, Rk): 2005 to the latest season.
