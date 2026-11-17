@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Can you see a star coming from AA? | Sox Fan. Stat Fan.</title>
+<meta name="description" content="Every hitter who reached AA from 2005 to 2018, and what he became. How young he was mattered most. Strikeouts mattered less than you'd think.">
+<meta property="og:title" content="Can you see a star coming from AA? | Sox Fan. Stat Fan.">
+<meta property="og:description" content="Every hitter who reached AA from 2005 to 2018, and what he became. How young he was mattered most. Strikeouts mattered less than you'd think.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+/* numbers filled by analysis/build_aa_article.py (the const D line) */
+:root{--star:#A8820F;--reg:#2F5E8C;--track:#DDE1E6;--hl:#DCE6F0}
+@media (prefers-color-scheme:dark){:root{--star:#E2BD4F;--reg:#6E9BD0;--track:#2A2E35;--hl:#26303C}}
+.part{display:grid;gap:14px;padding-top:10px}
+.part .num{font:600 12.5px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+.small{font-size:14px;color:var(--steel);max-width:65ch}
+.board{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:6px 14px;display:grid}
+.row{display:grid;gap:5px;padding:11px 0;border-bottom:1px solid var(--rule)}
+.row:last-child{border-bottom:0}
+.row .top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.row .name{font:600 18px/1.1 var(--display)}
+.row .n{font-weight:600;white-space:nowrap}
+.row .n small{font-weight:500;color:var(--steel)}
+.row .sub{font-size:13.5px;color:var(--steel)}
+.track{height:14px;background:var(--track);border-radius:2px;display:flex;gap:2px;overflow:hidden}
+.track i{display:block;height:100%}
+.track .s{background:var(--star)} .track .r{background:var(--reg)}
+.leg{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:14px;font-weight:500}
+.sw{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.mine{background:var(--hl);margin:0 -14px;padding-left:14px;padding-right:14px}
+/* separators: three dots on a 0-25% track */
+.sep .t{position:relative;height:26px;margin:0 8px}
+.sep .t::before{content:"";position:absolute;left:0;right:0;top:12.5px;height:1px;background:var(--rule)}
+.sep .t u{position:absolute;top:8px;width:1px;height:10px;background:var(--rule)}
+.sep .ln{position:absolute;top:12px;height:2px;background:var(--steel)}
+.sep .d{position:absolute;top:13px;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;border:2px solid var(--card);background:var(--reg)}
+.sep .d.lo{background:var(--card);border:2px solid var(--reg)}
+.sep .d.mid{width:8px;height:8px;margin:-4px 0 0 -4px;border:0;background:var(--steel)}
+.sep .ax2{position:relative;height:26px;margin:0 8px;font-size:11.5px;color:var(--steel)}
+.sep .ax2 span{position:absolute;top:6px;transform:translateX(-50%)}
+.dleg i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+.cards{display:grid;gap:10px}
+.kc{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:12px 14px;display:grid;gap:6px}
+.kc .big{font:700 30px/1 var(--display)}
+.kc .names{font-size:14px;color:var(--steel)}
+.kc .names b{color:var(--ink);font-weight:600}
+.kc.mine{border:1.5px solid var(--ink);margin:0;padding:12px 14px}
+.guess{border-left:4px solid var(--star);padding:6px 0 6px 12px;display:grid;gap:6px}
+.guess .eyebrow,.callout .eyebrow{font:600 12.5px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pair div{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:12px;display:grid;gap:2px}
+.pair b{font:700 30px/1 var(--display)}
+.pair span{font-size:13.5px;color:var(--steel)}
+.callout{background:var(--card);border:1.5px solid var(--ink);border-radius:4px;padding:14px 16px;display:grid;gap:8px}
+.callout ul{margin:0;padding-left:20px;display:grid;gap:6px}
+.callout a{color:var(--link);font-weight:600}
+</style>
+</head>
+<body data-section="articles">
+<div id="site-header"></div><script src="../../assets/site.js" data-root="../../"></script>
+<main class="page gut"><div class="col stack">
+<div class="head">
+  <span class="tag">Research</span>
+  <h1>Can you see a star coming from AA?</h1>
+  <p class="meta">By Aaron Simac · November 2026 · 6 min read</p>
+</div>
+
+<div class="answer">
+  <span class="eyebrow">Short answer</span>
+  <p id="short"></p>
+  <a href="#conclusion">Jump to the conclusion ↓</a>
+</div>
+
+<details class="method">
+  <summary>How we did this</summary>
+  <ul id="method"></ul>
+</details>
+
+<div class="prose">
+  <p>Every winter, Sox fans (me included) look at a prospect's minor league numbers and try to guess what he'll become. Some calls look obvious after the fact. Of course Mike Trout was going to be Mike Trout.</p>
+  <p>But how much can the numbers actually tell you? I took every hitter who reached AA from 2005 to 2018, looked at what he did there, and checked what he turned into.</p>
+</div>
+
+<div class="guess">
+  <span class="eyebrow">My guess going in</span>
+  <p>The young guys who rake will mostly make it. The ones who'll burn you are the young guys who have a great year but never fix the strikeouts.</p>
+</div>
+
+<div class="part">
+  <span class="num">Chart 1</span>
+  <h2>How young he was mattered most</h2>
+  <p class="small">Every hitter's first full shot at AA, grouped by how much younger or older he was than his league.</p>
+  <div class="leg"><span><i class="sw" style="background:var(--star)"></i>Became a star</span><span><i class="sw" style="background:var(--reg)"></i>Became a solid regular</span></div>
+  <div class="board" id="age"></div>
+  <p class="takeaway" id="take1"></p>
+</div>
+
+<div class="part">
+  <span class="num">Chart 2</span>
+  <h2>What separated the ones who made it?</h2>
+  <p class="small">Just the young ones (1+ years young), split into thirds on each stat. A "high" third means high for a hitter his age. Each dot is the share who became a solid regular or better.</p>
+  <div class="leg dleg"><span><i style="border:2px solid var(--reg);background:var(--card)"></i>Low third</span><span><i style="background:var(--steel);width:8px;height:8px"></i>Middle</span><span><i style="background:var(--reg)"></i>High third</span></div>
+  <div class="board sep" id="sep"></div>
+  <p class="takeaway" id="take2"></p>
+</div>
+
+<div class="part">
+  <span class="num">Chart 3</span>
+  <h2>Testing my guess: young, raking, striking out</h2>
+  <p class="small" id="kintro"></p>
+  <div class="cards" id="kcards"></div>
+  <p class="takeaway" id="take3"></p>
+</div>
+
+<div class="part">
+  <span class="num">Chart 4</span>
+  <h2>The next year</h2>
+  <p class="small">I figured the ones who made it would pull away the next season. They didn't, at least not in the minors.</p>
+  <div class="pair" id="race"></div>
+  <p class="takeaway" id="take4"></p>
+</div>
+
+<div class="prose" id="conclusion">
+  <h2>The conclusion</h2>
+  <div id="concl" class="prose"></div>
+</div>
+
+<div class="callout" id="player"></div>
+
+<div class="fb">
+  <p>Think I'm wrong? Argue with me on Facebook.</p>
+  <a class="btn" href="https://www.facebook.com/aaron.simac" target="_blank" rel="noopener">Join the discussion</a>
+</div>
+
+<div class="agency">
+  <span class="eyebrow">You made it to the bottom</span>
+  <h3>I look at insurance the same way.</h3>
+  <p>I'm Aaron Simac, an independent insurance agent in Indiana and Illinois. Send me your current declarations page and I'll look for the gaps. It takes about 30 seconds.</p>
+  <div class="btns">
+    <a class="btn solid" href="https://www.leadmanagementlab.com/Form.aspx?id=b9f88dcd-0046-43a9-9866-7195957a39b6" target="_blank" rel="noopener">Get a coverage review</a>
+    <a class="btn" href="https://www.leadmanagementlab.com/Form.aspx?id=b9f88dcd-0046-43a9-9866-7195957a39b6" target="_blank" rel="noopener">Get a quote</a>
+  </div>
+</div>
+
+<nav class="pn">
+  <a href="../how-good-is-good/"><span>← Previous</span><b>How good is good? How rare is great?</b></a>
+  <a href="../../prospects/caleb-bonemer/"><span>Next →</span><b>Caleb Bonemer: the company he keeps</b></a>
+</nav>
+</div></main>
+<div id="site-footer"></div>
+<script>
+const D={"short":"Partly. How young a hitter was for AA mattered more than anything: 21% of the hitters 3+ years young became solid regulars or better, compared with 1.4% of the ones at league age. After that it was the bat and the power. Strikeouts barely mattered.","take1":"Same level, very different odds. A hitter 3+ years young for AA made it about 1 in 5 times. A hitter at his league's average age made it about 1 in 71.","take2":"Overall bat and power separated them most. Strikeout rate was the weakest signal on the list, and it didn't separate the stars at all: about 4% of each third became All-Stars. (Power and batting average landing on the exact same numbers isn't a typo. Different hitters, same counts.)","take3":"My guess was wrong. The young raking hitters who struck out a lot made it 33% of the time, about the same as the low-strikeout group (37%). Yelich, Bryant, Tatis and Olson all struck out plenty at AA. These are small groups, so call it a lean, not a law. And yes, that's Tyler Flowers on the bust list.","take4":"In the minors the next year, both groups hit about the same as before (wRC+ 120 to 119 for the ones who made it, 103 to 100 for the rest). The real split: 53% of the future regulars were already in the majors, compared with 6% of everybody else. The teams saw something too.","kintro":"Hitters 2+ years young with a 130+ wRC+ at AA, way above average, split by how often they struck out compared with their league. 184 hitters in all.","conclusion":["You can see some of it coming. Age is the biggest tell. Being young for AA and holding your own is the strongest sign there is.","After age, it's the bat: overall production and power. Strikeouts, the thing everybody (me included) worries about, were the weakest signal of all. That doesn't mean strikeouts don't matter in the majors. It means a young hitter who strikes out a lot at AA isn't doomed if he's doing damage when he connects.","And even the young hitters who raked at AA made it only about 1 in 3 times. The numbers narrow it down. They don't call it."],"method":["<b>Who's in it.</b> Every hitter's first season at AA with 200+ plate appearances, 2005 to 2018: 2,937 hitters. 2005 is as far back as our minor league numbers go. Stopping at 2018 gives every career 8+ years to play out. Big leaguers on rehab or sent back down don't count.","<b>How young.</b> His age that season minus the average age of his league, weighted by playing time.","<b>Stats against his league.</b> Every stat is compared with his own league that year. Strikeouts are way up since 2005, so a 25% strikeout rate meant something different in 2008 than in 2018.","<b>Made it.</b> Solid regular or better: his best 3 big league seasons averaged 3+ WAR (Baseball-Reference), with 500+ at-bats. Star means All-Star level, 5+. Same tiers as <a href=\"../how-good-is-good/\">How good is good?</a>","<b>Holding age steady.</b> In Chart 2, each stat is split into thirds within each age group, so a 20-year-old is only ranked against other hitters his age. Otherwise age would swamp everything else.","<b>What's not in here.</b> Defense, position, injuries, draft spot, scouting reports. This is the bat only."],"by_age":[{"group":"3+ years young","n":370,"mlb":83.2,"made":21.4,"star":8.9,"harolds":17,"made_n":79,"star_n":33},{"group":"2 years young","n":482,"mlb":68.9,"made":11.4,"star":3.1,"harolds":5,"made_n":55,"star_n":15},{"group":"1 year young","n":650,"mlb":50.2,"made":5.2,"star":1.2,"harolds":6,"made_n":34,"star_n":8},{"group":"About league age","n":709,"mlb":32.9,"made":1.4,"star":0.6,"harolds":1,"made_n":10,"star_n":4},{"group":"Older","n":726,"mlb":28.0,"made":0.6,"star":0.1,"harolds":1,"made_n":4,"star_n":1}],"separators":[{"stat":"wRCplus","label":"Overall bat (wRC+)","Low":{"n":502,"made":4.0,"star":1.2},"Middle":{"n":499,"made":9.6,"star":2.8},"High":{"n":501,"made":20.0,"star":7.2},"spread":16.0},{"stat":"ISO_rel","label":"Power (ISO)","Low":{"n":502,"made":5.2,"star":1.4},"Middle":{"n":499,"made":10.0,"star":3.0},"High":{"n":501,"made":18.4,"star":6.8},"spread":13.2},{"stat":"AVG","label":"Batting average","Low":{"n":502,"made":5.2,"star":1.4},"Middle":{"n":499,"made":10.0,"star":2.6},"High":{"n":501,"made":18.4,"star":7.2},"spread":13.2},{"stat":"BB_rel","label":"Walk rate","Low":{"n":502,"made":6.2,"star":1.2},"Middle":{"n":499,"made":11.2,"star":4.2},"High":{"n":501,"made":16.2,"star":5.8},"spread":10.0},{"stat":"BABIP","label":"BABIP","Low":{"n":502,"made":8.4,"star":2.8},"Middle":{"n":499,"made":10.0,"star":2.0},"High":{"n":501,"made":15.2,"star":6.4},"spread":6.8},{"stat":"SB_rel","label":"Steals","Low":{"n":502,"made":8.6,"star":1.8},"Middle":{"n":499,"made":10.6,"star":4.2},"High":{"n":501,"made":14.4,"star":5.2},"spread":5.8},{"stat":"K_rel","label":"Strikeout rate","Low":{"n":502,"made":13.9,"star":4.0},"Middle":{"n":499,"made":10.8,"star":3.6},"High":{"n":501,"made":8.8,"star":3.6},"spread":5.1}],"kguess":[{"band":"Rarely strikes out (15%+ below league)","n":59,"made":37.3,"star":13.6,"names_made":["Mookie Betts","Dustin Pedroia","Marcus Semien","Alex Bregman","Ryan Zimmerman","Russell Martin"],"names_bust":["Austin Hays","Rob Refsnyder","Oscar Taveras","Angel Salome","Eloy Jiménez","Maikel Franco"]},{"band":"About league average","n":86,"made":27.9,"star":15.1,"names_made":["Mike Trout","Joey Votto","Evan Longoria","Ryan Braun","Xander Bogaerts","Trea Turner"],"names_bust":["Nick Senzel","Brandon Snyder","Vinnie Catricala","Dalton Kelly","AJ Reed","Dilson Herrera"]},{"band":"Strikes out a lot (20%+ above league)","n":39,"made":33.3,"star":12.8,"names_made":["Christian Yelich","Matt Olson","Fernando Tatis Jr.","Kris Bryant","Javier Báez","Harrison Bader"],"names_bust":["Pedro Álvarez","Tyler Flowers","Chris Carter","Ike Davis","Dylan Cozens","Nolan Reimold"]}],"race":{"made":{"n":168,"n_line":103,"straight_up":53.0,"now_wRC":120,"next_wRC":119,"now_ISO":0.155,"next_ISO":0.167,"now_K":17.0,"next_K":17.9,"now_BB":9.1,"next_BB":9.0,"held_wRC":63.1},"didnt":{"n":1334,"n_line":1038,"straight_up":5.5,"now_wRC":103,"next_wRC":100,"now_ISO":0.132,"next_ISO":0.137,"now_K":18.5,"next_K":19.0,"now_BB":8.1,"next_BB":8.4,"held_wRC":60.8}},"player":{"name":"Caleb Bonemer","season":2026,"age":20,"age_rel":-3.7,"group":"3+ years young","wRC":142,"ISO":0.284,"K":25.2,"BB":14.5,"pct":{"wRCplus":86,"ISO_rel":91,"K_rel":63,"BB_rel":87,"AVG":36,"SB_rel":28,"BABIP":30},"peers":370,"raking":true,"k_band":"About league average","K_rel":104,"last":"Bonemer","html":"<span class=\"eyebrow\">So where does Caleb Bonemer land?</span><ul><li>He was <b>3.7 years young</b> for AA in 2026, so he's in the best group on Chart 1.</li><li>His <b>wRC+ of 142</b> beat 86% of that group, and his <b>power</b> beat 91%. Those were the top two signals.</li><li>He struck out <b>25.2%</b> of the time. That sounds like a lot, but AA strikes out a lot now. It's only 4% above his league, which puts him in the middle group on Chart 3: young hitters who raked made it 28% of the time there, and 15% became stars.</li></ul><a href=\"../../prospects/caleb-bonemer/\">See the 10 hitters most like him, and what they became →</a>"}};
+(function(){
+var $=function(id){return document.getElementById(id)};
+var f1=function(v){return (Math.round(v*10)/10).toString()};
+$("short").textContent=D.short;
+$("method").innerHTML=D.method.map(function(m){return "<li>"+m+"</li>"}).join("");
+
+// chart 1
+var P=D.player;
+$("age").innerHTML=D.by_age.map(function(r){
+  var reg=r.made-r.star;
+  return '<div class="row'+(P&&P.group===r.group?" mine":"")+'"><div class="top"><span class="name">'+r.group+(P&&P.group===r.group?' <small style="font:500 13px var(--body);color:var(--steel)">← '+P.last+"</small>":"")+
+    '</span><span class="n">'+Math.round(r.made)+'% <small>made it</small></span></div>'+
+    '<div class="track" role="img" aria-label="'+r.group+": "+r.star_n+" stars and "+(r.made_n-r.star_n)+" solid regulars out of "+r.n+'"><i class="s" style="width:'+(r.star*3)+'%"></i><i class="r" style="width:'+(reg*3)+'%"></i></div>'+
+    '<span class="sub">'+r.made_n+" of "+r.n+" became regulars or better · "+r.star_n+(r.star_n===1?" star":" stars")+"</span></div>"}).join("");
+$("take1").textContent=D.take1;
+
+// chart 2
+var MAX=25;
+$("sep").innerHTML=D.separators.map(function(r){
+  var lo=r.Low.made,mi=r.Middle.made,hi=r.High.made,a=Math.min(lo,hi),b=Math.max(lo,hi),x=function(v){return 100*v/MAX};
+  return '<div class="row"><div class="top"><span class="name">'+r.label+'</span><span class="n">'+f1(lo)+"% → "+f1(hi)+'%</span></div>'+
+    '<div class="t" role="img" aria-label="'+r.label+": low third "+f1(lo)+"%, middle "+f1(mi)+"%, high third "+f1(hi)+'% became regulars"><u style="left:0"></u><u style="left:40%"></u><u style="left:80%"></u>'+
+    '<i class="ln" style="left:'+x(a)+"%;width:"+(x(b)-x(a))+'%"></i><i class="d mid" style="left:'+x(mi)+'%"></i><i class="d lo" style="left:'+x(lo)+'%"></i><i class="d" style="left:'+x(hi)+'%"></i></div></div>'}).join("")+
+  '<div class="ax2"><span style="left:0">0%</span><span style="left:40%">10%</span><span style="left:80%">20%</span></div>';
+$("take2").textContent=D.take2;
+
+// chart 3
+$("kintro").textContent=D.kintro;
+$("kcards").innerHTML=D.kguess.map(function(r){
+  return '<div class="kc'+(P&&P.k_band===r.band?" mine":"")+'"><span class="small" style="font-weight:600;color:var(--ink)">'+r.band+(P&&P.k_band===r.band?" · where "+P.last+" is":"")+'</span>'+
+    '<span><span class="big">'+Math.round(r.made)+'%</span> made it <span class="small">('+Math.round(r.made*r.n/100)+" of "+r.n+")</span></span>"+
+    '<span class="names"><b>Made it:</b> '+r.names_made.slice(0,5).join(", ")+'</span><span class="names"><b>Didn\'t:</b> '+r.names_bust.slice(0,5).join(", ")+"</span></div>"}).join("");
+$("take3").textContent=D.take3;
+
+// chart 4
+$("race").innerHTML='<div><span>Made it</span><b>'+Math.round(D.race.made.straight_up)+'%</b><span>were in the majors (200+ PA) the very next year</span></div>'+
+  '<div><span>Didn\'t</span><b>'+Math.round(D.race.didnt.straight_up)+'%</b><span>were in the majors the very next year</span></div>';
+$("take4").textContent=D.take4;
+
+$("concl").innerHTML=D.conclusion.map(function(p){return "<p>"+p+"</p>"}).join("");
+if(P)$("player").innerHTML=P.html;else $("player").hidden=true;
+})();
+</script>
+</body>
+</html>

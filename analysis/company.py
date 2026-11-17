@@ -31,6 +31,7 @@ FEATS = {"wRCplus": 1.0, "K_rel": 1.0, "BB_rel": 0.7, "ISO_rel": 1.0, "SB_rel": 
 AGE_COST = 1.2        # each year of age gap costs this many standard deviations
 MISSING = 2.2         # flat charge for an earlier stop the comp doesn't have
 MIN_AB, HAROLD_ID = 500, "baineha01"
+INFIELD = {"SS", "3B", "2B"}   # "if he stays in the infield": comp listed at one of these at the matched stop
 TIER_CUTS = [(7.5, "MVP candidate"), (5, "All-Star"), (3, "Solid regular"), (2, "Borderline starter"),
              (1, "Role player"), (0.01, "Fringe")]
 ORDER = ["MVP candidate", "All-Star", "Solid regular", "Borderline starter", "Role player", "Fringe",
@@ -146,7 +147,7 @@ def stop_dict(r):
     return d
 
 
-def company(pid, m, out, n_named=10, n_wide=50, n_recent=6):
+def company(pid, m, out, n_named=10, n_wide=50, n_recent=6, infield=False):
     me = m[m.player_id == pid].sort_values(["season", "level"], key=lambda s: s.map(RANK) if s.name == "level" else s)
     if me.empty: raise SystemExit(f"{pid}: no minor league stop with {MIN_PA}+ PA")
     last = me[me.season == me.season.max()]
@@ -166,6 +167,7 @@ def company(pid, m, out, n_named=10, n_wide=50, n_recent=6):
     others = m[m.player_id != pid]
     # candidates: have the anchor level within a year of the same age
     a_pool = others[(others.level == anchor.level) & ((others.age - anchor.age).abs() <= 1)].copy()
+    if infield: a_pool = a_pool[a_pool.pos.isin(INFIELD)]
     a_pool["d"] = dist_to(anchor, a_pool)
     a_best = a_pool.sort_values("d").drop_duplicates("player_id").set_index("player_id")
     total = np.zeros(len(a_best))
@@ -202,12 +204,26 @@ def company(pid, m, out, n_named=10, n_wide=50, n_recent=6):
     wide = [out(i)["tier"] for i in mature.head(n_wide).index]
     recent = [card(i, r) for i, r in a_best[~a_best.mature].head(n_recent).iterrows()]
     tally = lambda ts: {t: ts.count(t) for t in ORDER}
+    # the race: what each of the wider group did the next season at AA/AAA, made it vs didn't
+    nxt = []
+    for i, r in mature.head(n_wide).iterrows():
+        nx = m[(m.player_id == i) & (m.season == r.season + 1) & m.level.isin(["AA", "AAA"])]
+        if nx.empty: continue
+        w = nx.PA / nx.PA.sum()
+        nxt.append(dict(made=out(i)["tier"] in ("MVP candidate", "All-Star", "Solid regular"),
+                        now=dict(wRC=r.wRCplus, ISO=r.ISO, K=100 * r.K, BB=100 * r.BBr),
+                        next=dict(wRC=(nx.wRCplus * w).sum(), ISO=(nx.ISO * w).sum(), K=100 * (nx.K * w).sum(), BB=100 * (nx.BBr * w).sum())))
+    def med(rows, when, k):
+        v = [x[when][k] for x in rows]
+        return round(float(np.median(v)), 3) if v else None
+    race = {g: dict(n=len(rows), **{f"{when}_{k}": med(rows, when, k) for when in ("now", "next") for k in ("wRC", "ISO", "K", "BB")})
+            for g, rows in (("made", [x for x in nxt if x["made"]]), ("didnt", [x for x in nxt if not x["made"]]))}
     return dict(
         id=int(pid), name=anchor["name"], anchor=dict(level=anchor.level, age=int(anchor.age), season=int(anchor.season)),
         stops=[dict(key=r.level + str(int(r.season)), weight=round(float(wt), 2), **stop_dict(r)) for r, wt in zip(stops, wts)],
         pool=dict(candidates=int(len(a_best)), scored=int(len(mature)), cutoff=CUTOFF[anchor.level]),
         comps=named, tally=tally([c["tier"] for c in named]),
-        wide=dict(n=len(wide), tally=tally(wide)),
+        wide=dict(n=len(wide), tally=tally(wide)), race=race, infield=infield,
         recent=recent, order=ORDER, finger=FINGER)
 
 
@@ -217,6 +233,7 @@ if __name__ == "__main__":
     os.makedirs("analysis/company", exist_ok=True)
     for arg in sys.argv[1:]:
         res = company(int(arg), m, out)
+        res["infield_view"] = company(int(arg), m, out, infield=True)
         res.update(harold=harold, latest=latest)
         json.dump(res, open(f"analysis/company/{arg}.json", "w"), indent=1, ensure_ascii=False)
         print(f"\n{res['name']}  anchor {res['anchor']}  pool {res['pool']}")
@@ -231,3 +248,12 @@ if __name__ == "__main__":
         print("  tally10:", {k: v for k, v in res["tally"].items() if v})
         print(f"  wide{res['wide']['n']}:", {k: v for k, v in res["wide"]["tally"].items() if v})
         print("  recent:", [(c["name"], c["score"], c["tier"]) for c in res["recent"]])
+        print("  race:", res["race"])
+        iv = res["infield_view"]
+        print(f"  INFIELD pool {iv['pool']}")
+        for c in iv["comps"]:
+            a = c["stops"].get(res["stops"][-1]["key"], {})
+            print(f"    {c['score']:.2f} {c['name']:22s} {c['pos']:3s} {c['tier']:18s} WAR {c['war']} | {a.get('season')} age {a.get('age')} wRC+ {a.get('wRC')} K {a.get('K')} BB {a.get('BB')} ISO {a.get('ISO')}")
+        print("  INFIELD tally10:", {k: v for k, v in iv["tally"].items() if v})
+        print(f"  INFIELD wide{iv['wide']['n']}:", {k: v for k, v in iv["wide"]["tally"].items() if v})
+        print("  INFIELD race:", iv["race"])

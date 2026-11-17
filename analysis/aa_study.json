@@ -1,0 +1,351 @@
+{
+ "last": 2018,
+ "pool": 2937,
+ "harold": 38.8,
+ "by_age": [
+  {
+   "group": "3+ years young",
+   "n": 370,
+   "mlb": 83.2,
+   "made": 21.4,
+   "star": 8.9,
+   "harolds": 17,
+   "made_n": 79,
+   "star_n": 33
+  },
+  {
+   "group": "2 years young",
+   "n": 482,
+   "mlb": 68.9,
+   "made": 11.4,
+   "star": 3.1,
+   "harolds": 5,
+   "made_n": 55,
+   "star_n": 15
+  },
+  {
+   "group": "1 year young",
+   "n": 650,
+   "mlb": 50.2,
+   "made": 5.2,
+   "star": 1.2,
+   "harolds": 6,
+   "made_n": 34,
+   "star_n": 8
+  },
+  {
+   "group": "About league age",
+   "n": 709,
+   "mlb": 32.9,
+   "made": 1.4,
+   "star": 0.6,
+   "harolds": 1,
+   "made_n": 10,
+   "star_n": 4
+  },
+  {
+   "group": "Older",
+   "n": 726,
+   "mlb": 28.0,
+   "made": 0.6,
+   "star": 0.1,
+   "harolds": 1,
+   "made_n": 4,
+   "star_n": 1
+  }
+ ],
+ "young_n": 1502,
+ "separators": [
+  {
+   "stat": "wRCplus",
+   "label": "Overall bat (wRC+)",
+   "Low": {
+    "n": 502,
+    "made": 4.0,
+    "star": 1.2
+   },
+   "Middle": {
+    "n": 499,
+    "made": 9.6,
+    "star": 2.8
+   },
+   "High": {
+    "n": 501,
+    "made": 20.0,
+    "star": 7.2
+   },
+   "spread": 16.0
+  },
+  {
+   "stat": "ISO_rel",
+   "label": "Power (ISO)",
+   "Low": {
+    "n": 502,
+    "made": 5.2,
+    "star": 1.4
+   },
+   "Middle": {
+    "n": 499,
+    "made": 10.0,
+    "star": 3.0
+   },
+   "High": {
+    "n": 501,
+    "made": 18.4,
+    "star": 6.8
+   },
+   "spread": 13.2
+  },
+  {
+   "stat": "AVG",
+   "label": "Batting average",
+   "Low": {
+    "n": 502,
+    "made": 5.2,
+    "star": 1.4
+   },
+   "Middle": {
+    "n": 499,
+    "made": 10.0,
+    "star": 2.6
+   },
+   "High": {
+    "n": 501,
+    "made": 18.4,
+    "star": 7.2
+   },
+   "spread": 13.2
+  },
+  {
+   "stat": "BB_rel",
+   "label": "Walk rate",
+   "Low": {
+    "n": 502,
+    "made": 6.2,
+    "star": 1.2
+   },
+   "Middle": {
+    "n": 499,
+    "made": 11.2,
+    "star": 4.2
+   },
+   "High": {
+    "n": 501,
+    "made": 16.2,
+    "star": 5.8
+   },
+   "spread": 10.0
+  },
+  {
+   "stat": "BABIP",
+   "label": "BABIP",
+   "Low": {
+    "n": 502,
+    "made": 8.4,
+    "star": 2.8
+   },
+   "Middle": {
+    "n": 499,
+    "made": 10.0,
+    "star": 2.0
+   },
+   "High": {
+    "n": 501,
+    "made": 15.2,
+    "star": 6.4
+   },
+   "spread": 6.8
+  },
+  {
+   "stat": "SB_rel",
+   "label": "Steals",
+   "Low": {
+    "n": 502,
+    "made": 8.6,
+    "star": 1.8
+   },
+   "Middle": {
+    "n": 499,
+    "made": 10.6,
+    "star": 4.2
+   },
+   "High": {
+    "n": 501,
+    "made": 14.4,
+    "star": 5.2
+   },
+   "spread": 5.8
+  },
+  {
+   "stat": "K_rel",
+   "label": "Strikeout rate",
+   "Low": {
+    "n": 502,
+    "made": 13.9,
+    "star": 4.0
+   },
+   "Middle": {
+    "n": 499,
+    "made": 10.8,
+    "star": 3.6
+   },
+   "High": {
+    "n": 501,
+    "made": 8.8,
+    "star": 3.6
+   },
+   "spread": 5.1
+  }
+ ],
+ "made_vs": {
+  "made": {
+   "n": 168,
+   "wRC": 127,
+   "ISO": 0.166,
+   "K": 17.0,
+   "BB": 9.3,
+   "AVG": 0.286,
+   "BABIP": 0.325
+  },
+  "didnt": {
+   "n": 798,
+   "wRC": 109,
+   "ISO": 0.136,
+   "K": 17.6,
+   "BB": 8.3,
+   "AVG": 0.273,
+   "BABIP": 0.319
+  },
+  "never": {
+   "n": 536,
+   "wRC": 91,
+   "ISO": 0.118,
+   "K": 19.9,
+   "BB": 7.7,
+   "AVG": 0.252,
+   "BABIP": 0.306
+  }
+ },
+ "kguess": [
+  {
+   "band": "Rarely strikes out (15%+ below league)",
+   "n": 59,
+   "made": 37.3,
+   "star": 13.6,
+   "names_made": [
+    "Mookie Betts",
+    "Dustin Pedroia",
+    "Marcus Semien",
+    "Alex Bregman",
+    "Ryan Zimmerman",
+    "Russell Martin"
+   ],
+   "names_bust": [
+    "Austin Hays",
+    "Rob Refsnyder",
+    "Oscar Taveras",
+    "Angel Salome",
+    "Eloy Jiménez",
+    "Maikel Franco"
+   ]
+  },
+  {
+   "band": "About league average",
+   "n": 86,
+   "made": 27.9,
+   "star": 15.1,
+   "names_made": [
+    "Mike Trout",
+    "Joey Votto",
+    "Evan Longoria",
+    "Ryan Braun",
+    "Xander Bogaerts",
+    "Trea Turner"
+   ],
+   "names_bust": [
+    "Nick Senzel",
+    "Brandon Snyder",
+    "Vinnie Catricala",
+    "Dalton Kelly",
+    "AJ Reed",
+    "Dilson Herrera"
+   ]
+  },
+  {
+   "band": "Strikes out a lot (20%+ above league)",
+   "n": 39,
+   "made": 33.3,
+   "star": 12.8,
+   "names_made": [
+    "Christian Yelich",
+    "Matt Olson",
+    "Fernando Tatis Jr.",
+    "Kris Bryant",
+    "Javier Báez",
+    "Harrison Bader"
+   ],
+   "names_bust": [
+    "Pedro Álvarez",
+    "Tyler Flowers",
+    "Chris Carter",
+    "Ike Davis",
+    "Dylan Cozens",
+    "Nolan Reimold"
+   ]
+  }
+ ],
+ "race": {
+  "made": {
+   "n": 168,
+   "n_line": 103,
+   "straight_up": 53.0,
+   "now_wRC": 120,
+   "next_wRC": 119,
+   "now_ISO": 0.155,
+   "next_ISO": 0.167,
+   "now_K": 17.0,
+   "next_K": 17.9,
+   "now_BB": 9.1,
+   "next_BB": 9.0,
+   "held_wRC": 63.1
+  },
+  "didnt": {
+   "n": 1334,
+   "n_line": 1038,
+   "straight_up": 5.5,
+   "now_wRC": 103,
+   "next_wRC": 100,
+   "now_ISO": 0.132,
+   "next_ISO": 0.137,
+   "now_K": 18.5,
+   "next_K": 19.0,
+   "now_BB": 8.1,
+   "next_BB": 8.4,
+   "held_wRC": 60.8
+  }
+ },
+ "player": {
+  "name": "Caleb Bonemer",
+  "season": 2026,
+  "age": 20,
+  "age_rel": -3.7,
+  "group": "3+ years young",
+  "wRC": 142,
+  "ISO": 0.284,
+  "K": 25.2,
+  "BB": 14.5,
+  "pct": {
+   "wRCplus": 86,
+   "ISO_rel": 91,
+   "K_rel": 63,
+   "BB_rel": 87,
+   "AVG": 36,
+   "SB_rel": 28,
+   "BABIP": 30
+  },
+  "peers": 370,
+  "raking": true,
+  "k_band": "About league average",
+  "K_rel": 104
+ }
+}
