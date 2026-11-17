@@ -7,7 +7,7 @@ rate in 2006 and in 2026 aren't treated as the same thing.
 Similarity, stop to stop: distance across overall bat (wRC+), strikeouts, walks, power and
 steals, each in standard deviations at that level, plus a charge for each year of age gap.
 Career to date: the prospect's stops are combined, weighted by playing time, with higher
-levels counting a bit more. A comp has to have played the prospect's top level within a
+levels counting more and his latest season counting double. A comp has to have played the prospect's top level within a
 year of the same age; an earlier stop he doesn't have (skipped the level, or under 200 PA)
 is charged a flat penalty.
 
@@ -23,7 +23,8 @@ import numpy as np, pandas as pd
 
 LEVELS = {"A": "a", "A+": "aplus", "AA": "aa", "AAA": "aaa"}
 RANK = {"A": 0, "A+": 1, "AA": 2, "AAA": 3}
-LEVEL_WT = {"A": 1.0, "A+": 1.25, "AA": 1.5, "AAA": 1.75}
+LEVEL_WT = {"A": 1.0, "A+": 1.5, "AA": 2.25, "AAA": 3.0}   # higher levels count more
+RECENT_WT = {0: 2.0, 1: 1.0, 2: 0.5}                     # latest season counts double; older seasons fade
 CUTOFF = {"AAA": 2019, "AA": 2018, "A+": 2017, "A": 2016}   # last season a comp can be scored from
 MIN_PA = 200
 FEATS = {"wRCplus": 1.0, "K_rel": 1.0, "BB_rel": 0.7, "ISO_rel": 1.0, "SB_rel": 0.4}
@@ -151,7 +152,8 @@ def company(pid, m, out, n_named=10, n_wide=50, n_recent=6):
     last = me[me.season == me.season.max()]
     anchor = last.loc[last.level.map(RANK).idxmax()]
     stops = [r for _, r in me.iterrows()]
-    wts = np.array([r.PA * LEVEL_WT[r.level] for r in stops], float)
+    top_season = max(int(r.season) for r in stops)
+    wts = np.array([r.PA * LEVEL_WT[r.level] * RECENT_WT.get(top_season - int(r.season), 0.25) for r in stops], float)
     wts /= wts.sum()
     zc = ["z_" + f for f in FEATS]
     fw = np.array(list(FEATS.values()))
